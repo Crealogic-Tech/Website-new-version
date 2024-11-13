@@ -1,3 +1,116 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --home-body-bg: white;
+  --medium-sea-green: #5ab963;
+  --hover-2: #b83535;
+  --primary-color: #121d45;
+  --hover: #0b132e;
+  --white-smoke: #f2f4f7;
+  --brand-colo: #ef3f3e;
+  --text-color: #585e75;
+}
+
+body {
+  color: #333;
+  background-color: var(--home-body-bg);
+  min-height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.background-gr {
+  z-index: -5;
+  background-image: linear-gradient(#fef9f9 26%, #fff0);
+  width: 100%;
+  height: 111.2rem;
+  position: absolute;
+}
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  display: inline-block;
+}
+
+
+.cta-floting {
+  z-index: 1200;
+  width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  inset: auto 0% 3%;
+}
+
+.outer-cta {
+  -webkit-backdrop-filter: blur(28px);
+  backdrop-filter: blur(28px);
+  background-color: #3f1e1d14;
+  border: 1px solid #d7cccc;
+  border-radius: 1rem;
+  padding: .75rem;
+}
+
+.wrapper-cta {
+  z-index: 800;
+  background-color: #fff;
+  border-radius: .5rem;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.375rem;
+  display: flex;
+  position: relative;
+}
+
+.wrappper {
+  grid-column-gap: .875rem;
+  grid-row-gap: .875rem;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex
+;
+}
+
+.w-button {
+  color: #fff;
+  line-height: inherit;
+  cursor: pointer;
+  background-color: #3898ec;
+  border: 0;
+  border-radius: 0;
+  padding: 9px 15px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.founde-image {
+  border-radius: 3.125rem;
+  max-width: 2.875rem;
+  overflow: hidden;
+}
+
+.bodytext-24 {
+  font-family: Poppins, sans-serif;
+  font-size: 1.5rem;
+  line-height: 150%;
+}
+
+.home-hero-button {
+  text-shadow: 0 .5px .5px #4d010080;
+  background-color: #f04f4b;
+  background-image: linear-gradient(#ffffff3d, #fff0 33% 68%, #ffffff3d);
+  border-radius: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.375rem 2rem;
+  font-family: Poppins, sans-serif;
+  font-size: 1.125rem;
+  line-height: 100%;
+  transition: all .35s cubic-bezier(.755,.05,.855,.06);
+  box-shadow: 0 0 0 6px #a5110e33, inset 0 1.5px #fffc, 0 0 0 2px #94302e;
+}
