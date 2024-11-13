@@ -30,12 +30,12 @@ body {
   height: 111.2rem;
   position: absolute;
 }
+
 img {
   vertical-align: middle;
   max-width: 100%;
   display: inline-block;
 }
-
 
 .cta-floting {
   z-index: 1200;
@@ -52,13 +52,13 @@ img {
   background-color: #3f1e1d14;
   border: 1px solid #d7cccc;
   border-radius: 1rem;
-  padding: .75rem;
+  padding: 0.75rem;
 }
 
 .wrapper-cta {
   z-index: 800;
   background-color: #fff;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
@@ -68,12 +68,11 @@ img {
 }
 
 .wrappper {
-  grid-column-gap: .875rem;
-  grid-row-gap: .875rem;
+  grid-column-gap: 0.875rem;
+  grid-row-gap: 0.875rem;
   justify-content: flex-start;
   align-items: center;
-  display: flex
-;
+  display: flex;
 }
 
 .w-button {
@@ -101,7 +100,7 @@ img {
 }
 
 .home-hero-button {
-  text-shadow: 0 .5px .5px #4d010080;
+  text-shadow: 0 0.5px 0.5px #4d010080;
   background-color: #f04f4b;
   background-image: linear-gradient(#ffffff3d, #fff0 33% 68%, #ffffff3d);
   border-radius: 1rem;
@@ -111,6 +110,271 @@ img {
   font-family: Poppins, sans-serif;
   font-size: 1.125rem;
   line-height: 100%;
-  transition: all .35s cubic-bezier(.755,.05,.855,.06);
+  transition: all 0.35s cubic-bezier(0.755, 0.05, 0.855, 0.06);
   box-shadow: 0 0 0 6px #a5110e33, inset 0 1.5px #fffc, 0 0 0 2px #94302e;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/*========================= nav =========================*/
+.navbar {
+  flex-flow: row;
+  max-width: 89.125rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.div-block-41 {
+  flex: 1;
+  display: flex;
+}
+
+.wrapper-deco--left {
+  flex-flow: column;
+  flex: none;
+  justify-content: center;
+  align-self: stretch;
+  align-items: center;
+  width: 0.9375rem;
+  padding: 0.4375rem 3px 0.4375rem 9px;
+  display: flex;
+}
+
+.wrapper-deco--left.deco-top {
+  padding-top: 0;
+}
+
+.verticale-deco-line {
+  z-index: 6;
+  background-color: #d7cccc;
+  border-radius: 31.25rem;
+  flex-flow: column;
+  flex: 1;
+  justify-content: space-between;
+  align-self: center;
+  align-items: stretch;
+  width: 0.125rem;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 2px 5px #fff6, inset 0 2px 5px #0003;
+}
+
+.lottie-animation-4-copy {
+  object-fit: contain;
+  flex: none;
+  width: 3px;
+  height: 100%;
+}
+
+.nav-wrapper {
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  display: flex;
+}
+
+.w-inline-block {
+  max-width: 100%;
+  display: inline-block;
+}
+
+.image-4 {
+  height: 1.5rem;
+}
+
+a {
+  background-color: #0000;
+}
+
+.nav-button {
+  z-index: 3;
+  color: #1f2e42;
+  background-color: #fff;
+  border: 1px solid #3f1e1d4d;
+  border-radius: 1rem;
+  padding: 1.375rem 2rem;
+  font-family: Poppins, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 100%;
+  position: relative;
+  box-shadow: 0 0 #3f1e1d1f, 0 0 0 1.5px #1f2e4214, 0 1px 1px #1f2e420a,
+    0 0.1875rem 0.1875px #1f2e4208, 0 0.375rem 0.25rem #1f2e4205,
+    0 0.6875rem 0.25rem #1f2e4203;
+}
+
+.nav-button.hide {
+  display: none;
+}
+
+.wrapper-deco-right.deco-top {
+  padding-top: 0;
+}
+
+.wrapper-deco-right {
+  z-index: 2;
+  flex-flow: column;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  width: 0.9375rem;
+  padding: 0.4375rem 10px 0.4375rem 3px;
+  display: flex;
+  position: relative;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ======================= Divider ====================== */
+.divider-main {
+  grid-column-gap: 0rem;
+  grid-row-gap: 0rem;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.divider-line-left {
+  background-color: #d7cccc;
+  border-radius: 3.125rem;
+  flex: 1;
+  height: 0.125rem;
+  overflow: hidden;
+  box-shadow: 0 -0.4px 0.3px #fff6, inset 0 0.4px 0.3px #0006;
+}
+
+.divider-line-left.left-5 {
+  justify-content: flex-end;
+  align-items: stretch;
+  height: 0.125rem;
+  display: flex;
+}
+
+.lottie-animation-3-copy {
+  align-items: center;
+  width: 100%;
+  height: 2px;
+  display: flex;
+  transform: rotate(180deg);
+}
+
+.divider {
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 89.125rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 7px;
+  padding-right: 7px;
+  display: flex;
+}
+
+.round {
+  background-color: #d7cccc;
+  border-radius: 3.125rem;
+  flex-flow: row;
+  flex: none;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  width: 0.4375rem;
+  height: 0.4375rem;
+  display: flex;
+  position: relative;
+  box-shadow: inset 0 -0.4px 0.3px #fff6, inset 0 0.4px 0.3px #0006;
+}
+
+.div-block-58 {
+  flex-flow: row;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  width: 7px;
+  height: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.lottie-animation-57 {
+  z-index: 100;
+  opacity: 0.5;
+  flex-flow: row;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.divider-line {
+  background-color: #d7cccc;
+  border-radius: 3.125rem;
+  flex: 1;
+  width: 100%;
+  height: 0.125rem;
+  display: flex;
+  box-shadow: 0 -0.4px 0.3px #fff6, inset 0 0.4px 0.3px #0006;
+}
+
+.lottie-animation-2 {
+  width: 50%;
+  height: 1px;
+  display: flex;
+}
+
+.lottie-animation-2-flip {
+  width: 50%;
+  height: 1px;
+  display: flex;
+  transform: rotate(180deg);
+}
+
+.divider-line-right {
+  background-color: #d7cccc;
+  border-radius: 3.125rem;
+  flex-flow: row;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  height: 2px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 -0.4px 0.3px #fff6, inset 0 0.4px 0.3px #0006;
+}
+
+.lottie-animation-3 {
+  align-items: center;
+  width: 100%;
+  height: 2px;
+  display: flex;
 }
