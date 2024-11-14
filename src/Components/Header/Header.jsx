@@ -5,6 +5,7 @@ import Lottie from 'lottie-react';  // Correct default import syntax
 import Divider from '../Divider/Divider';
 import LeftHorizontalDivider from '../Divider/LeftHorizontalDivider';
 import RightHorizontalDivider from '../Divider/RightHorizontalDivider';
+import HeaderLogo from '../../assets/images/logo/3.png';
 
 const Header = () => {
   return (
@@ -19,7 +20,7 @@ const Header = () => {
         <div className="nav-wrapper">
           <a href="/" aria-current="page" className="w-inline-block w--current">
             <img
-              src="https://cdn.prod.website-files.com/60530d64d0c48cbd53eb4a84/668f9cb4189e5b91ea78e559_Lw%20Logo.svg"
+              src={HeaderLogo}
               loading="lazy"
               alt="Logo"
               className="image-4"
