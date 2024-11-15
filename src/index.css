@@ -6,11 +6,13 @@
   --home-body-bg: white;
   --medium-sea-green: #5ab963;
   --hover-2: #b83535;
-  --primary-color: #121d45;
-  --hover: #0b132e;
+  --primary-color: rgba(252, 114, 255, 0.12);
+  --secondory-color: rgba(0, 102, 255, 0.04);
+  --hover: rgb(254,235,252);
   --white-smoke: #f2f4f7;
   --brand-colo: #ef3f3e;
-  --text-color: #585e75;
+  --text-color: rgb(42, 189, 255);  
+  --text-color-2: #FC72FF;
 }
 
 @font-face {
