@@ -19,9 +19,7 @@ function App() {
   }, []);
 
   return (
-    <div className="wrapper w-[100%] h-[100%] absolute -z-10 bg-custom-background-gradient ">
-      <div className="crm_plugin"></div>
-      <div id="content">
+    <div className="wrapper flex items-center flex-col w-[100%] h-[100%] absolute -z-10 bg-custom-background-gradient ">
         {loader ? (
           <Loader /> // Show the loader until it's hidden after the timeout
         ) : (
@@ -33,7 +31,6 @@ function App() {
             </Routes>
           </BrowserRouter>
         )}
-      </div>
     </div>
   );
 }

@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
 :root {
   --home-body-bg: white;
   --medium-sea-green: #5ab963;
@@ -10,7 +16,7 @@
   --secondory-color: rgba(0, 102, 255, 0.04);
   --hover: rgb(254,235,252);
   --white-smoke: #f2f4f7;
-  --brand-colo: #ef3f3e;
+  --brand-color: #ef3f3e;
   --text-color: rgb(42, 189, 255);  
   --text-color-2: #FC72FF;
 }
@@ -195,10 +201,9 @@
   font-display: swap;
 }
 
-
 body {
   color: #333;
-  background-color: var(--home-body-bg);
+  /* background-color: var(--home-body-bg); */
   min-height: 100%;
   margin: 0;
   font-family: Arial, sans-serif;
@@ -206,12 +211,19 @@ body {
   line-height: 20px;
 }
 
-.background-gr {
-  z-index: -5;
-  background-image: linear-gradient(#fef9f9 26%, #fff0);
-  width: 100%;
-  height: 111.2rem;
-  position: absolute;
+.wrapper::before{
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -20;
+  background-image: url("https://futuredesks.in/wp-content/uploads/2022/12/gradient_bg01-1.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  opacity: 0.2;
 }
 
 img {
@@ -220,6 +232,19 @@ img {
   display: inline-block;
 }
 
+.container{
+  width: 100%;
+  max-width: 89.125rem;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+section{
+  max-width: 89.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* ================================================================================
 ============================= Loader Page ======================================
@@ -227,7 +252,7 @@ img {
 
 
 .loader-wrap{
-  background: 0 0;
+  background: linear-gradient(var(--secondory-color), var(--primary-color )33% 68%, var(--secondory-color));
   top: 0;
   left: 0;
 }
@@ -256,7 +281,7 @@ position: absolute;
 top: 0;
 width: 100vw;
 height: 110vh;
-fill: #1d1d1d;
+fill: var(--secondory-color);
 }
 
 .loader-wrap .loader-wrap-heading .load-text {
@@ -275,7 +300,7 @@ letter-spacing: 15px;
 .load-text span {
 -webkit-animation: 1s infinite alternate loading;
 animation: 1s infinite alternate loading;
-color: #fff;
+color: var(--brand-color);
 }
 
 .load-text span:first-child {
