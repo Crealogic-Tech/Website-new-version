@@ -9,7 +9,7 @@ const LineComponent = () => {
                 width: "100vw",
                 height: "100vh",
                 position: "absolute",
-                zIndex: 0,
+                zIndex: -10,
                 right: 0,
                 top: 0,
             }}

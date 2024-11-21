@@ -204,21 +204,21 @@
 body {
   color: #333;
   /* background-color: var(--home-body-bg); */
-  min-height: 100%;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Poppins, sans-serif;
   font-size: 14px;
   line-height: 20px;
+  /* overflow-x: hidden; */
 }
 
-.wrapper::before{
+.wrapper::after{
   content: '';
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -20;
+  z-index: -10;
   background-image: url("https://futuredesks.in/wp-content/uploads/2022/12/gradient_bg01-1.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -227,9 +227,9 @@ body {
 }
 
 img {
-  vertical-align: middle;
   max-width: 100%;
-  display: inline-block;
+  width: 100%;
+  height: auto;
 }
 
 .container{
@@ -239,13 +239,66 @@ img {
   margin: 0 auto;
 }
 
-section{
-  max-width: 89.125rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl,
+.padding-rl-30 {
+    padding-right: 30px;  
+    
 }
 
+.logoBrans {
+  transform: none !important;
+  translate: none !important;
+  rotate: none !important;
+  scale: none !important;
+}
+
+
+.icon-img-20 {
+  width: 20px;
+}
+
+.icon-img-30 {
+  width: 30px;
+}
+
+.icon-img-40 {
+  width: 40px;
+}
+
+.icon-img-50 {
+  width: 50px;
+}
+
+.icon-img-60 {
+  width: 60px;
+}
+
+.icon-img-70 {
+  width: 70px;
+}
+
+.icon-img-80 {
+  width: 80px;
+}
+
+.icon-img-90 {
+  width: 90px;
+}
+
+.icon-img-100 {
+  width: 80px;
+  padding: 12px 0;
+}
+
+.icon-img-120 {
+  width: 120px;
+}
 /* ================================================================================
 ============================= Loader Page ======================================
 ================================================================================ */
@@ -461,16 +514,17 @@ summary {
 ==================================== Nav Bar ======================================
 ================================================================================ */
 .navbar {
-  flex-flow: row;
-  max-width: 89.125rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border-bottom: 2px solid transparent;
+  z-index: 999;
 }
 
-.div-block-41 {
-  flex: 1;
-  display: flex;
+.icon-img-100 {
+  width: 80px;
+  padding: 12px 0;
 }
 
 .wrapper-deco--left {
@@ -575,6 +629,42 @@ a {
 svg:not(:root) {
   overflow: hidden;
 }
+
+.hamenu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: 2000;
+  background-image: url('https://futuredesks.in/wp-content/uploads/2022/12/gradient_bg01-1.png');
+  background-position: right;
+  backdrop-filter: blur(25px);
+  overflow-y: auto;
+  transition: left 0.3s ease-in-out; /* Smooth transition */
+}
+
+.menu-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.menu-links ul li {
+  margin: 20px 0;
+}
+
+.close-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+
 
 /* ================================================================================
 ============================= Divider ======================================

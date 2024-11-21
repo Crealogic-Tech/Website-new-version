@@ -10,6 +10,8 @@ import HeaderLogo from "../../assets/images/logo/3.png";
 import BurgerBTN from "../BurgerBTN/BurgerBTN";
 import LineComponent from "../Divider/LineComponent";
 import CloseBTNSVG from "../Button/CloseBTNSVG";
+import { NavManu } from "../NavMenu/NavMenu";
+import { SocialLink } from "../SocialLink/SocialLink";
 
 const Header = (props) => {
   const location = useLocation();
@@ -125,266 +127,180 @@ const Header = (props) => {
   });
 
   return (
-    // <>
-    //   <section>
-    //   <div className="container">
-    //     <div className="flex mx-auto flex-row">
-
-    //     <div className="flex flex-1">
-       
-    //       <LeftHorizontalDivider />
-    //       <div className="nav-wrapper">
-    //       <nav className="navbar navbar-expand-lg nav-crev">
-    //         <div className="container">
-    //           <NavLink
-    //             className="logo icon-img-100"
-    //             to="/"
-    //             aria-label="logobrand"
-    //           >
-    //             <img
-    //               src={HeaderLogo}
-    //               loading="lazy"
-    //               alt="Logo"
-    //               className="image-4"
-    //             />
-    //           </NavLink>
-    //           <NavLink
-    //             className={"gsapAnime burderBTN"}
-    //             onMouseEnter={mousFunc}
-    //             onClick={manuBTN}
-    //             aria-label="burgerBTN"
-    //           >
-    //             <BurgerBTN />
-    //           </NavLink>
-    //         </div>
-    //       </nav>
-    //       </div>
-
-    //     </div>
-    //   <RightHorizontalDivider />
-    //     </div>
-    //   </div>
-    //   </section>
-    //   <Divider />
-
-    //   <div id="smooth-wrapper" className="wrapper">
-    //     <div id="content">
-     
-    //        <div ref={menuRef} className="hamenu one-scroll" style={{ left: "-100%" }}>
-    //         <div className="menu-header">
-    //           <NavLink className="manuLogo" to="/" aria-label="Logo">
-    //             <img src={HeaderLogo} alt="Logo" />
-    //           </NavLink>
-    //           <button className="close-menu" onClick={closeMenu} aria-label="Close Menu">
-    //             ✕
-    //           </button>
-    //         </div>
-    //         <div className="container">
-    //           <div className="menu-links">
-    //             <ul className="main-menu">
-    //               <li>
-    //                 <NavLink to="/" onClick={closeMenu}>Home</NavLink>
-    //               </li>
-    //               <li>
-    //                 <NavLink to="/about" onClick={closeMenu}>About</NavLink>
-    //               </li>
-    //               {!navTrue && (
-    //                 <>
-    //                   <li>
-    //                     <NavLink to="/services" onClick={closeMenu}>Services</NavLink>
-    //                   </li>
-    //                   <li>
-    //                     <NavLink to="/advantages" onClick={closeMenu}>Advantages</NavLink>
-    //                   </li>
-    //                   <li>
-    //                     <NavLink to="/blockchain" onClick={closeMenu}>Blockchain</NavLink>
-    //                   </li>
-    //                 </>
-    //               )}
-    //               <li>
-    //                 <NavLink to="/portfolio" onClick={closeMenu}>Portfolio</NavLink>
-    //               </li>
-    //               <li>
-    //                 <NavLink to="/career" onClick={closeMenu}>Career</NavLink>
-    //               </li>
-    //               <li>
-    //                 <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
-    //               </li>
-    //             </ul>
-    //           </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-
-      
-    // </>
-
-    <>
-      <div id="smooth-wrapper wrapper">
-        <div id="content">
-          <nav className="navbar navbar-expand-lg nav-crev">
-            <div className="container">
+    <div id="smooth-wrapper wrapper">
+      <div id="content">
+        <nav className="navbar navbar-expand-lg nav-crev">
+          <div className="container">
+            <div className="flex justify-center items-center">
+              <LeftHorizontalDivider />
               <NavLink
-                className={"logo icon-img-100 gsapAnime logoBrans"}
-                to={"/"}
+                className="logo  gsapAnime logoBrans"
+                to="/"
                 aria-label="logobrand"
               >
-                <img src={HeaderLogo} alt="" />
+                <img
+                  src={HeaderLogo}
+                  loading="lazy"
+                  alt="Logo"
+                  className="image-4 float-start"
+                />
               </NavLink>
+            </div>
+            <div className="flex justify-center items-center gap-10">
               <NavLink
-                className={"gsapAnime burderBTN"}
+                className={"gsapAnime logoBrans burderBTN"}
                 onMouseEnter={mousFunc}
                 onClick={manuBTN}
                 aria-label="burgerBTN"
               >
                 <BurgerBTN />
               </NavLink>
+              <RightHorizontalDivider />
             </div>
-          </nav>
+          </div>
+        </nav>
+        <LineComponent />
+        <Divider />
 
-          {/* ------------------------------------------- line box component for a side header lines animation --------------------------------------------- */}
-
-          <LineComponent />
-
-          {/* ------------------------------------------- line box component for a side header lines animation --------------------------------------------- */}
-
-          <div className="hamenu one-scroll">
-            <div className="logo icon-img-100 manuLogo logoAnim burgerBTN">
-              {HeaderLogo}
-            </div>
-            <div className="close-menu cursor-pointer">
-              <NavLink
-                onClick={manuCloseBTN}
-                onMouseEnter={mousCloseFunc}
-                aria-label="close-btn"
+        <div className="hamenu one-scroll">
+          <div className="logo icon-img-100 manuLogo logoAnim burgerBTN">
+            <NavLink
+                className="logo  gsapAnime logoBrans"
+                to="/"
+                aria-label="logobrand"
               >
-                <CloseBTNSVG />
+                <img
+                  src={HeaderLogo}
+                  loading="lazy"
+                  alt="Logo"
+                  className="image-4 float-start"
+                />
               </NavLink>
-            </div>
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-2">
-                  <div className="menu-text -z-1">
-                    <div className="text">
-                      <h2>Menu</h2>
-                    </div>
+          </div>
+          <div className="close-menu cursor-pointer">
+            <NavLink
+              onClick={manuCloseBTN}
+              onMouseEnter={mousCloseFunc}
+              aria-label="close-btn"
+            >
+              <CloseBTNSVG />
+            </NavLink>
+          </div>
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-2">
+                <div className="menu-text -z-1">
+                  <div className="text">
+                    <h2>Menu</h2>
                   </div>
                 </div>
-                <div className="col-lg-7">
-                  <div className="menu-links">
-                    <ul className="main-menu rest">
+              </div>
+              <div className="col-lg-7">
+                <div className="menu-links">
+                  <ul className="main-menu rest">
+                    <NavManu
+                      navigate={props.home}
+                      label={"Home"}
+                      name={"Home"}
+                      route={"/"}
+                    />
+                    <NavManu
+                      navigate={closeManu}
+                      label={"About"}
+                      name={"About"}
+                      route={"/about"}
+                    />
+
+                    {navTrue ? null : (
                       <NavManu
-                        navigate={props.home}
-                        label={"Home"}
-                        name={"Home"}
-                        route={"/"}
+                        navigate={props.service}
+                        label={"SERVICES"}
+                        name={"SERVICES"}
                       />
+                    )}
+                    {navTrue ? null : (
                       <NavManu
-                        navigate={closeManu}
-                        label={"About"}
-                        name={"About"}
-                        route={"/about"}
+                        navigate={props.advantage}
+                        label={"ADVANTAGES"}
+                        name={"ADVANTAGES"}
                       />
-                      {/* {location.pathname === '/career' || location.pathname === '/contact' ? null : <NavManu navigate={props.about} label={'About'} name={"About"} />} */}
-                      {navTrue ? null : (
-                        <NavManu
-                          navigate={props.service}
-                          label={"SERVICES"}
-                          name={"SERVICES"}
-                        />
-                      )}
-                      {navTrue ? null : (
-                        <NavManu
-                          navigate={props.advantage}
-                          label={"ADVANTAGES"}
-                          name={"ADVANTAGES"}
-                        />
-                      )}
-                      {navTrue ? null : (
-                        <NavManu
-                          navigate={props.blockchain}
-                          label={"Blockchain"}
-                          name={"Blockchain"}
-                        />
-                      )}
+                    )}
+                    {navTrue ? null : (
                       <NavManu
-                        navigate={closeManu}
-                        label={"Product"}
-                        name={"Product"}
-                        route={"/product"}
+                        navigate={props.blockchain}
+                        label={"Blockchain"}
+                        name={"Blockchain"}
                       />
-                      <NavManu
-                        navigate={closeManu}
-                        label={"Portfolio"}
-                        name={"Portfolio"}
-                        route={"/portfolio"}
+                    )}
+                    <NavManu
+                      navigate={closeManu}
+                      label={"Product"}
+                      name={"Product"}
+                      route={"/product"}
+                    />
+                    <NavManu
+                      navigate={closeManu}
+                      label={"Portfolio"}
+                      name={"Portfolio"}
+                      route={"/portfolio"}
+                    />
+                    <NavManu
+                      navigate={closeManu}
+                      label={"Career"}
+                      name={"Career"}
+                      route={"/career"}
+                    />
+                    <NavManu
+                      navigate={closeManu}
+                      label={"Contact"}
+                      name={"Contact"}
+                      route={"/contact"}
+                    />
+                  </ul>
+                </div>
+              </div>
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div className="cont-info">
+                  <div className="item mb-50">
+                    <h3 className="sub-title mb-15 opacity-7">Address</h3>
+                    <p className="addssX">
+                      Dubai,
+                      <br />
+                      1918 Tamani Arts Building, Business Bay, Dubai, UAE
+                    </p>
+                  </div>
+                  <div className="item mb-50">
+                    <h3 className="sub-title mb-15 opacity-7">Social Media</h3>
+                    <ul className="rest social-text">
+                      <SocialLink
+                        name={"Facebook"}
+                        to={"#"}
+                        label={"Facebook"}
                       />
-                      <NavManu
-                        navigate={closeManu}
-                        label={"Career"}
-                        name={"Career"}
-                        route={"/career"}
+                      <SocialLink
+                        name={"Twitter"}
+                        to={"https://twitter.com/360CoreInc"}
+                        label={"twitter"}
                       />
-                      <NavManu
-                        navigate={closeManu}
-                        label={"Contact"}
-                        name={"Contact"}
-                        route={"/contact"}
+                      <SocialLink
+                        name={"LinkedIn"}
+                        to={"https://www.linkedin.com/company/79066664/admin/"}
+                        label={"LinkedIn"}
+                      />
+                      <SocialLink
+                        name={"Instagram"}
+                        to={"https://www.instagram.com/360coreinc/"}
+                        label={"Instagram"}
                       />
                     </ul>
                   </div>
-                </div>
-                <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div className="cont-info">
-                    <div className="item mb-50">
-                      <h3 className="sub-title mb-15 opacity-7">Address</h3>
-                      <p className="addssX">
-                        Dubai,
-                        <br />
-                        1918 Tamani Arts Building, Business Bay, Dubai, UAE
-                      </p>
-                    </div>
-                    <div className="item mb-50">
-                      <h3 className="sub-title mb-15 opacity-7">
-                        Social Media
-                      </h3>
-                      <ul className="rest social-text">
-                        <SocialLink
-                          name={"Facebook"}
-                          to={"#"}
-                          label={"Facebook"}
-                        />
-                        <SocialLink
-                          name={"Twitter"}
-                          to={"https://twitter.com/360CoreInc"}
-                          label={"twitter"}
-                        />
-                        <SocialLink
-                          name={"LinkedIn"}
-                          to={
-                            "https://www.linkedin.com/company/79066664/admin/"
-                          }
-                          label={"LinkedIn"}
-                        />
-                        <SocialLink
-                          name={"Instagram"}
-                          to={"https://www.instagram.com/360coreinc/"}
-                          label={"Instagram"}
-                        />
-                      </ul>
-                    </div>
-                    <div className="item mb-40">
-                      <h3 className="sub-title mb-15 opacity-7">Contact Us</h3>
-                      <p className="contact">
-                        <NavLink
-                          to="mailto:hello@360core.inc"
-                          aria-label="gmail"
-                        >
-                          hello@360core.inc
-                        </NavLink>
-                      </p>
-                    </div>
+                  <div className="item mb-40">
+                    <h3 className="sub-title mb-15 opacity-7">Contact Us</h3>
+                    <p className="contact">
+                      <NavLink to="mailto:hello@360core.inc" aria-label="gmail">
+                        hello@360core.inc
+                      </NavLink>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -392,7 +308,7 @@ const Header = (props) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -1,11 +1,10 @@
-import React from 'react'
-import gsap from 'gsap'
-import DrawSVGPlugin from 'gsap/DrawSVGPlugin'
+import React from 'react';
+import gsap from 'gsap';
+import DrawSVGPlugin from 'gsap/DrawSVGPlugin';
+
 
 const CloseBTNSVG = () => {
     gsap.registerPlugin(DrawSVGPlugin)
-
-
 
     return (
         <svg
