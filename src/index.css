@@ -19,6 +19,14 @@
   --text-color: rgb(42, 189, 255);
   --text-color-2: #fc72ff;
   --line-color: #dfb6f4;
+
+
+  --bg-color: #C2D9E1;
+  --text-colors: #15274F;
+  /* opacity: 0.2; */
+
+  --bg-color1: #d5fbef;
+  /* opacity: 0.4; */
 }
 
 ::-webkit-scrollbar {
