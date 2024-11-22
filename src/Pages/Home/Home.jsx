@@ -5,7 +5,10 @@ const Home = () => {
   return (
     <>
     {/* <Toggle /> */}
-    home
+    home 
+    <div className='flex justify-center items-center text-[100px]'>
+ Crealogic
+    </div>
     </>
   )
 }

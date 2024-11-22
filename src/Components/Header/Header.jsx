@@ -7,6 +7,7 @@ import Divider from "../Divider/Divider";
 import LeftHorizontalDivider from "../Divider/LeftHorizontalDivider";
 import RightHorizontalDivider from "../Divider/RightHorizontalDivider";
 import HeaderLogo from "../../assets/images/logo/3.png";
+import HeaderLogo2 from "../../assets/images/logo/2.png";
 import BurgerBTN from "../BurgerBTN/BurgerBTN";
 import LineComponent from "../Divider/LineComponent";
 import CloseBTNSVG from "../Button/CloseBTNSVG";
@@ -24,7 +25,7 @@ const Header = (props) => {
       0.7,
       {
         drawSVG: "50% 50%",
-        stroke: "#14CF93",
+        stroke: "#ef3f3e",
         ease: Linear.easeInOut,
         transformOrigin: "0%",
       },
@@ -35,7 +36,7 @@ const Header = (props) => {
     gsap.fromTo(
       "#menu-close path",
       1.5,
-      { drawSVG: "50% 50%", stroke: "#14CF93", ease: Linear.easeInOut },
+      { drawSVG: "50% 50%", stroke: "#ef3f3e", ease: Linear.easeInOut },
       { drawSVG: "0% 100%", stroke: "#fff" }
     );
   };
@@ -131,7 +132,7 @@ const Header = (props) => {
       <div id="content">
         <nav className="navbar navbar-expand-lg nav-crev">
           <div className="container">
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center md:gap-4">
               <LeftHorizontalDivider />
               <NavLink
                 className="logo  gsapAnime logoBrans"
@@ -142,11 +143,11 @@ const Header = (props) => {
                   src={HeaderLogo}
                   loading="lazy"
                   alt="Logo"
-                  className="image-4 float-start"
+                  className="image-4 headerLogos"
                 />
               </NavLink>
             </div>
-            <div className="flex justify-center items-center gap-10">
+            <div className="flex justify-center items-center md:gap-4">
               <NavLink
                 className={"gsapAnime logoBrans burderBTN"}
                 onMouseEnter={mousFunc}
@@ -170,10 +171,10 @@ const Header = (props) => {
                 aria-label="logobrand"
               >
                 <img
-                  src={HeaderLogo}
+                  src={HeaderLogo2}
                   loading="lazy"
                   alt="Logo"
-                  className="image-4 float-start"
+                  className="image-4 headerLogo"
                 />
               </NavLink>
           </div>
@@ -261,16 +262,16 @@ const Header = (props) => {
               </div>
               <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div className="cont-info">
-                  <div className="item mb-50">
-                    <h3 className="sub-title mb-15 opacity-7">Address</h3>
+                  <div className="item mb-[50px]">
+                    <h3 className="sub-title mb-4 opacity-7">Address</h3>
                     <p className="addssX">
                       Dubai,
                       <br />
                       1918 Tamani Arts Building, Business Bay, Dubai, UAE
                     </p>
                   </div>
-                  <div className="item mb-50">
-                    <h3 className="sub-title mb-15 opacity-7">Social Media</h3>
+                  <div className="item mb-[50px]">
+                    <h3 className="sub-title mb-4 opacity-7">Social Media</h3>
                     <ul className="rest social-text">
                       <SocialLink
                         name={"Facebook"}
@@ -294,8 +295,8 @@ const Header = (props) => {
                       />
                     </ul>
                   </div>
-                  <div className="item mb-40">
-                    <h3 className="sub-title mb-15 opacity-7">Contact Us</h3>
+                  <div className="item mb-[40px]">
+                    <h3 className="sub-title mb-4 opacity-7">Contact Us</h3>
                     <p className="contact">
                       <NavLink to="mailto:hello@360core.inc" aria-label="gmail">
                         hello@360core.inc

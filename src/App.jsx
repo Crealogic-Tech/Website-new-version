@@ -30,9 +30,9 @@ function App() {
   return (
     <div className="wrapper w-[100%] h-[100%] absolute overflow-hidden z-10 bg-custom-background-gradient ">
       <div id="content">
-        {loader ? (
-          <Loader /> // Show the loader until it's hidden after the timeout
-        ) : (
+        {/* {loader ? ( */}
+          {/* <Loader /> // Show the loader until it's hidden after the timeout */}
+        {/* ) : ( */}
           <BrowserRouter>
             <Header />
             <Routes>
@@ -42,7 +42,7 @@ function App() {
               {/* </Route> */}
             </Routes>
           </BrowserRouter>
-        )}
+        {/* )} */}
       </div>
     </div>
   );
