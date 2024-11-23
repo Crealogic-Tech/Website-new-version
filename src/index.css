@@ -16,13 +16,12 @@
   --hover: rgb(254, 235, 252);
   --white-smoke: #f2f4f7;
   --brand-color: #ef3f3e;
-  --text-color: rgb(42, 189, 255);
-  --text-color-2: #fc72ff;
+  --text-color: #0f051d;
+  --text-color-2: #7b7583;
   --line-color: #dfb6f4;
 
-
-  --bg-color: #C2D9E1;
-  --text-colors: #15274F;
+  --bg-color: #c2d9e1;
+  --text-colors: #15274f;
   /* opacity: 0.2; */
 
   --bg-color1: #d5fbef;
@@ -223,7 +222,7 @@
 }
 
 body {
-  color: #333;
+  color: var(--secondory-color);
   /* background-color: var(--home-body-bg); */
   margin: 0;
   font-family: Poppins, sans-serif;
@@ -232,7 +231,7 @@ body {
   /* overflow-x: hidden; */
 }
 a {
-  color: white !important;
+  color: var(--text-color-2) !important;
 }
 
 .wrapper::after {
@@ -247,7 +246,7 @@ a {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  opacity: 0.2;
+  opacity: 0.1;
 }
 
 img {
@@ -265,7 +264,7 @@ img {
 .container {
   width: 100%;
   max-width: 89.125rem !important;
-  padding: 0 15px;
+  padding: 0 !important;
   margin: 0 auto;
 }
 
@@ -547,9 +546,9 @@ summary {
 /* ================================================================================
 ==================================== Nav Bar ======================================
 ================================================================================ */
-.headerLogos {
-  transform: translate(-56px, 0);
-}
+/* .headerLogos {
+  transform: translate(-25px, 0);
+} */
 
 .navbar {
   position: absolute;
@@ -572,7 +571,7 @@ summary {
   align-self: stretch;
   align-items: center;
   width: 0.9375rem;
-  padding: 0.4375rem 3px 0.4375rem 0;
+  padding: 0.4375rem 3px 0.4375rem 9px;
   display: flex;
 }
 
@@ -599,6 +598,11 @@ summary {
   box-shadow: inset 0 2px 5px #fff6, inset 0 2px 5px #0003;
 }
 
+.lottie-animation {
+  object-fit: cover;
+  height: 100%;
+}
+
 .lottie-animation-4-copy {
   object-fit: contain;
   flex: none;
@@ -619,11 +623,13 @@ summary {
   display: inline-block;
 }
 
-.image-4,.image-04 {
-  height: 1.8rem;
+.image-4 {
+  height: 3rem;
 }
 
-
+.image-04 {
+  height: 1.8rem;
+}
 
 a {
   background-color: #0000;
@@ -661,7 +667,7 @@ a {
   justify-content: center;
   align-items: center;
   width: 0.9375rem;
-  padding: 0.4375rem 0 0.4375rem 3px;
+  padding: 0.4375rem 10px 0.4375rem 3px;
   display: flex;
   position: relative;
 }
@@ -682,12 +688,11 @@ svg:not(:root) {
   left: -100%;
   width: 100%;
   z-index: 9999;
-
-  backdrop-filter: blur(25px);
+  backdrop-filter: blur(70px);
   transition: left 0.3s ease-in-out; /* Smooth transition */
 }
-.hamenu::after{
-  content: '';
+.hamenu::after {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -695,21 +700,22 @@ svg:not(:root) {
   height: 100%;
   background-image: url("https://futuredesks.in/wp-content/uploads/2022/12/gradient_bg01-1.png");
   background-position: center;
-  opacity: 0.4;
+  opacity: 0.08;
+  z-index: -10;
 }
 
 .icon-img-100 {
   width: 100%;
-  padding: 12px 0;
+  /* padding: 12px 0; */
 }
 .hamenu .logo {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 15px;
+  /* left: 40px; */
 }
-.headerLogo {
-  transform: translate(-120px, 0);
-}
+/* .headerLogo {
+  transform: translate(-90px, 0);
+} */
 
 .hamenu .close-menu {
   position: absolute;
@@ -765,16 +771,28 @@ svg:not(:root) {
   font-weight: 800;
   line-height: 1;
   text-transform: uppercase;
-  opacity: 0.5;
-  color: var(--line-color);
+  opacity: 0.09;
+  color: var(--brand-color);
 }
 
 .hamenu .menu-links {
   color: #fff;
-  height: 100vh;
+  height: 100%;
   padding-top: 140px;
   padding-bottom: 40px;
-  overflow: auto;
+
+  position: relative;
+}
+
+.hamenu .menu-links:after {
+  content: "";
+  width: 1px;
+  height: 200vh;
+  background: var(--line-color);
+  position: absolute;
+  right: 0px;
+  bottom: -75vh;
+  transition: 1s;
 }
 .hamenu .menu-links::-webkit-scrollbar {
   width: 5px;
@@ -835,14 +853,14 @@ span {
 
 .hamenu .menu-links .main-menu > li .link .fill-text {
   position: relative;
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--text-colors);
 }
 .hamenu .menu-links .main-menu > li .link .fill-text:after {
   content: attr(data-text);
   position: absolute;
   top: 0;
   left: 0;
-  color: #fff;
+  color: var(--text-colors);
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
@@ -870,6 +888,7 @@ span {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  color: var(--text-colors);
 }
 
 p {
@@ -932,8 +951,8 @@ p {
   max-width: 89.125rem;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 7px;
+  padding-right: 7px;
   display: flex;
 }
 
@@ -1068,16 +1087,12 @@ p {
   }
 }
 @media screen and (max-width: 768px) {
-  .image-4 {
-    height: 1.3rem;
-  }
-
-  .headerLogos {
-    transform: translate(-30px);
-  }
-  .headerLogo {
+  /* .headerLogos {
+    transform: translate(-10px);
+  } */
+  /* .headerLogo {
     transform: translate(-80px);
-  }
+  } */
 
   .hamenu .logo {
     left: 25px;

@@ -6,7 +6,7 @@ import gsap, { Linear } from "gsap";
 import Divider from "../Divider/Divider";
 import LeftHorizontalDivider from "../Divider/LeftHorizontalDivider";
 import RightHorizontalDivider from "../Divider/RightHorizontalDivider";
-import HeaderLogo from "../../assets/images/logo/3.png";
+import HeaderLogo from "../../assets/images/logo/6.png";
 import HeaderLogo2 from "../../assets/images/logo/2.png";
 import BurgerBTN from "../BurgerBTN/BurgerBTN";
 import LineComponent from "../Divider/LineComponent";
@@ -29,23 +29,25 @@ const Header = (props) => {
         ease: Linear.easeInOut,
         transformOrigin: "0%",
       },
-      { drawSVG: "0% 100%", stroke: "#fff", transformOrigin: "100%" }
+      { drawSVG: "0% 100%", stroke: "#FF6762", transformOrigin: "100%" }
     );
   };
   const mousCloseFunc = () => {
     gsap.fromTo(
       "#menu-close path",
       1.5,
-      { drawSVG: "50% 50%", stroke: "#ef3f3e", ease: Linear.easeInOut },
-      { drawSVG: "0% 100%", stroke: "#fff" }
+      { drawSVG: "50% 50%", stroke: "#FF6762", ease: Linear.easeInOut },
+      { drawSVG: "0% 100%", stroke: "#000" }
     );
   };
   useGSAP(() => {
     gsap.from(".gsapAnime", 1, { y: -100, ease: Linear.easeIn });
   });
+  
   const manuBTN = () => {
     document.body.classList.add("fixedBody");
     const tl = gsap.timeline({ ease: Linear.easeInOut });
+  
     tl.to(".lineContainer", 0.2, { zIndex: 200 })
       .staggerFromTo(
         ".lines",
@@ -79,8 +81,11 @@ const Header = (props) => {
         { y: 0, opacity: 1 },
         "collabe+=2.5"
       )
-      .to(".lineContainer", 0.2, { zIndex: 0 });
+      .to(".lineContainer", 0.2, { zIndex: 0 }) // Reset zIndex here
+      .call(() => document.body.classList.remove("fixedBody")); // Reset body class after animation
   };
+  
+  
   const manuCloseBTN = () => {
     document.body.classList.remove("fixedBody");
     const tl = gsap.timeline({});
@@ -132,7 +137,7 @@ const Header = (props) => {
       <div id="content">
         <nav className="navbar navbar-expand-lg nav-crev">
           <div className="container">
-            <div className="flex justify-center items-center md:gap-4">
+            <div className="flex justify-center items-center">
               <LeftHorizontalDivider />
               <NavLink
                 className="logo  gsapAnime logoBrans"
@@ -156,6 +161,7 @@ const Header = (props) => {
               >
                 <BurgerBTN />
               </NavLink>
+
               <RightHorizontalDivider />
             </div>
           </div>
@@ -166,17 +172,17 @@ const Header = (props) => {
         <div className="hamenu one-scroll">
           <div className="logo icon-img-100 manuLogo logoAnim burgerBTN">
             <NavLink
-                className="logo  gsapAnime logoBrans"
-                to="/"
-                aria-label="logobrand"
-              >
-                <img
-                  src={HeaderLogo2}
-                  loading="lazy"
-                  alt="Logo"
-                  className="image-4 headerLogo"
-                />
-              </NavLink>
+              className="logo  gsapAnime logoBrans"
+              to="/"
+              aria-label="logobrand"
+            >
+              <img
+                src={HeaderLogo}
+                loading="lazy"
+                alt="Logo"
+                className="image-4 headerLogo"
+              />
+            </NavLink>
           </div>
           <div className="close-menu cursor-pointer">
             <NavLink
@@ -215,42 +221,42 @@ const Header = (props) => {
                     {navTrue ? null : (
                       <NavManu
                         navigate={props.service}
-                        label={"SERVICES"}
-                        name={"SERVICES"}
+                        label={"Project"}
+                        name={"project"}
                       />
                     )}
-                    {navTrue ? null : (
+                    {/* {navTrue ? null : (
                       <NavManu
                         navigate={props.advantage}
                         label={"ADVANTAGES"}
                         name={"ADVANTAGES"}
                       />
-                    )}
-                    {navTrue ? null : (
+                    )} */}
+                    {/* {navTrue ? null : (
                       <NavManu
                         navigate={props.blockchain}
                         label={"Blockchain"}
                         name={"Blockchain"}
                       />
-                    )}
-                    <NavManu
+                    )} */}
+                    {/* <NavManu
                       navigate={closeManu}
                       label={"Product"}
                       name={"Product"}
                       route={"/product"}
-                    />
+                    /> */}
                     <NavManu
                       navigate={closeManu}
                       label={"Portfolio"}
                       name={"Portfolio"}
                       route={"/portfolio"}
                     />
-                    <NavManu
+                    {/* <NavManu
                       navigate={closeManu}
                       label={"Career"}
                       name={"Career"}
                       route={"/career"}
-                    />
+                    /> */}
                     <NavManu
                       navigate={closeManu}
                       label={"Contact"}
@@ -262,14 +268,14 @@ const Header = (props) => {
               </div>
               <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div className="cont-info">
-                  <div className="item mb-[50px]">
+                  {/* <div className="item mb-[50px]">
                     <h3 className="sub-title mb-4 opacity-7">Address</h3>
                     <p className="addssX">
                       Dubai,
                       <br />
                       1918 Tamani Arts Building, Business Bay, Dubai, UAE
                     </p>
-                  </div>
+                  </div> */}
                   <div className="item mb-[50px]">
                     <h3 className="sub-title mb-4 opacity-7">Social Media</h3>
                     <ul className="rest social-text">
