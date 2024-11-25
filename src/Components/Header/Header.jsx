@@ -43,11 +43,11 @@ const Header = (props) => {
   useGSAP(() => {
     gsap.from(".gsapAnime", 1, { y: -100, ease: Linear.easeIn });
   });
-  
+
   const manuBTN = () => {
     document.body.classList.add("fixedBody");
     const tl = gsap.timeline({ ease: Linear.easeInOut });
-  
+
     tl.to(".lineContainer", 0.2, { zIndex: 200 })
       .staggerFromTo(
         ".lines",
@@ -84,8 +84,7 @@ const Header = (props) => {
       .to(".lineContainer", 0.2, { zIndex: 0 }) // Reset zIndex here
       .call(() => document.body.classList.remove("fixedBody")); // Reset body class after animation
   };
-  
-  
+
   const manuCloseBTN = () => {
     document.body.classList.remove("fixedBody");
     const tl = gsap.timeline({});
@@ -211,6 +210,7 @@ const Header = (props) => {
                       name={"Home"}
                       route={"/"}
                     />
+
                     <NavManu
                       navigate={closeManu}
                       label={"About"}
@@ -218,45 +218,25 @@ const Header = (props) => {
                       route={"/about"}
                     />
 
-                    {navTrue ? null : (
-                      <NavManu
-                        navigate={props.service}
-                        label={"Project"}
-                        name={"project"}
-                      />
-                    )}
-                    {/* {navTrue ? null : (
-                      <NavManu
-                        navigate={props.advantage}
-                        label={"ADVANTAGES"}
-                        name={"ADVANTAGES"}
-                      />
-                    )} */}
-                    {/* {navTrue ? null : (
-                      <NavManu
-                        navigate={props.blockchain}
-                        label={"Blockchain"}
-                        name={"Blockchain"}
-                      />
-                    )} */}
-                    {/* <NavManu
-                      navigate={closeManu}
-                      label={"Product"}
-                      name={"Product"}
-                      route={"/product"}
-                    /> */}
+                    <NavManu
+                      navigate={props.service}
+                      label={"Services"}
+                      name={"Services"}
+                    />
+
+                    <NavManu
+                      navigate={props.projects}
+                      label={"Projects"}
+                      name={"Projects"}
+                    />
+
                     <NavManu
                       navigate={closeManu}
                       label={"Portfolio"}
                       name={"Portfolio"}
                       route={"/portfolio"}
                     />
-                    {/* <NavManu
-                      navigate={closeManu}
-                      label={"Career"}
-                      name={"Career"}
-                      route={"/career"}
-                    /> */}
+
                     <NavManu
                       navigate={closeManu}
                       label={"Contact"}
@@ -268,35 +248,38 @@ const Header = (props) => {
               </div>
               <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div className="cont-info">
-                  {/* <div className="item mb-[50px]">
+                  <div className="item mb-[50px]">
                     <h3 className="sub-title mb-4 opacity-7">Address</h3>
                     <p className="addssX">
-                      Dubai,
-                      <br />
-                      1918 Tamani Arts Building, Business Bay, Dubai, UAE
+                      Shrungal Palace, Bamroli - Althan Rd, opp. dmart, Nem Nagar, Pandesara, Althan, Surat, Gujarat 394221
                     </p>
-                  </div> */}
+                  </div>
                   <div className="item mb-[50px]">
                     <h3 className="sub-title mb-4 opacity-7">Social Media</h3>
                     <ul className="rest social-text">
                       <SocialLink
                         name={"Facebook"}
-                        to={"#"}
+                        to={"https://www.facebook.com/crealogictech"}
                         label={"Facebook"}
                       />
-                      <SocialLink
+                      {/* <SocialLink
                         name={"Twitter"}
-                        to={"https://twitter.com/360CoreInc"}
+                        to={"https://twitter.com/crealogictech"}
                         label={"twitter"}
-                      />
+                      /> */}
                       <SocialLink
                         name={"LinkedIn"}
-                        to={"https://www.linkedin.com/company/79066664/admin/"}
+                        to={"https://www.linkedin.com/company/crealogictech"}
                         label={"LinkedIn"}
                       />
                       <SocialLink
+                        name={"Medium"}
+                        to={"https://medium.com/@crealogictech"}
+                        label={"Medium"}
+                      />
+                      <SocialLink
                         name={"Instagram"}
-                        to={"https://www.instagram.com/360coreinc/"}
+                        to={"https://www.instagram.com/crealogictech"}
                         label={"Instagram"}
                       />
                     </ul>
@@ -304,8 +287,11 @@ const Header = (props) => {
                   <div className="item mb-[40px]">
                     <h3 className="sub-title mb-4 opacity-7">Contact Us</h3>
                     <p className="contact">
-                      <NavLink to="mailto:hello@360core.inc" aria-label="gmail">
-                        hello@360core.inc
+                      <NavLink
+                        to="mailto:hello@crealogic.com"
+                        aria-label="gmail"
+                      >
+                        hello@crealogic.com
                       </NavLink>
                     </p>
                   </div>
