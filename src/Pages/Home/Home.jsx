@@ -8,7 +8,7 @@ const Home = () => {
     <div className="flex justify-center items-center text-[100px] py-[7px]">
       <div className="container">
         <div className="flex justify-between h-[90vh] items-center">
-          <HomeLeftHorizontalDivider />
+          
           <div className="flex flex-col justify-center items-center">
             <div className="">
               <h5 className="text-[16px] text-center">
@@ -31,7 +31,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <HomeRightHorizontalDivider />
+
         </div>
       </div>
     </div>
