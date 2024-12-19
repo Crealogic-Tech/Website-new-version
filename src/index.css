@@ -8,20 +8,20 @@
   box-sizing: border-box;
 }
 :root {
-  --home-body-bg: white;
+  --home-body-bg: #f7e2ec;
   --medium-sea-green: #5ab963;
   --hover-2: #b83535;
-  --primary-color: rgba(252, 114, 255, 0.12);
+  --primary-color: #7b466a;
   --secondory-color: rgba(0, 102, 255, 0.04);
   --hover: rgb(254, 235, 252);
   --white-smoke: #f2f4f7;
   --brand-color: #ef3f3e;
-  --text-color: #0f051d;
-  --text-color-2: #7b7583;
-  --line-color: #dfb6f4;
+  --text-color: #0c0420;
+  --text-color-2: #d391b0;
+  --line-color: #9f6496;
 
   --bg-color: #c2d9e1;
-  --text-colors: #15274f;
+  --text-colors: #0c0420;
   /* opacity: 0.2; */
 
   --bg-color1: #d5fbef;
@@ -223,7 +223,7 @@
 
 body {
   color: var(--secondory-color);
-  /* background-color: var(--home-body-bg); */
+  background-color: var(--home-body-bg) !important;
   margin: 0;
   font-family: Poppins, sans-serif;
   font-size: 14px;
@@ -556,7 +556,7 @@ summary {
   margin: 0;
   width: 100%;
   border-bottom: 2px solid transparent;
-  z-index: 999;
+  /* z-index: 999; */
 }
 
 .icon-img-100 {
@@ -624,7 +624,7 @@ summary {
 }
 
 .image-4 {
-  height: 3rem;
+  height: 2.5rem;
 }
 
 .image-04 {
@@ -688,7 +688,7 @@ svg:not(:root) {
   left: -100%;
   width: 100%;
   z-index: 9999;
-  backdrop-filter: blur(70px);
+  backdrop-filter: blur(150px);
   transition: left 0.3s ease-in-out; /* Smooth transition */
 }
 .hamenu::after {
@@ -711,7 +711,7 @@ svg:not(:root) {
 .hamenu .logo {
   position: absolute;
   top: 15px;
-  /* left: 40px; */
+  left: 10px;
 }
 /* .headerLogo {
   transform: translate(-90px, 0);
@@ -894,7 +894,7 @@ span {
 p {
   line-height: 1.5;
   font-size: 18px;
-  color: #c6c8c9;
+  color: var(--text-color-2);
 }
 
 p {
@@ -1073,6 +1073,24 @@ p {
   }
 } */
 
+@media screen and (max-width: 1024px) {
+  /* .headerLogos {
+    transform: translate(-10px);
+  } */
+  /* .headerLogo {
+    transform: translate(-80px);
+  } */
+
+  .hamenu .logo {
+    top: 25px;
+    left: 0px;
+  }
+  .image-4 {
+    height: 2.2rem;
+    z-index: 10;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .hamenu .cont-info,
   .hamenu .menu-text,
@@ -1085,7 +1103,12 @@ p {
   .hamenu .menu-links {
     height: calc(100vh - 40px);
   }
+  .hamenu .close-menu {
+    top: 40px;
+    right: 30px;
+  }
 }
+
 @media screen and (max-width: 768px) {
   /* .headerLogos {
     transform: translate(-10px);
@@ -1095,14 +1118,43 @@ p {
   } */
 
   .hamenu .logo {
-    left: 25px;
+    top: 25px;
+    left: 10px;
   }
   .hamenu .close-menu {
-    top: 60px;
+    top: 40px;
     right: 30px;
   }
   .hamenu .menu-links .main-menu > li .link,
   h3 {
     font-size: 30px;
   }
+}
+
+.button {
+  padding: 12px 26px;
+  border: 0;
+  font-size: 16px;
+  transition: all 150ms ease-in-out;
+  border-radius: 14px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #0c0420;
+  background-image: radial-gradient(
+    50% 115% at 50% -5%,
+    rgba(255, 255, 255, 0.11) 0%,
+    transparent 100%
+  );
+  box-shadow: inset 0 0px 10px 0px rgba(255, 255, 255, 0.14),
+    inset 0px 5px 10px 0px rgba(255, 255, 255, 0.11),
+    inset 0px 2px 5px 0px rgba(255, 255, 255, 0.4),
+    inset 0px 3px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.button:hover {
+  background-color: #5a3c3c;
+}
+
+.button:active {
+  transform: scale(0.95);
 }

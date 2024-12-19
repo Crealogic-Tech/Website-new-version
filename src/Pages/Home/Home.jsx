@@ -1,13 +1,14 @@
 import React from "react";
+import Button from "../../Components/BurgerBTN/Button";
 // import Toggle from "../../Components/Toggle/Toggle";
-import HomeLeftHorizontalDivider from "../../Components/Divider/HeroLeftHorizontalDivider";
-import HomeRightHorizontalDivider from "../../Components/Divider/HeroRightHorizontalDivider";
+// import HomeLeftHorizontalDivider from "../../Components/Divider/HeroLeftHorizontalDivider";
+// import HomeRightHorizontalDivider from "../../Components/Divider/HeroRightHorizontalDivider";
 
 const Home = () => {
   return (
-    <div className="flex justify-center items-center text-[100px] py-[7px]">
+    <div className="flex justify-center items-center text-[100px] py-40">
       <div className="container">
-        <div className="flex justify-between h-[90vh] items-center">
+        <div className="flex justify-between items-center">
           
           <div className="flex flex-col justify-center items-center">
             <div className="">
@@ -16,7 +17,7 @@ const Home = () => {
               </h5>
             </div>
             <div className="pb-8 w-3/4">
-              <h1 className="text-7xl text-center">
+              <h1 className="text-7xl text-center font-bold">
                 Your Logical Choice Where Bold Ideas Meet Logical Execution
               </h1>
             </div>
@@ -30,8 +31,10 @@ const Home = () => {
                 possibilities are limitless.
               </p>
             </div>
+          <div>
+            <Button>Let's work together</Button>
           </div>
-
+          </div>
         </div>
       </div>
     </div>

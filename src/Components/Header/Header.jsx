@@ -81,7 +81,7 @@ const Header = (props) => {
         { y: 0, opacity: 1 },
         "collabe+=2.5"
       )
-      .to(".lineContainer", 0.2, { zIndex: 0 }) // Reset zIndex here
+      .to(".lineContainer", 0.2, { zIndex: -10 }) // Reset zIndex here
       .call(() => document.body.classList.remove("fixedBody")); // Reset body class after animation
   };
 
