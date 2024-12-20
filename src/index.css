@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 :root {
-  --home-body-bg: #f7e2ec;
+  --home-body-bg: #f7f0f3;
   --medium-sea-green: #5ab963;
   --hover-2: #b83535;
   --primary-color: #7b466a;
@@ -225,7 +225,7 @@ body {
   color: var(--secondory-color);
   background-color: var(--home-body-bg) !important;
   margin: 0;
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", sans-serif !important;
   font-size: 14px;
   line-height: 20px;
   /* overflow-x: hidden; */
@@ -263,8 +263,8 @@ img {
 
 .container {
   width: 100%;
-  max-width: 89.125rem !important;
-  padding: 0 !important;
+  /* max-width: 89.125rem !important; */
+  padding: 0 15px !important;
   margin: 0 auto;
 }
 
@@ -339,7 +339,7 @@ img {
 .loader-wrap {
   background: linear-gradient(
     var(--secondory-color),
-    var(--primary-color) 33% 68%,
+    var(--hover) 33% 68%,
     var(--secondory-color)
   );
   top: 0;
@@ -449,7 +449,12 @@ img {
 /* ================================================================================
 ==================================== Button  ======================================
 ================================================================================ */
-
+.main-bg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .cta-floting {
   z-index: 1200;
   width: 50rem;
@@ -552,9 +557,9 @@ summary {
 
 .navbar {
   position: absolute;
-  padding-bottom: 0 !important;
   margin: 0;
   width: 100%;
+  height: 70px;
   border-bottom: 2px solid transparent;
   /* z-index: 999; */
 }
@@ -895,6 +900,8 @@ p {
   line-height: 1.5;
   font-size: 18px;
   color: var(--text-color-2);
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
 }
 
 p {
@@ -948,7 +955,7 @@ p {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 89.125rem;
+  /* max-width: 89.125rem; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 7px;
@@ -1040,6 +1047,66 @@ p {
   display: flex;
 }
 
+.button {
+  padding: 12px 26px;
+  border: 0;
+  font-size: 16px;
+  transition: all 150ms ease-in-out;
+  border-radius: 14px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #0c0420;
+  background-image: radial-gradient(
+    50% 115% at 50% -5%,
+    rgba(255, 255, 255, 0.11) 0%,
+    transparent 100%
+  );
+  box-shadow: inset 0 0px 10px 0px rgba(255, 255, 255, 0.14),
+    inset 0px 5px 10px 0px rgba(255, 255, 255, 0.11),
+    inset 0px 2px 5px 0px rgba(255, 255, 255, 0.4),
+    inset 0px 3px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.button:hover {
+  background-color: #5a3c3c;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+
+/* ================================================================================
+============================= Banner Section  ======================================
+================================================================================ */
+
+h1 {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 64.75rem;
+  letter-spacing: -1px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 4rem;
+  line-height: 120%;
+  font-weight: 600;
+  font-family: "Poppins",sans-serif;
+}
+
+@media screen and (max-width: 991px) {
+  h1 {
+      font-size: 3rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  h1 {
+
+      padding-left: .5rem;
+      padding-right: .5rem;
+      font-size: 2rem;
+  }
+}
+
 /* ================================================================================
 ============================= Responsive ======================================
 ================================================================================ */
@@ -1129,32 +1196,8 @@ p {
   h3 {
     font-size: 30px;
   }
-}
 
-.button {
-  padding: 12px 26px;
-  border: 0;
-  font-size: 16px;
-  transition: all 150ms ease-in-out;
-  border-radius: 14px;
-  font-weight: 600;
-  color: #fff;
-  background-color: #0c0420;
-  background-image: radial-gradient(
-    50% 115% at 50% -5%,
-    rgba(255, 255, 255, 0.11) 0%,
-    transparent 100%
-  );
-  box-shadow: inset 0 0px 10px 0px rgba(255, 255, 255, 0.14),
-    inset 0px 5px 10px 0px rgba(255, 255, 255, 0.11),
-    inset 0px 2px 5px 0px rgba(255, 255, 255, 0.4),
-    inset 0px 3px 20px 0px rgba(0, 0, 0, 0.25);
-}
-
-.button:hover {
-  background-color: #5a3c3c;
-}
-
-.button:active {
-  transform: scale(0.95);
+  .home-hero {
+    height: 90vh;
+  }
 }

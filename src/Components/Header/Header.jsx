@@ -4,10 +4,10 @@ import { NavLink, useLocation, useRoutes } from "react-router-dom";
 import { useGSAP } from "@gsap/react";
 import gsap, { Linear } from "gsap";
 import Divider from "../Divider/Divider";
-import LeftHorizontalDivider from "../Divider/LeftHorizontalDivider";
-import RightHorizontalDivider from "../Divider/RightHorizontalDivider";
+// import LeftHorizontalDivider from "../Divider/LeftHorizontalDivider";
+// import RightHorizontalDivider from "../Divider/RightHorizontalDivider";
 import HeaderLogo from "../../assets/images/logo/6.png";
-import HeaderLogo2 from "../../assets/images/logo/2.png";
+// import HeaderLogo2 from "../../assets/images/logo/2.png";
 import BurgerBTN from "../BurgerBTN/BurgerBTN";
 import LineComponent from "../Divider/LineComponent";
 import CloseBTNSVG from "../Button/CloseBTNSVG";
@@ -133,13 +133,13 @@ const Header = (props) => {
 
   return (
     <div id="smooth-wrapper wrapper">
-      <div id="content">
-        <nav className="navbar navbar-expand-lg nav-crev">
-          <div className="container">
+
+        <nav className="navbar">
+          <div className="container-xxl">
             <div className="flex justify-center items-center">
-              <LeftHorizontalDivider />
+              {/* <LeftHorizontalDivider /> */}
               <NavLink
-                className="logo  gsapAnime logoBrans"
+                className="logo gsapAnime logoBrans"
                 to="/"
                 aria-label="logobrand"
               >
@@ -161,7 +161,7 @@ const Header = (props) => {
                 <BurgerBTN />
               </NavLink>
 
-              <RightHorizontalDivider />
+              {/* <RightHorizontalDivider /> */}
             </div>
           </div>
         </nav>
@@ -171,7 +171,7 @@ const Header = (props) => {
         <div className="hamenu one-scroll">
           <div className="logo icon-img-100 manuLogo logoAnim burgerBTN">
             <NavLink
-              className="logo  gsapAnime logoBrans"
+              className="logo gsapAnime logoBrans"
               to="/"
               aria-label="logobrand"
             >
@@ -300,7 +300,7 @@ const Header = (props) => {
             </div>
           </div>
         </div>
-      </div>
+
     </div>
   );
 };

@@ -30,19 +30,19 @@ function App() {
   return (
     <div className="wrapper w-[100%] h-[100%] absolute overflow-hidden z-10 ">
       <div id="content">
-        {/* {loader ? ( */}
-          {/* <Loader /> // Show the loader until it's hidden after the timeout */}
-        {/* ) : ( */}
+        {loader ? (
+           <Loader /> // Show the loader until it's hidden after the timeout 
+         ) : ( 
           <BrowserRouter>
-            <Header />
+            {/* <Header /> */}
             <Routes>
-              {/* <Route path="/" element={<Layout />}> */}
+              <Route path="/" element={<Layout />}>
                 <Route  path="/" element={<Home />}></Route>
                 <Route path="about" element={<About />}></Route>
-              {/* </Route> */}
+              </Route>
             </Routes>
           </BrowserRouter>
-        {/* )} */}
+         )} 
       </div>
     </div>
   );
