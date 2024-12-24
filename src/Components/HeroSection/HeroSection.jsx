@@ -4,7 +4,6 @@ import Divider from "../Divider/Divider";
 
 const HeroSection = () => {
   return (
-    <section>
       <div className="flex justify-center items-center text-[100px] h-[89vh] ">
         <div className="container-xxl">
           <div className="flex justify-between items-center">
@@ -37,7 +36,7 @@ const HeroSection = () => {
         </div>
       </div>
       
-    </section>
+
   );
 };
 

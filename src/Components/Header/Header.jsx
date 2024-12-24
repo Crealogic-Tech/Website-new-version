@@ -1,13 +1,11 @@
+'use client'
 // src/components/Header.js
 import React, { useRef, useEffect, useState } from "react";
 import { NavLink, useLocation, useRoutes } from "react-router-dom";
 import { useGSAP } from "@gsap/react";
 import gsap, { Linear } from "gsap";
 import Divider from "../Divider/Divider";
-// import LeftHorizontalDivider from "../Divider/LeftHorizontalDivider";
-// import RightHorizontalDivider from "../Divider/RightHorizontalDivider";
 import HeaderLogo from "../../assets/images/logo/6.png";
-// import HeaderLogo2 from "../../assets/images/logo/2.png";
 import BurgerBTN from "../BurgerBTN/BurgerBTN";
 import LineComponent from "../Divider/LineComponent";
 import CloseBTNSVG from "../Button/CloseBTNSVG";
@@ -132,7 +130,7 @@ const Header = (props) => {
   });
 
   return (
-    <div id="smooth-wrapper wrapper">
+    <header id="smooth-wrapper wrapper">
 
         <nav className="navbar">
           <div className="container-xxl">
@@ -301,7 +299,7 @@ const Header = (props) => {
           </div>
         </div>
 
-    </div>
+    </header>
   );
 };
 
