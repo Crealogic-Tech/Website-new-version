@@ -1,0 +1,656 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #0c0420;
+  --secondory-color: #fff;
+  --hover: #ececec;
+  --brand-color: #ba6e8f;
+  --color1: #9f6496;
+  --color2: #d391b0;
+  --text: #000;
+  --p: #3d3d3f;
+  --blur: rgba(241, 243, 244, 1);
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../app/assets/fonts/Urbanist-SemiBold.woff2") format("woff2"),
+    url("../app/assets/fonts/Urbanist-SemiBold.woff") format("woff"),
+    url("../app/assets/fonts/Urbanist-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../app/assets/fonts/Urbanist-SemiBoldItalic.woff2") format("woff2"),
+    url("../app/assets/fonts/Urbanist-SemiBoldItalic.woff") format("woff"),
+    url("../app/assets/fonts/Urbanist-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../app/assets/fonts/Urbanist-ExtraBoldItalic.woff2") format("woff2"),
+    url("../app/assets/fonts/Urbanist-ExtraBoldItalic.woff") format("woff"),
+    url("../app/assets/fonts/Urbanist-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../app/assets/fonts/Urbanist-ExtraLightItalic.woff2")
+      format("woff2"),
+    url("../app/assets/fonts/Urbanist-ExtraLightItalic.woff") format("woff"),
+    url("../app/assets/fonts/Urbanist-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../app/assets/fonts/Urbanist-Medium.woff2") format("woff2"),
+    url("../app/assets/fonts/Urbanist-Medium.woff") format("woff"),
+    url("../app/assets/fonts/Urbanist-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../app/assets/fonts/Urbanist-BlackItalic.woff2") format("woff2"),
+    url("../app/assets/fonts/Urbanist-BlackItalic.woff") format("woff"),
+    url("../app/assets/fonts/Urbanist-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../app/assets/fonts/Urbanist-Bold.woff2") format("woff2"),
+    url("../app/assets/fonts/Urbanist-Bold.woff") format("woff"),
+    url("../app/assets/fonts/Urbanist-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../app/assets/fonts/Urbanist-LightItalic.woff2") format("woff2"),
+    url("../app/assets/fonts/Urbanist-LightItalic.woff") format("woff"),
+    url("../app/assets/fonts/Urbanist-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../app/assets/fonts/Urbanist-MediumItalic.woff2") format("woff2"),
+    url("../app/assets/fonts/Urbanist-MediumItalic.woff") format("woff"),
+    url("../app/assets/fonts/Urbanist-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../app/assets/fonts/Urbanist-Black.woff2") format("woff2"),
+    url("../app/assets/fonts/Urbanist-Black.woff") format("woff"),
+    url("../app/assets/fonts/Urbanist-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../app/assets/fonts/Urbanist-Italic.woff2") format("woff2"),
+    url("../app/assets/fonts/Urbanist-Italic.woff") format("woff"),
+    url("../app/assets/fonts/Urbanist-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../app/assets/fonts/Urbanist-Thin.woff2") format("woff2"),
+    url("../app/assets/fonts/Urbanist-Thin.woff") format("woff"),
+    url("../app/assets/fonts/Urbanist-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../app/assets/fonts/Urbanist-ExtraBold.woff2") format("woff2"),
+    url("../app/assets/fonts/Urbanist-ExtraBold.woff") format("woff"),
+    url("../app/assets/fonts/Urbanist-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../app/assets/fonts/Urbanist-ThinItalic.woff2") format("woff2"),
+    url("../app/assets/fonts/Urbanist-ThinItalic.woff") format("woff"),
+    url("../app/assets/fonts/Urbanist-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../app/assets/fonts/Urbanist-BoldItalic.woff2") format("woff2"),
+    url("../app/assets/fonts/Urbanist-BoldItalic.woff") format("woff"),
+    url("../app/assets/fonts/Urbanist-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../app/assets/fonts/Urbanist-Light.woff2") format("woff2"),
+    url("../app/assets/fonts/Urbanist-Light.woff") format("woff"),
+    url("../app/assets/fonts/Urbanist-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../app/assets/fonts/Urbanist-ExtraLight.woff2") format("woff2"),
+    url("../app/assets/fonts/Urbanist-ExtraLight.woff") format("woff"),
+    url("../app/assets/fonts/Urbanist-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../app/assets/fonts/Urbanist-Regular.woff2") format("woff2"),
+    url("../app/assets/fonts/Urbanist-Regular.woff") format("woff"),
+    url("../app/assets/fonts/Urbanist-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 40px;
+}
+
+body {
+  color: var(--foreground);
+  background: white;
+  font-family: Urbanist, sans-serif;
+  line-height: 1.8;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.2;
+  font-family: Urbanist, sans-serif;
+  color: var(--foreground);
+  margin: 0.67em 0;
+}
+
+h2{
+  margin-top: 0px;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 70px;
+  color: var(--foreground);
+  font-weight: 600;
+  margin-bottom: 0.75em;
+}
+ p {
+  margin-right: 60px;
+  font-size: 18px;
+  margin-bottom: 1.5em;
+  color: var(--p);
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.gradient-text  p{
+  background: -webkit-linear-gradient(
+    to right,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+/* ================================================================================
+============================= Loader Page ======================================
+================================================================================ */
+
+.loader-wrap {
+  background: linear-gradient(
+    var(--secondory-color),
+    var(--hover) 33% 68%,
+    var(--secondory-color)
+  );
+  top: 0;
+  left: 0;
+}
+.loader-wrap {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.loader-wrap {
+  position: fixed;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 99999999999999;
+}
+
+.loader-wrap svg {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 110vh;
+  fill: var(--secondory-color);
+}
+
+.loader-wrap .loader-wrap-heading .load-text {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  z-index: 20;
+}
+.loader-wrap .loader-wrap-heading .load-text {
+  font-size: 18px;
+  letter-spacing: 15px;
+}
+
+.load-text span {
+  -webkit-animation: 1s infinite alternate loading;
+  animation: 1s infinite alternate loading;
+  color: var(--brand-color);
+}
+
+.load-text span:first-child {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.load-text span:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.load-text span:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.load-text span:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.load-text span:nth-child(5) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.load-text span:nth-child(6) {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.load-text span:nth-child(7) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.hamenu,
+.loader-wrap {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hamenu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  z-index: 9999;
+  backdrop-filter: blur(50px);
+  box-shadow: 1px 1px 10px #000;
+  transition: left 0.3s ease-in-out; /* Smooth transition */
+}
+
+.icon-img-100 {
+  width: 100%;
+  /* padding: 12px 0; */
+}
+
+/* .headerLogo {
+  transform: translate(-90px, 0);
+} */
+
+.hamenu .close-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border: 1px solid var(--color2);
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  z-index: 4;
+  padding: 5px;
+}
+.hamenu .close-menu svg {
+  width: 40px;
+  height: 40px;
+}
+
+.hamenu .menu-text {
+  position: relative;
+  height: 100%;
+}
+.hamenu .menu-links:before {
+  content: "";
+  width: 1px;
+  height: 200vh;
+  background: var(--color2);
+  position: absolute;
+  left: 0px;
+  bottom: -75vh;
+  transition: 1s;
+}
+
+.hamenu .menu-text .text h2 {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 10vw;
+  font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
+  opacity: 0.09;
+  color: var(--color2);
+}
+
+.hamenu .menu-links {
+  color: #fff;
+  height: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  position: relative;
+}
+
+.hamenu .menu-links:after {
+  content: "";
+  width: 1px;
+  height: 200vh;
+  background: var(--color2);
+  position: absolute;
+  right: 0px;
+  bottom: -75vh;
+  transition: 1s;
+}
+
+.hamenu .menu-links::-webkit-scrollbar {
+  width: 5px;
+}
+
+.hamenu .menu-links::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+}
+
+.hamenu .menu-links::-webkit-scrollbar-thumb {
+  background: var(--color2);
+  border-radius: 5px;
+}
+
+.rest {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.hamenu .menu-links .main-menu {
+  position: relative;
+  z-index: 2;
+}
+
+.hamenu .menu-links .main-menu > li,
+.services-boxs .itemBox h5,
+.services-boxs .itemBox p {
+  transition: 0.5s;
+}
+
+.bg-img,
+.o-hidden {
+  overflow: hidden;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.hamenu .menu-links .main-menu > li .link {
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  padding: 20px 30px;
+  border-top: 1px solid var(--color2);
+  width: 100%;
+  position: relative;
+  display: block;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.7s;
+}
+
+.horizontal-link li,
+.inline,
+a,
+span {
+  display: inline-block;
+}
+
+.hamenu .menu-links .main-menu > li .link .fill-text {
+  position: relative;
+  color: var(--text);
+}
+.hamenu .menu-links .main-menu > li .link .fill-text:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--text);
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: width 0.75s cubic-bezier(0.63, 0.03, 0.21, 1);
+}
+
+.blinking-cursor {
+  display: inline-block;
+  width: 1px;
+  height: 1em;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.marquee-mask{
+  overflow: hidden;
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0));
+
+}
+
+.marquee-text{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: var(--white);
+    -webkit-text-stroke-width: 1px !important;
+}
+
+.excellence{
+  position: relative;
+  background: #fff;
+  background: linear-gradient(180deg, rgba(255, 255, 255, .65) 5%, #fff 100%);
+}
+.excellences{
+  position: relative;
+  background: #fff;
+  background: linear-gradient(0deg, rgba(255, 255, 255, .65) 5%, #fff 100%);
+}
+
+.excellence:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);
+  z-index: -1;
+}
+.excellences:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);
+  z-index: -1;
+}
+
+
+@media (max-width: 1024px) {
+  h1,
+  p {
+    text-align: left !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hamenu .menu-links {
+    height: calc(100vh - 40px);
+  }
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .loader-wrap .loader-wrap-heading .load-text {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+
+  .hamenu .logo {
+    top: 25px;
+    left: 10px;
+  }
+
+  .hamenu .menu-links .main-menu > li .link,
+  h3 {
+    font-size: 30px;
+  }
+}
