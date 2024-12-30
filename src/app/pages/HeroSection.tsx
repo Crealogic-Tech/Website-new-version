@@ -14,7 +14,7 @@ function HeroSection() {
   const [isDeleting, setIsDeleting] = useState(false);
   const [typingSpeed, setTypingSpeed] = useState(100);
 
-  const words = ["Logical", "Professional", "Secured", "Creative"];
+  const words = ['Logical', 'Professional', 'Secured', 'Creative'];
 
   // GSAP Animation
   useGSAP(() => {

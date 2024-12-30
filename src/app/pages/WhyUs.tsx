@@ -1,7 +1,6 @@
 import React from "react";
 import HadingTitle from "../Components/HadingTitle";
 import WebDev from "../assets/images/web.svg";
-import ServicesBox from "../Components/layout/ServicesBox";
 import WhyUsBox from "./WhyUsBox";
 
 function WhyUs() {
