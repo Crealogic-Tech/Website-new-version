@@ -1,8 +1,8 @@
 
 'use client'
-import React, { useEffect } from "react";
+import React from "react";
 import HadingTitle from "../Components/HadingTitle";
-import gsap, { Back} from 'gsap';
+import gsap from 'gsap';
 import { ScrollTrigger  } from 'gsap/ScrollTrigger';
 import { SplitText } from 'gsap/SplitText';
 

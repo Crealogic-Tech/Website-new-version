@@ -21,28 +21,6 @@ const ExcellenceSection = () => {
 
           <ExcellenceBox  data={excellenceData} />
 
-          {/* <div className="grid grid-cols-3 w-full gap-20">
-            <div className="flex flex-col justify-between items-center p-3 excellence w-full">
-              <strong className="text-4xl py-9 ">10+</strong>
-              <span className="text-2xl pt-5 pb-8">Years</span>
-            </div>
-            <div className="flex flex-col justify-between items-center p-3 excellence w-full">
-              <strong className="text-4xl py-9 ">62+</strong>
-              <span className="text-2xl pt-5 pb-8">Countries</span>
-            </div>
-            <div className="flex flex-col justify-between items-center p-3 excellence w-full">
-              <strong className="text-4xl py-9 ">90%</strong>
-              <span className="text-2xl pt-5 pb-8">Repeat Clients</span>
-            </div>
-            <div className=" flex flex-col justify-between items-center p-3 excellence w-full">
-              <strong className="text-4xl py-9 ">320+</strong>
-              <span className="text-2xl pt-5 pb-8">Customers</span>
-            </div>
-            <div className=" flex flex-col justify-between items-center p-3 excellence w-full">
-              <strong className="text-4xl py-9 ">35+</strong>
-              <span className="text-2xl pt-5 pb-8">techncrats</span>
-            </div>
-          </div> */}
         </div>
       </div>
     </section>

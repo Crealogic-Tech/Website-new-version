@@ -10,7 +10,7 @@ const Button: React.FC<ButtonProps> = ({ text, className }) => {
   return (
     <button
       className={`${className} px-6 py-2 rounded-xl text-white 
-    bg-gradient-to-r from-[#355c7d] via-[#6c5b7b] to-[#c06c84]`}
+    bg-gradient-to-tl from-[#355c7d] via-[#6c5b7b] to-[#c06c84] hover:bg-gradient-to-tl hover:from-[#c06c84] hover:via-[#6c5b7b] hover:to-[#355c7d]`}
     >
       {text}
     </button>

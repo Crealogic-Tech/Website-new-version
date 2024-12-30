@@ -8,6 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import DrawSVGPlugin from "gsap/DrawSVGPlugin";
 import { SplitText } from "gsap/SplitText";
 import ServicesSection from "./pages/ServicesSection";
+import Contactbook from "./pages/Contactbook";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, DrawSVGPlugin, SplitText);
 
@@ -20,6 +21,7 @@ export default function Home() {
       <ExcellenceSection />
       <AboutSection />
       <ServicesSection />
+      <Contactbook />
     </div>
   );
 }

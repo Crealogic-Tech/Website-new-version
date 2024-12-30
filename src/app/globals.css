@@ -9,7 +9,7 @@
   --hover: #ececec;
   --brand-color: #ba6e8f;
   --color1: #9f6496;
-  --color2: #d391b0;
+  --color2: rgb(211, 145, 176);
   --text: #000;
   --p: #3d3d3f;
   --blur: rgba(241, 243, 244, 1);
@@ -232,7 +232,7 @@ h1 {
   margin: 0.67em 0;
 }
 
-h2{
+h2 {
   margin-top: 0px;
   text-align: center;
   font-size: 2rem;
@@ -241,7 +241,7 @@ h2{
   font-weight: 600;
   margin-bottom: 0.75em;
 }
- p {
+p {
   margin-right: 60px;
   font-size: 18px;
   margin-bottom: 1.5em;
@@ -254,7 +254,7 @@ img {
   vertical-align: bottom;
 }
 
-.gradient-text  p{
+.gradient-text p {
   background: -webkit-linear-gradient(
     to right,
     #c06c84,
@@ -276,7 +276,6 @@ img {
   text-align: center;
   font-size: 25px;
 }
-
 
 /* ================================================================================
 ============================= Loader Page ======================================
@@ -575,27 +574,32 @@ span {
   }
 }
 
-.marquee-mask{
+.marquee-mask {
   overflow: hidden;
-  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0));
-
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0)
+  );
 }
 
-.marquee-text{
+.marquee-text {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-color: var(--white);
-    -webkit-text-stroke-width: 1px !important;
+  -webkit-text-stroke-width: 1px !important;
 }
 
-.excellence{
+.excellence {
   position: relative;
   background: #fff;
-  background: linear-gradient(180deg, rgba(255, 255, 255, .65) 5%, #fff 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.65) 5%, #fff 100%);
 }
-.excellences{
+.excellences {
   position: relative;
   background: #fff;
-  background: linear-gradient(0deg, rgba(255, 255, 255, .65) 5%, #fff 100%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.65) 5%, #fff 100%);
 }
 
 .excellence:before {
@@ -619,6 +623,18 @@ span {
   z-index: -1;
 }
 
+.serviceHover:hover  {
+  background-color: rgba(243 ,244, 246, 1);
+  box-shadow: 16px 16px 23px 0px rgba(243 ,244, 246,0.5);
+  color: #c06c84;
+}
+.serviceHover:hover p{
+  color: #969494;
+}
+
+.contact-box {
+
+}
 
 @media (max-width: 1024px) {
   h1,

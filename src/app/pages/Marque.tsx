@@ -32,16 +32,16 @@ function Marque() {
           ref={marqueeRef} // Attach ref to the marquee container
         >
           <span className="marquee-text text-4xl font-extrabold px-3">
-            " Innovation is our foundation, your success is ours. "
+             &apos; Innovation is our foundation, your success is ours. &apos;
           </span>
           <span className="marquee-text text-4xl font-extrabold px-3">
-            " Building tomorrow's tech, today. "
+             &apos; Building tomorrow&apos;s tech, today. &apos;
           </span>
           <span className="marquee-text text-4xl font-extrabold px-3">
-            " Driven by logic, inspired by creativity. "
+             &apos; Driven by logic, inspired by creativity. &apos;
           </span>
           <span className="marquee-text text-4xl font-extrabold px-3">
-            " IT solutions that elevate your business. "
+             &apos; IT solutions that elevate your business. &apos;
           </span>
         </div>
       </div>
