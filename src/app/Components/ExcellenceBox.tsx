@@ -1,10 +1,13 @@
 "use client";
 
+import Image, { StaticImageData } from "next/image";
 import React, { useEffect } from "react";
 
 type ExcellenceItem = {
   value: string;
   label: string;
+  alt: string;
+  src: StaticImageData; // StaticImageData type
 };
 
 type ExcellenceGridProps = {
@@ -17,7 +20,7 @@ const ExcellenceBox: React.FC<ExcellenceGridProps> = ({ data }) => {
     const counters = document.querySelectorAll(".counter");
 
     counters.forEach((counter) => {
-      const element = counter as HTMLElement; // Assert type to HTMLElement
+      const element = counter as HTMLElement;
       element.innerText = "0";
 
       const updateCounter = () => {
@@ -35,28 +38,25 @@ const ExcellenceBox: React.FC<ExcellenceGridProps> = ({ data }) => {
 
       updateCounter();
     });
-  }, [data]); // Trigger the effect when 'data' changes
+  }, [data]);
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full gap-6 md:gap-10 lg:gap-20">
-      {data.map((item, index) => (
-        <div
-          key={index}
-          className="flex flex-col justify-between items-center p-3 excellence w-full"
-        >
-            <div className="flex justify-center ">
+    <div className="rounded-xl p-10" >
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full rounded-2xl border-0 gap-6 md:gap-10 ">
 
-          <strong
-            className="text-4xl py-9 counter"
-            data-target={item.value} 
-          >
-            0   
-          </strong>
-            <span className="text-4xl py-9 font-bold">+</span>
-            </div>
+      {data.map((item, index) => (
+        <div key={index} className="flex flex-col justify-between items-center p-3 w-full rounded-xl border-x-2 shadow-3xl bg-transparent backdrop-blur-3xl">
+          <Image alt={item.alt} src={item.src}  className="w-20 h-20"/>
+          <div className="flex justify-center ">
+            <strong className="text-4xl pt-4 counter" data-target={item.value}>
+              0
+            </strong>
+            <span className="text-4xl pt-4 font-bold">+</span>
+          </div>
           <span className="text-2xl pt-5 pb-8">{item.label}</span>
         </div>
       ))}
+      </div>
     </div>
   );
 };

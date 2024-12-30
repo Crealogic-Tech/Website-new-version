@@ -1,14 +1,15 @@
 import React from "react";
 import HadingTitle from "../Components/HadingTitle";
 import ExcellenceBox from "../Components/ExcellenceBox";
+import Year from "../assets/images/years.png"; // Import the image
 
 const ExcellenceSection = () => {
-    const excellenceData = [
-        { value: "5", label: "Years" },
-        { value: "4", label: "Countries Served" },
-        { value: "20", label: "Repeat Clients" },
-        { value: "15", label: "Projects" },
-      ];
+  const excellenceData = [
+    { src: Year, alt: "Year", value: "5", label: "Years" },
+    { src: Year, alt: "Year", value: "4", label: "Countries Served" },
+    { src: Year, alt: "Year", value: "20", label: "Repeat Clients" },
+    { src: Year, alt: "Year", value: "15", label: "Projects" },
+  ];
 
   return (
     <section data-scroll-index="3" className="pb-[40px]  lg:py-16">
@@ -18,10 +19,10 @@ const ExcellenceSection = () => {
             className="flex justify-center items-center"
             text="Excellence"
           />
-
-          <ExcellenceBox  data={excellenceData} />
-
         </div>
+      <div className=" excellence mt-6" >
+        <ExcellenceBox data={excellenceData} />
+      </div>
       </div>
     </section>
   );
