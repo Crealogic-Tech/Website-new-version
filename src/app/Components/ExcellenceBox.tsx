@@ -41,11 +41,11 @@ const ExcellenceBox: React.FC<ExcellenceGridProps> = ({ data }) => {
   }, [data]);
 
   return (
-    <div className="rounded-xl p-10" >
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full rounded-2xl border-0 gap-6 md:gap-10 ">
+    <div className="border-0 border-transparent p-10" >
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full gap-6 md:gap-10 ">
 
       {data.map((item, index) => (
-        <div key={index} className="flex flex-col justify-between items-center p-3 w-full rounded-xl border-x-2 shadow-3xl bg-transparent backdrop-blur-3xl">
+        <div key={index} className="flex flex-col justify-between items-center p-3 w-full rounded-xl border-2 shadow-3xl bg-transparent backdrop-blur-3xl">
           <Image alt={item.alt} src={item.src}  className="w-20 h-20"/>
           <div className="flex justify-center ">
             <strong className="text-4xl pt-4 counter" data-target={item.value}>
