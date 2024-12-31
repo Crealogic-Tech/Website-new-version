@@ -21,15 +21,15 @@ const ServicesBox: React.FC<ServicesProps> = ({ data }) => {
   // };
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10 ">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 ">
       {data.map((item, index) => (
         <div key={index} className="services">
-          <div className="services_img_wrap">
+          <div className="services_img_wrap relative">
 
           <Image
             src={item.src}
             alt={item.alt}
-            className="w-8 h-8 "
+            className="w-8 h-8  z-10"
           />
           </div>
           <h3 className="services_title">

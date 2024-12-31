@@ -10,6 +10,7 @@ import { SplitText } from "gsap/SplitText";
 import ServicesSection from "./pages/ServicesSection";
 import Contactbook from "./pages/Contactbook";
 import WhyUs from "./pages/WhyUs";
+import ProcessSection from "./pages/ProcessSection";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, DrawSVGPlugin, SplitText);
 
@@ -24,6 +25,7 @@ export default function Home() {
       <ServicesSection />
       <Contactbook />
       <WhyUs />
+      <ProcessSection />
     </div>
   );
 }

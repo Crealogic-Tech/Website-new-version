@@ -6,7 +6,6 @@ import WhyUsBox from "./WhyUsBox";
 function WhyUs() {
   const SrvicesData = [
     {
-
       src: WebDev,
       alt: "Web Development",
       title: "Web Development",
