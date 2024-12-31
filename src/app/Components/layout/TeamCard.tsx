@@ -1,98 +1,98 @@
-"use client";
-import { useRef, useEffect } from "react";
-import { gsap } from "gsap";
-import Image, { StaticImageData } from "next/image";
+'use client'
+import { useState } from 'react';
+import Image from 'next/image';
+import { StaticImageData } from 'next/image';
 
-// Define prop types
 interface SocialLink {
-  icon: string;
+  icon: string | React.ReactElement; // Allow string or JSX element for the icon
   url: string;
 }
 
-interface TeamCardProps {
+interface ProfileCardProps {
   name: string;
   role: string;
-  image: string | StaticImageData;
+  avatarSrc: string | StaticImageData;  // Accept both string (URL) and StaticImageData (next/image)
   socialLinks: SocialLink[];
 }
 
-const TeamCard: React.FC<TeamCardProps> = ({
-  name,
-  role,
-  image,
-  socialLinks,
-}) => {
-  const socialIconsRef = useRef<HTMLAnchorElement[]>([]); // Array of social icons for animation
-
-  useEffect(() => {
-    // Set initial animation state
-    gsap.set(socialIconsRef.current, { opacity: 0, y: 20 });
-  }, []);
-
-  const handleMouseEnter = () => {
-    // Animate social icons on hover
-    gsap.to(socialIconsRef.current, {
-      opacity: 1,
-      y: 0,
-      stagger: 0.1, // Stagger effect for each icon
-      duration: 0.3,
-      ease: "power3.out",
-    });
-  };
-
-  const handleMouseLeave = () => {
-    // Hide social icons on hover out
-    gsap.to(socialIconsRef.current, {
-      opacity: 0,
-      y: 20,
-      stagger: 0.1,
-      duration: 0.3,
-      ease: "power3.in",
-    });
-  };
+const ProfileCard: React.FC<ProfileCardProps> = ({ name, role, avatarSrc, socialLinks }) => {
+  const [hovered, setHovered] = useState(false);
 
   return (
     <div
-      className="relative w-72 shadow-3xl rounded-xl overflow-hidden border border-[#c06c84] transform hover:scale-105 transition duration-300"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+      className="col-span-1 xl:col-span-3 group pt-12 pb-9 px-5 flex flex-col items-center justify-center border-b xl:border-b-0 border-r border-team bg-slate-200 dark:bg-c-blue-900 hover:bg-gray-300 dark:hover:bg-drawerBg transition duration-300"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
     >
-      {/* Image Section */}
-      <div className="relative ">
+      {/* Avatar Section */}
+      <div className="w-56 h-56 mb-11">
         <Image
-          src={image}
-          alt={`${name}'s picture`}
-          height={300}
-          width={300}
-          className="object-cover w-full h-full"
+          src={avatarSrc}
+          alt={name}
+          width={150} // Image size for next/image
+          height={150} // Image size for next/image
+          className="object-cover w-full h-full rounded-full"
         />
-        {/* Social Icons */}
-        <div className="absolute inset-0  flex items-center justify-center gap-4">
-          {socialLinks.map((link, index) => (
-            <a
-              key={index}
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              ref={(el) => {
-                if (el) socialIconsRef.current[index] = el; // Add to refs
-              }}
-              className="text-white  p-2 rounded-full transition bg-gradient-to-tl from-[#355c7d] via-[#6c5b7b] to-[#c06c84] hover:bg-gradient-to-tl hover:from-[#c06c84] hover:via-[#6c5b7b] hover:to-[#355c7d]"
-            >
-              <i className={`fab fa-${link.icon} text-xl`}></i>
-            </a>
-          ))}
-        </div>
       </div>
-      {/* Name and Role Section */}
-      <div className=" p-4 card_text text-white text-center">
-        <div className="card_text_inner ">
-          <h3 className="text-xl font-bold">{name}</h3>
-          <p className="text-lg me-0">{role}</p>
-        </div>
+
+      {/* Name and Role */}
+      <div className="text-center mb-5">
+        <h3 className="text-xl xl:text-2xl text-c-blue-900 dark:text-white font-semibold leading-6 mb-2.5 font-plus-jakarta-sans">
+          {name}
+        </h3>
+        <span className="text-base font-semibold">{role}</span>
+      </div>
+
+      {/* Social Icons Section */}
+      <div className="flex flex-wrap items-center justify-center space-x-4">
+        {/* Left Social Icons */}
+        <ul
+          className={`flex items-center transition-opacity duration-1000 ${
+            hovered ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-5'
+          }`}
+        >
+          {socialLinks.slice(0, Math.ceil(socialLinks.length / 2)).map((social, index) => (
+            <li key={index} className="mr-1">
+              <a
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 flex items-center justify-center rounded-full bg-slate-700 dark:bg-c-blue-900 text-white"
+              >
+                {social.icon}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        {/* Center Button */}
+        <span className="relative !opacity-100 w-8 h-8 mx-1.5 flex items-center justify-center rounded-full bg-slate-800 dark:bg-[#3C12D4] text-c-blue-900 dark:text-white">
+          <span className={`absolute h-2.5 w-0.5 bg-white transition-transform duration-300 ${hovered ? 'rotate-90': 'rotate-0'}`}></span>
+          <span className={`absolute h-0.5 w-2.5 bg-white transition-opacity duration-300 ${hovered ? 'opacity-0': 'opacity-100'}`}></span>
+        </span>
+
+        {/* Right Social Icons */}
+        <ul
+          className={`flex items-center transition-opacity duration-1000 ${
+            hovered ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-5'
+          }`}
+        >
+          {socialLinks.slice(Math.ceil(socialLinks.length / 2)).map((social, index) => (
+            <li key={index} className="mr-1">
+              <a
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 flex items-center justify-center rounded-full bg-slate-700 dark:bg-c-blue-900 text-white"
+              >
+                {social.icon}
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
 };
 
-export default TeamCard;
+export default ProfileCard;
