@@ -11,11 +11,15 @@ import ServicesSection from "./pages/ServicesSection";
 import Contactbook from "./pages/Contactbook";
 import WhyUs from "./pages/WhyUs";
 import ProcessSection from "./pages/ProcessSection";
+import ContactSection from "./pages/ContactSection";
+import TecnologysSection from "./pages/TecnologysSection";
+import InderstreSection from "./pages/InderstreSection";
+import OurTeam from "./pages/OurTeam";
+
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, DrawSVGPlugin, SplitText);
 
 export default function Home() {
-  
   return (
     <div className="mt-[2.5em] h-[100vh]">
       <HeroSection />
@@ -26,6 +30,11 @@ export default function Home() {
       <Contactbook />
       <WhyUs />
       <ProcessSection />
+      <TecnologysSection />
+      <OurTeam />
+      <InderstreSection />
+
+      <ContactSection />
     </div>
   );
 }

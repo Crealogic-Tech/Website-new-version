@@ -1,4 +1,7 @@
 import "./globals.css";
+// If you use a global CSS file:
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
 import Header from "./Components/layout/Header";
 import ClientWrapper from "./Components/layout/ClientWrapper";
 import gsap from 'gsap';

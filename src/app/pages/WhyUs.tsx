@@ -1,7 +1,7 @@
 import React from "react";
 import HadingTitle from "../Components/HadingTitle";
 import WebDev from "../assets/images/web.svg";
-import WhyUsBox from "./WhyUsBox";
+import WhyUsBox from "../Components/layout/WhyUsBox";
 
 function WhyUs() {
   const SrvicesData = [
