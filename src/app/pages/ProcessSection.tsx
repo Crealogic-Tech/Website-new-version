@@ -2,6 +2,7 @@ import React from "react";
 import HadingTitle from "../Components/HadingTitle";
 import ProcessBox from "../Components/layout/ProcessBox";
 import WebDev from "../assets/images/web.svg";
+import Image from "next/image";
 
 
 function ProcessSection() {
@@ -105,7 +106,7 @@ function ProcessSection() {
     //                 <div className="content">
     //                   <div className="flex items-center justify-start gap-5 mb-4">
     //                     <Image
-    //                       src={item.src}
+    //                     src={item.src}
     //                       alt={item.alt}
     //                       className="w-10 h-10"
     //                     />

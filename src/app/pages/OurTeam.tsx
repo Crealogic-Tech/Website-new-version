@@ -29,10 +29,54 @@ const OurTeam: React.FC = () => {
         { icon: <FaInstagram />, url: "https://linkedin.com" },
       ],
     },
+    {
+      name: "Mallela Oni",
+      role: "Product Analyst",
+      avatarSrc: Hero,
+      socialLinks: [
+        { icon: <FaFacebook />, url: "https://facebook.com" },
+        { icon: <FaTwitter />, url: "https://twitter.com" },
+        { icon: <FaLinkedin />, url: "https://linkedin.com" },
+        { icon: <FaInstagram />, url: "https://linkedin.com" },
+      ],
+    },
+    {
+      name: "Mallela Oni",
+      role: "Product Analyst",
+      avatarSrc: Hero,
+      socialLinks: [
+        { icon: <FaFacebook />, url: "https://facebook.com" },
+        { icon: <FaTwitter />, url: "https://twitter.com" },
+        { icon: <FaLinkedin />, url: "https://linkedin.com" },
+        { icon: <FaInstagram />, url: "https://linkedin.com" },
+      ],
+    },
+    {
+      name: "Mallela Oni",
+      role: "Product Analyst",
+      avatarSrc: Hero,
+      socialLinks: [
+        { icon: <FaFacebook />, url: "https://facebook.com" },
+        { icon: <FaTwitter />, url: "https://twitter.com" },
+        { icon: <FaLinkedin />, url: "https://linkedin.com" },
+        { icon: <FaInstagram />, url: "https://linkedin.com" },
+      ],
+    },
+    {
+      name: "Mallela Oni",
+      role: "Product Analyst",
+      avatarSrc: Hero,
+      socialLinks: [
+        { icon: <FaFacebook />, url: "https://facebook.com" },
+        { icon: <FaTwitter />, url: "https://twitter.com" },
+        { icon: <FaLinkedin />, url: "https://linkedin.com" },
+        { icon: <FaInstagram />, url: "https://linkedin.com" },
+      ],
+    },
   ];
 
   return (
-    <section className="py-[90px] lg:pb-16 relative">
+    <section className="py-[90px] lg:pb-16 lg:pt-0 relative">
       <div className="container">
         <div className="flex flex-col justify-center items-center">
           <div>
@@ -40,9 +84,9 @@ const OurTeam: React.FC = () => {
               className="flex justify-center items-center"
               text="Our Team"
             />
-            <h2 className="blockSubTitle pSubTitle">Industries We Serve</h2>
+            <h2 className="blockSubTitle pSubTitle">Meet Our Team</h2>
           </div>
-          <div className="flex flex-wrap gap-8 justify-center mt-10">
+          <div className="flex flex-wrap gap-8 justify-center w-full mt-10">
             {teamMembers.map((member, index) => (
               <ProfileCard
                 key={index}

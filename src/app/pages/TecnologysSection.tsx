@@ -20,30 +20,50 @@ function TecnologysSection() {
     { name: string; icon: string }[]
   > = {
     frontend: [
-      { name: "Angular JS", icon: "/angular.png" },
       { name: "TypeScript", icon: "/typescript.png" },
       { name: "React JS", icon: "/react.png" },
       { name: "Next JS", icon: "/next.png" },
       { name: "Vue JS", icon: "/vue.png" },
+      { name: "Electron", icon: "/Electron.png" },
       { name: "Tailwind CSS", icon: "/tailwind.png" },
       { name: "Bootstrap", icon: "/bootstrap.png" },
       { name: "HTML5", icon: "/html5.png" },
     ],
     backend: [
-      { name: "Node.js", icon: "/node.png" },
-      { name: "Express.js", icon: "/express.png" },
+      { name: "Node js", icon: "/node.png" },
+      { name: "Next JS", icon: "/next.png" },
+      { name: "Python", icon: "/python.png" },
+      { name: "Mongodb", icon: "/mongodb.png" },
+      { name: "MySQL", icon: "/mysql.png" },
+      { name: "Solidity", icon: "/solidity.png" },
     ],
     mobile: [
-      { name: "Flutter", icon: "/flutter.png" },
+      { name: "Ios", icon: "/ios.png" },
+      { name: "Android", icon: "/android.png" },
       { name: "React Native", icon: "/reactnative.png" },
+      { name: "Flutter", icon: "/flutter.png" },
+      { name: "Firebase", icon: "/firebase.png" },
+      { name: "Swift", icon: "/swift.png" },
+      { name: "Kotlin", icon: "/kotlin.png" },
+      { name: "JavaScript", icon: "/javascript.png" },
     ],
     "devOps & Cloud": [
       { name: "AWS", icon: "/aws.png" },
+      { name: "Google Clound", icon: "/google.png" },
+      { name: "Jenkins", icon: "/jenkis.png" },
       { name: "Docker", icon: "/docker.png" },
+      { name: "Kubernetes", icon: "/kubernetes.png" },
+      { name: "GitLab", icon: "/gitlab.png" },
+      { name: "Terraform", icon: "/terraform.png" },
     ],
     "Third Party Integration": [
-      { name: "Stripe", icon: "/stripe.png" },
       { name: "PayPal", icon: "/paypal.png" },
+      { name: "Google", icon: "/google.png" },
+      { name: "Cloudflare", icon: "/cloudflare.png" },
+      { name: "Twilio", icon: "/twilio.png" },
+      { name: "Binance Pay", icon: "/binance.png" },
+      { name: "CoinGecko", icon: "/coingecko.png" },
+      { name: "MataMask", icon: "/matamask.png" },
     ],
   };
   return (
@@ -85,17 +105,17 @@ function TecnologysSection() {
               ))}
             </ul>
 
-            <div className="w-full grid grid-cols-1  sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 border-t border-[#eee]  p-10 text-left">
+            <div className=" flex flex-wrap justify-center items-center gap-4 border-t border-[#eee]  p-10 text-left">
               {technologies[activeTab].map((tech) => (
                 <div
                   key={tech.name}
-                  className="space-x-7  tab-boxs text-center hover:bg-[#fbfbfb] p-4 rounded  flex flex-col"
+                  className="space-x-6  tab-boxs text-center hover:bg-[#fbfbfb] p-4 rounded  flex flex-col"
                 >
                   <Image
                     src={tech.icon}
                     alt={tech.name}
-                    width={100} // Provide explicit width
-                    height={100} // Provide explicit height
+                    width={175} // Provide explicit width
+                    height={200} // Provide explicit height
                     className="h-24 mx-auto mb-2"
                   />
                   <h4 className="font-bold text-lg py-6">{tech.name}</h4>

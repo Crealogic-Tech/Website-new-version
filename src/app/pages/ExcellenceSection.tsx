@@ -23,7 +23,7 @@ const ExcellenceSection = () => {
             text="Excellence"
           />
         </div>
-      <div className=" excellence border  border-transparent mt-6" >
+      <div className=" excellence border rounded-[50px] border-transparent mt-6" >
         <ExcellenceBox data={excellenceData} />
       </div>
       </div>

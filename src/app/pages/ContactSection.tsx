@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const ContactSection = () => {
   return (
-    <section className="py-[90px] lg:pb-16 lg:pt-32 ">
+    <section className="py-[90px] lg:py-16">
       <div className="container">
         <div className="flex flex-col justify-center items-center">
           <div>

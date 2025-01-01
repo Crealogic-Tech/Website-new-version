@@ -17,7 +17,7 @@ const ProcessBox: React.FC<ProcessProps> = ({ data }) => {
   return (
     <div className="process__main">
       {data.map((item, index) => (
-        <div key={index} className={`process-box ${index % 2 === 1 ? "right" : ""}`}>
+        <div key={index} className={`process-box shadow-3xl  shadow-[#c06c84] ${index % 2 === 1 ? "right" : ""}`}>
           {/* <div className="step">{item.step}</div> */}
           <div className="content">
             <div className="flex items-center justify-start gap-5 ">

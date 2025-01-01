@@ -113,7 +113,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header data-scroll-index="0" className="fixed w-full top-0 flex items-center z-10 justify-between py-3  bg-white shadow-lg">
+    <header data-scroll-index="0" className="fixed w-full top-0 flex items-center z-50 justify-between py-3  bg-white shadow-lg">
       <div className="container mx-auto px-4 transition-shadow duration-300">
         <div className="flex flex-row justify-between items-center">
           {/* Logo */}

@@ -15,6 +15,9 @@ import ContactSection from "./pages/ContactSection";
 import TecnologysSection from "./pages/TecnologysSection";
 import InderstreSection from "./pages/InderstreSection";
 import OurTeam from "./pages/OurTeam";
+import Footer from "./Components/layout/Footer";
+import TalkToExpertSection from "./pages/TalkToExpertSection";
+import FaqSection from "./pages/FaqSection";
 
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, DrawSVGPlugin, SplitText);
@@ -35,6 +38,9 @@ export default function Home() {
       <InderstreSection />
 
       <ContactSection />
+      <FaqSection />
+      <TalkToExpertSection />
+      <Footer />
     </div>
   );
 }
