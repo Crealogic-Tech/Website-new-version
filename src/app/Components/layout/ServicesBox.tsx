@@ -29,7 +29,7 @@ const ServicesBox: React.FC<ServicesProps> = ({ data }) => {
           <Image
             src={item.src}
             alt={item.alt}
-            className="w-8 h-8  z-10"
+            className="w-12 h-12  z-10"
           />
           </div>
           <h3 className="services_title">

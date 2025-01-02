@@ -21,7 +21,7 @@ const ProcessBox: React.FC<ProcessProps> = ({ data }) => {
           {/* <div className="step">{item.step}</div> */}
           <div className="content">
             <div className="flex items-center justify-start gap-5 ">
-              <Image src={item.src} alt={item.alt} className="w-10 h-10 " />
+              <Image src={item.src} alt={item.alt} className="w-10 h-10 mb-[21px]" />
               <h3 className="title">{item.title}</h3>
             </div>
             <p className="text me-0">{item.pra}</p>

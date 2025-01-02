@@ -2,23 +2,39 @@
 import React from "react";
 import HadingTitle from "../Components/HadingTitle";
 import Image from "next/image";
+import Banking from "@/src/app/assets/images/Banking-Finance.png";
+import Healthcare from "@/src/app/assets/images/Healthcare-Medicine.png";
+import Travel from "@/src/app/assets/images/Travel-Tourism.png";
+import Real from "@/src/app/assets/images/Real-Estate.png";
+import Restaurants from "@/src/app/assets/images/Restaurants.png";
+import Elearning from "@/src/app/assets/images/E-learning.png";
+import Ecommerce from "@/src/app/assets/images/e-commerce.png";
+import Logistics from "@/src/app/assets/images/Logistics-Procurement.png";
+import Social from "@/src/app/assets/images/Social Network.png";
+import SaaS from "@/src/app/assets/images/SaaS.png";
+import Startup from "@/src/app/assets/images/Startup.png";
+import Advertising from "@/src/app/assets/images/Advertising.png";
+import Retail from "@/src/app/assets/images/Retail-store.png";
+import Media from "@/src/app/assets/images/Media-Entertainment.png";
+import Gaming from "@/src/app/assets/images/Gaming.png";
+
 
 const industries = [
-  { name: "Banking & Finance", icon: "/icons/banking.png" },
-  { name: "Healthcare & Medicine", icon: "/icons/healthcare.png" },
-  { name: "Travel & Tourism", icon: "/icons/travel.png" },
-  { name: "Real Estate", icon: "/icons/realestate.png" },
-  { name: "Restaurants", icon: "/icons/restaurants.png" },
-  { name: "E-learning", icon: "/icons/elearning.png" },
-  { name: "E-commerce", icon: "/icons/ecommerce.png" },
-  { name: "Logistics & Procurement", icon: "/icons/logistics.png" },
-  { name: "Social Network", icon: "/icons/social.png" },
-  { name: "SaaS", icon: "/icons/saas.png" },
-  { name: "Startup", icon: "/icons/startup.png" },
-  { name: "Advertising", icon: "/icons/advertising.png" },
-  { name: "Retail store", icon: "/icons/retail.png" },
-  { name: "Media & Entertainment", icon: "/icons/media.png" },
-  { name: "Gaming", icon: "/icons/gaming.png" },
+  { name: "Banking & Finance", icon: Banking },
+  { name: "Healthcare & Medicine", icon: Healthcare },
+  { name: "Travel & Tourism", icon: Travel },
+  { name: "Real Estate", icon: Real },
+  { name: "Restaurants", icon: Restaurants },
+  { name: "E-learning", icon: Elearning },
+  { name: "E-commerce", icon: Ecommerce },
+  { name: "Logistics & Procurement", icon: Logistics },
+  { name: "Social Network", icon: Social },
+  { name: "SaaS", icon: SaaS },
+  { name: "Startup", icon: Startup },
+  { name: "Advertising", icon: Advertising },
+  { name: "Retail store", icon: Retail },
+  { name: "Media & Entertainment", icon: Media },
+  { name: "Gaming", icon: Gaming },
 ];
 
 // Sorting industries alphabetically
@@ -42,18 +58,18 @@ function InderstreSection() {
             {sortedIndustries.map((industry, index) => (
               <div
                 key={index}
-                className="group bg-[#f8fbfc] hover:shadow-lg p-4 rounded-lg flex flex-col items-center text-center transition duration-300"
+                className="group bg-[#f8fbfc] group  p-4 rounded-lg flex flex-col items-center text-center transition duration-300"
               >
-                <div className="bg-white rounded-full p-4 mb-4 shadow-md">
+                <div className="bg-white rounded-full group-hover:shadow-lg group-hover:scale-105 p-4 mb-4 shadow-4xxl group-hover:shadow-[#c06c84]  transition duration-300">
                   <Image
                     src={industry.icon}
                     alt={industry.name}
-                    width={100} // Provide explicit width
-                    height={100} // Provide explicit height
-                    className="h-10 w-10"
+                    width={60} // Provide explicit width
+                    height={60} // Provide explicit height
+                    className="h-10 w-10 group-hover:scale-105  transition duration-300"
                   />
                 </div>
-                <h3 className="font-medium text-gray-800 text-lg group-hover:text-blue-500">
+                <h3 className="font-medium text-gray-800 text-lg group-hover:text-[#c06c84] transition duration-300">
                   {industry.name}
                 </h3>
               </div>

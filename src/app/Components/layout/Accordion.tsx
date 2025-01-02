@@ -1,30 +1,28 @@
 'use client';
-import { useState, useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
+import { FaChevronDown } from 'react-icons/fa';
 
 interface AccordionItemProps {
   id: number;
   title: string;
   content: string;
+  isOpen: boolean;
+  onToggle: () => void;
 }
 
-const Accordion: React.FC<AccordionItemProps> = ({ id, title, content }) => {
-  const [isOpen, setIsOpen] = useState(false);
+const Accordion: React.FC<AccordionItemProps> = ({ id, title, content, isOpen, onToggle }) => {
   const contentRef = useRef<HTMLDivElement>(null);
 
-  const toggleAccordion = () => {
-    setIsOpen(!isOpen);
-
+  useEffect(() => {
     if (contentRef.current) {
-      if (!isOpen) {
-        // Expand content
+      if (isOpen) {
         gsap.to(contentRef.current, {
           height: 'auto',
           duration: 0.5,
           ease: 'power1.out',
         });
       } else {
-        // Collapse content
         gsap.to(contentRef.current, {
           height: 0,
           duration: 0.5,
@@ -32,31 +30,38 @@ const Accordion: React.FC<AccordionItemProps> = ({ id, title, content }) => {
         });
       }
     }
-  };
+  }, [isOpen]);
 
   return (
-    <div className="accordion-item border-b border-gray-700">
+    <div className="accordion-item faq-box">
       <button
-        className="flex items-center justify-between w-full text-left px-4 py-4 text-lg font-semibold text-orange-400 bg-transparent hover:bg-gray-800 transition duration-200"
-        onClick={toggleAccordion}
+        className="flex items-center justify-between w-full text-left px-4 py-4 text-lg font-semibold text-e bg-transparent transition duration-200"
+        onClick={onToggle}
       >
-        <span>
-          <span className="mr-2 text-orange-500">#{id}</span> {title}
+        <div>
+
+          <span className="mr-2 text-black">#{id}</span> 
+        <span className="gradient-texts !text-left !text-xl">
+          {title}
         </span>
-        <span className="transform transition-transform duration-200">
-          {isOpen ? '▲' : '▼'}
+        </div>
+        <span
+          className={`transform transition-transform duration-300 ${
+            isOpen ? '-rotate-180' : 'rotate-0'
+          } text-black`}
+        >
+          <FaChevronDown />
         </span>
       </button>
       <div
         ref={contentRef}
-        className="overflow-hidden text-white bg-gray-900 px-4"
+        className="overflow-hidden text-[#9ea1a5] "
         style={{ height: 0 }}
       >
-        <div className="py-4">{content}</div>
+        <div className="py-4 px-5">{content}</div>
       </div>
     </div>
   );
 };
-
 
 export default Accordion;

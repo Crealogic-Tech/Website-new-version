@@ -276,6 +276,28 @@ img {
   text-align: center;
   font-size: 25px;
 }
+.gradient-texts {
+  background: -webkit-linear-gradient(
+    to right,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 25px;
+}
 
 /* ================================================================================
 ============================= Loader Page ======================================
@@ -744,6 +766,7 @@ span {
   width: calc(50% - 30px);
 }
 
+
 .process-box:before {
   background: #3f506e;
   content: "";
@@ -1097,7 +1120,7 @@ textarea {
   );
   bottom: 0;
   content: "";
-  height: 1px;
+  height: 2px;
   left: 0;
   margin-left: auto;
   margin-right: auto;
@@ -1130,6 +1153,13 @@ textarea {
 
 .accordion-button span {
   margin-right: 32px;
+}
+.faq-box {
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  background: linear-gradient(180deg, #127ee20d, #0988f900 73.86%);
+  border: 1px solid #ffffff1a;
+  border-radius: 16px;
 }
 
 .accordion-button b {
