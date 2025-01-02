@@ -3,6 +3,11 @@ import React from "react";
 import Logo from "../../assets/images/logo.png";
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+import Call from "../../assets/images/phone.svg";
+import Mail from "../../assets/images/mail.svg";
+>>>>>>> Stashed changes
 =======
 import Call from "../../assets/images/phone.svg";
 import Mail from "../../assets/images/mail.svg";
