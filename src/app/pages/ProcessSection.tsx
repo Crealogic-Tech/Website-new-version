@@ -2,6 +2,7 @@ import React from "react";
 import HadingTitle from "../Components/HadingTitle";
 import ProcessBox from "../Components/layout/ProcessBox";
 import WebDev from "../assets/images/web.svg";
+import Image from "next/image";
 
 
 function ProcessSection() {

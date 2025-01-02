@@ -1,4 +1,4 @@
-// File: D:\flutter\Website-new-version\src\app\layout.tsx
+// File: C:\Users\Master.DESKTOP-VIFQA7J\Documents\Website-new-version\src\app\layout.tsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
