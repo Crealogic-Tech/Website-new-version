@@ -33,7 +33,11 @@ const FaqSection: React.FC = () => {
           </div>
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           <div className="max-w-4xl mx-auto mt-10 rounded-lg text-gray-200">
+=======
+          <div className="max-w-3xl mx-auto mt-10 rounded-lg text-gray-200">
+>>>>>>> Stashed changes
 =======
           <div className="max-w-3xl mx-auto mt-10 rounded-lg text-gray-200">
 >>>>>>> Stashed changes
