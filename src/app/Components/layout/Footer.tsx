@@ -1,6 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import Logo from "../../assets/images/logo.png";
+<<<<<<< Updated upstream
+=======
+import Call from "../../assets/images/phone.svg";
+import Mail from "../../assets/images/mail.svg";
+>>>>>>> Stashed changes
 import FooterIcon from "../../assets/images/footer.png";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { BiSolidPhoneCall } from "react-icons/bi";
