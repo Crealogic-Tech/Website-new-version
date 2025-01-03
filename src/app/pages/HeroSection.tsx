@@ -7,7 +7,7 @@ import { useGSAP } from "@gsap/react";
 import gsap, { Linear } from "gsap";
 import { TweenLite } from "gsap/gsap-core";
 
-function HeroSection() {
+function HeroSectio
   const [animationComplete, setAnimationComplete] = useState(false); // Track GSAP animation completion
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [displayText, setDisplayText] = useState("Logical"); // Start with "Logical"
