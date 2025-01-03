@@ -8,6 +8,7 @@ import Mail from "../assets/images/mail.svg";
 import Skype from "../assets/images/skype.svg";
 import Image from "next/image";
 import axios from "axios";
+import Turnstile from "react-turnstile";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -17,17 +18,24 @@ const ContactSection = () => {
     phone: "",
     description: "",
   });
+  const [captchaToken, setCaptchaToken] = useState("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-  
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (!captchaToken) {
+      alert("Please complete the CAPTCHA.");
+      return;
+    }
     try {
-      const response = await axios.post("/api/sendemail/", formData);
+      const response = await axios.post("/api/sendemail", {
+        ...formData,
+        captchaToken,
+      });
       alert(response.data.message);
       setFormData({
         firstName: "",
@@ -36,9 +44,10 @@ const ContactSection = () => {
         phone: "",
         description: "",
       });
+      setCaptchaToken(""); // Reset CAPTCHA
     } catch (error) {
-      alert("Failed to send email. Please try again later.");
       console.error(error);
+      alert("Failed to send email. Please try again later.");
     }
   };
 
@@ -138,11 +147,13 @@ const ContactSection = () => {
                     required
                   ></textarea>
                 </div>
+                <div className="form-row">
+                  <Turnstile
+                    sitekey="0x4AAAAAAA4fOTL7Q5GY82TN"
+                    onVerify={(token) => setCaptchaToken(token)}
+                  />
+                </div>
                 <div className="form-row justify-between items-center">
-                  <div className="flex">
-                    <input type="checkbox" id="not-robot" required />
-                    <label htmlFor="not-robot">I&apos;m not a robot</label>
-                  </div>
                   <button type="submit" className="w-56 h-14">
                     Submit
                   </button>
