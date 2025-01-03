@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Button from "../Components/layout/Button";
+// import Button from "../Components/layout/Button";
 import HadingTitle from "../Components/HadingTitle";
 import Phone from "../assets/images/phone.svg";
 import Check from "../assets/images/check.svg";
