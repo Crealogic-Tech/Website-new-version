@@ -27,7 +27,7 @@ const ContactSection = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      const response = await axios.post("/api/sendemail", formData);
+      const response = await axios.post("/api/sendemail/", formData);
       alert(response.data.message);
       setFormData({
         firstName: "",
