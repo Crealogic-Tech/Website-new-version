@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Button from "../Components/layout/Button";
 import HadingTitle from "../Components/HadingTitle";
 import Phone from "../assets/images/phone.svg";
@@ -6,8 +7,41 @@ import Check from "../assets/images/check.svg";
 import Mail from "../assets/images/mail.svg";
 import Skype from "../assets/images/skype.svg";
 import Image from "next/image";
+import axios from "axios";
 
 const ContactSection = () => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    description: "",
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+  
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post("/api/sendemail", formData);
+      alert(response.data.message);
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        description: "",
+      });
+    } catch (error) {
+      alert("Failed to send email. Please try again later.");
+      console.error(error);
+    }
+  };
+
   return (
     <section className="py-[90px] lg:py-16">
       <div className="container">
@@ -21,7 +55,7 @@ const ContactSection = () => {
           </div>
           <div className="contact-wrapper flex-col lg:flex-row">
             {/* Left Section */}
-            <div className="contact-info  p-5 lg:p-12 text-start">
+            <div className="contact-info p-5 lg:p-12 text-start">
               <h3>Contact Information</h3>
               <p>
                 Fill up the form and our team will get back to you within 24
@@ -29,57 +63,89 @@ const ContactSection = () => {
               </p>
               <ul>
                 <li>
-                  <span role="img" aria-label="phone">
-                    <Image src={Phone} alt="Phone" width={30} height={30} />
-                  </span>{" "}
-                  +91 1234658790
+                  <Image src={Phone} alt="Phone" width={30} height={30} /> +91
+                  1234658790
                 </li>
                 <li>
-                  <span role="img" aria-label="email">
-                    <Image src={Mail} alt="Mail" width={30} height={30} />
-                  </span>{" "}
+                  <Image src={Mail} alt="Mail" width={30} height={30} />{" "}
                   inquiry@crealogic.tech
                 </li>
                 <li>
-                  <span role="img" aria-label="skype">
-                    <Image src={Skype} alt="Skype" width={30} height={30}/>
-                  </span>{" "}
+                  <Image src={Skype} alt="Skype" width={30} height={30} />{" "}
                   Crealogic Tech
-                </li> 
+                </li>
               </ul>
-              <span className="check-icon-p ">
-                <Image src={Check} alt="Check" width={40} height={40} className="pe-2"/>
-                 We guarantee 100% security of your information. We will not
+              <span className="check-icon-p">
+                <Image
+                  src={Check}
+                  alt="Check"
+                  width={40}
+                  height={40}
+                  className="pe-2"
+                />
+                We guarantee 100% security of your information. We will not
                 share the details you provide above with anyone. Your email
                 won&apos;t be used for spamming.
               </span>
             </div>
 
             {/* Right Section */}
-            <div className="contact-form ">
-              <span className="">How do we help?</span>
-              <form>
+            <div className="contact-form">
+              <span>How do we help?</span>
+              <form onSubmit={handleSubmit}>
                 <div className="form-row">
-                  <input type="text" placeholder="First Name" required />
-                  <input type="text" placeholder="Last Name" required />
+                  <input
+                    type="text"
+                    name="firstName"
+                    placeholder="First Name"
+                    value={formData.firstName}
+                    onChange={handleChange}
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="lastName"
+                    placeholder="Last Name"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    required
+                  />
                 </div>
                 <div className="form-row">
-                  <input type="email" placeholder="Email" required />
-                  <input type="tel" placeholder="Phone" required />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                  />
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    required
+                  />
                 </div>
                 <div className="form-row">
                   <textarea
+                    name="description"
                     placeholder="Project Description"
+                    value={formData.description}
+                    onChange={handleChange}
                     required
                   ></textarea>
                 </div>
-
                 <div className="form-row justify-between items-center">
-                  <div className="flex  ">
-                    <input type="checkbox" id="not-robot" />
+                  <div className="flex">
+                    <input type="checkbox" id="not-robot" required />
                     <label htmlFor="not-robot">I&apos;m not a robot</label>
                   </div>
-                  <Button className="w-56 h-14" text="Submit" />
+                  <button type="submit" className="w-56 h-14">
+                    Submit
+                  </button>
                 </div>
               </form>
             </div>
