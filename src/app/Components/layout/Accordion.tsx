@@ -44,10 +44,12 @@ const Accordion: React.FC<AccordionItemProps> = ({
         className="flex items-center justify-between w-full text-left px-4 py-4 text-lg font-semibold text-e bg-transparent transition duration-200"
         onClick={onToggle}
       >
-        <div>
-          <span className="mr-2 text-black">#{id}</span>
+        <div className="block md:hidden">
+        <span className=" mr-2 text-black">#{id}</span>
+
         </div>
-        <div>
+        <div className="flex gap-3">
+          <span className="hidden md:block mr-2 text-black">#{id}</span>
           <span className="gradient-texts !text-left !text-lg md:!text-xl">{title}</span>
         </div>
         <span
