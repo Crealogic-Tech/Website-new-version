@@ -3,7 +3,7 @@
 import Button from "./Button";
 import BurgerBTN from "./BurgerBTN";
 import CloseBTNSVG from "./CloseBTNSVG";
-import NavManu from "./NavMenu";
+// import NavManu from "./NavMenu";
 import Image from "next/image";
 import Logo from "../../assets/images/logo.png";
 import NavItem from "../NavItem";
@@ -35,7 +35,7 @@ const Header: React.FC = () => {
       //   { name: "Custom Software Development", href: "/services" },
       // ],
     },
-    { name: "Projects", href: "/#projects" },
+    { name: "Projects", href: "/#project" },
     // { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
   ];
@@ -109,6 +109,9 @@ const Header: React.FC = () => {
     tl.to(".hamenu", 1, { left: "-102%" });
   };
 
+  const handleNavClick = () => {
+    manuCloseBTN();
+  };
   return (
     <header
       data-scroll-index="0"
@@ -140,9 +143,7 @@ const Header: React.FC = () => {
 
             {/* Contact Button */}
             <Link href="/contact">
-              
-                <Button className="gsapAnime" text="Let's Talk" />
-
+              <Button className="gsapAnime" text="Let's Talk" />
             </Link>
           </div>
 
@@ -167,6 +168,7 @@ const Header: React.FC = () => {
                 <Link
                   className="logo gsapAnime logoBrans cursor-pointer"
                   href="/"
+                  onClick={handleNavClick}
                   aria-label="logobrand"
                 >
                   <Image
@@ -196,28 +198,55 @@ const Header: React.FC = () => {
                   <BrowserRouter>
                     <nav>
                       <ul className="main-menu rest">
-                        <NavManu label="Home" name="Home" route="/" />
-                        <NavManu label="About" name="About" route="/about" />
+                        {navItems.map((item) => (
+                          <li key={item.name}>
+                            <Link
+                              href={item.href}
+                              onClick={handleNavClick}
+                              aria-label={item.name}
+                              className="link cursor-pointer dmenu"
+                            >
+                              <span className="fill-text" data-text={item.name}>
+                                {item.name}
+                              </span>
+                            </Link>
+                          </li>
+                        ))}
+                        {/* <NavManu
+                          onClick={handleNavClick}
+                          label="Home"
+                          name="Home"
+                          route="/"
+                        />
                         <NavManu
+                          onClick={handleNavClick}
+                          label="About"
+                          name="About"
+                          route="/#about"
+                        />
+                        <NavManu
+                          onClick={handleNavClick}
                           label="Services"
                           name="Services"
-                          route="/service"
+                          route="/#service"
                         />
                         <NavManu
+                          onClick={handleNavClick}
                           label="Projects"
                           name="Projects"
-                          route="/projects"
-                        />
-                        {/* <NavManu
+                          route="/#project"
+                        /> */}
+                        {/* <NavManu onClick={handleNavClick }
                           label="Block"
                           name="Block"
                           route="/block"
                         /> */}
-                        <NavManu
+                        {/* <NavManu
+                          onClick={handleNavClick}
                           label="Contact"
                           name="Contact"
                           route="/contact"
-                        />
+                        /> */}
                       </ul>
                     </nav>
                   </BrowserRouter>

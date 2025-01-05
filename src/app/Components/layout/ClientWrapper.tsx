@@ -11,7 +11,7 @@ const ClientWrapper: React.FC<{ children: React.ReactNode }> = ({
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1200); 
+    }, 3200); 
 
     return () => clearTimeout(timer);
   }, []);

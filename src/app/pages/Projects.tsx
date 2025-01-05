@@ -62,7 +62,7 @@ const ProtfoliosData = [
 ]
 
   return (
-    <section className="py-[90px] lg:pb-16 lg:pt-32 relative">
+    <section id='project' className="py-[90px] lg:pb-16 lg:pt-32 relative">
       <div className="container">
         <div className="flex flex-col justify-center items-center">
           <div>

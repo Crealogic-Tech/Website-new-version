@@ -5,6 +5,7 @@ interface NavManuProps {
   label: string;
   name: string;
   route: string;
+  onClick: () => void;
 }
 
 const NavManu: React.FC<NavManuProps> = (props) => {
@@ -15,6 +16,7 @@ const NavManu: React.FC<NavManuProps> = (props) => {
           to={props.route} // Use props.route without quotes
           className="link cursor-pointer dmenu"
           aria-label={props.label}
+          onClick={props.onClick}
         >
           <span className="fill-text" data-text={props.name}>
             {props.name}

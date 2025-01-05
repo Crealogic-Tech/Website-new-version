@@ -370,7 +370,7 @@ img {
 .load-text span {
   -webkit-animation: 1s infinite alternate loading;
   animation: 1s infinite alternate loading;
-  color: var(--foreground);
+  color: var(--color1);
 }
 
 .load-text span:first-child {
