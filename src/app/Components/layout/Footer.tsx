@@ -110,7 +110,7 @@ function Footer() {
 
                   <div className="flex flex-col justify-start items-start">
                     <div className="flex flex-col items-start mb-3">
-                      <strong>Crealogic Sell</strong>
+                      <strong>Crealogic Tech</strong>
                       <div className="flex gap-2 items-center">
                         <Link
                           href="tel:+9181603 43175"
@@ -133,18 +133,7 @@ function Footer() {
                         </Link>
                       </div>
                     </div>
-                    <div className="flex flex-col items-start mb-3 ">
-                      <strong>HR/Corporate Enquiry</strong>
-                      <div className="flex gap-2 items-center">
-                        <Link
-                          href="tel:+9181603 43175"
-                          className="flex items-center  gap-3"
-                        >
-                          <BiSolidPhoneCall className="w-5 h-5 text-[#c06c84]" />
-                          +91 81603 43175
-                        </Link>
-                      </div>
-                    </div>
+                   
                     <div className="flex items-center justify-between gap-5 mt-3">
                       <Link href="https://join.skype.com/invite/thfRVKaY89La"
                         className=" p-2 flex justify-center items-center social-icon rounded-full bg-[#1778f2]"

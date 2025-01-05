@@ -5,9 +5,9 @@ import App1 from '../assets/images/Protfolio/a1.png'
 import App2 from '../assets/images/Protfolio/a2.png'
 // import App3 from '../assets/images/Protfolio/a3.png'
 // import App4 from '../assets/images/Protfolio/a4.png'
-// import App5 from '../assets/images/Protfolio/a5.png'
+import App5 from '../assets/images/Protfolio/a5.png'
 import web1 from '../assets/images/Protfolio/web1.png'
-import web2 from '../assets/images/Protfolio/web4.png'
+// import web2 from '../assets/images/Protfolio/web4.png'
 import web3 from '../assets/images/Protfolio/web3.png'
 import web8 from '../assets/images/Protfolio/web8.png'
 import web5 from '../assets/images/Protfolio/web5.png'
@@ -31,16 +31,12 @@ const ProtfoliosData = [
   //   src: App4,
   //   alt:"Protfolio",
   // },
-  // {
-  //   src: App5,
-  //   alt:"Protfolio",
-  // },
   {
-    src: web1,
+    src: App5,
     alt:"Protfolio",
   },
   {
-    src: web2,
+    src: web1,
     alt:"Protfolio",
   },
   {

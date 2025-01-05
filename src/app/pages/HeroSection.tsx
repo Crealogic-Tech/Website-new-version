@@ -115,8 +115,8 @@ function HeroSection() {
                   {displayText}
                   <span className="blinking-cursor">|</span>
                 </span>{" "} */}
-                <span className="text-[#c06c84]">Logical</span>
-                Execution
+                <span className="text-[#c06c84]">Logical </span>
+                {" "}Execution
               </h1>
             </div>
             <div>
