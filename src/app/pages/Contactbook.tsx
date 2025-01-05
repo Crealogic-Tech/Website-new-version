@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../Components/layout/Button";
+import Link from "next/link";
 
 function Contactbook() {
   return (
@@ -10,10 +11,12 @@ function Contactbook() {
             Empowering Businesses with Custom Software Solutions
           </h3>
           <p className="text-sm lg:text-lg me-0 !text-center">
-          Let’s validate, scale, and innovate your idea and build scalable, impactful
-          software together
+            Let’s validate, scale, and innovate your idea and build scalable,
+            impactful software together
           </p>
-          <Button text="Book Your Consultation" className=""/>
+          <Link href="/contact">
+            <Button text="Book Your Consultation" className="" />
+          </Link>
         </div>
       </div>
     </section>

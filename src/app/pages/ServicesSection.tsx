@@ -4,9 +4,14 @@ import ServicesBox from "../Components/layout/ServicesBox";
 import WebDev from "../assets/images/web-dev.png"; 
 import MobileDev from "../assets/images/mobile-development.png"; 
 import SoftDev from "../assets/images/software-development.png"; 
-import CustomDev from "../assets/images/custom-dev.png"; 
+import CustomDev from "../assets/images/optimization.png"; 
 import BlockDev from "../assets/images/blockchain.png"; 
-import AppDev from "../assets/images/app-development.png"; 
+import DevOps from "../assets/images/devops.png"; 
+import Data from "../assets/images/administration.png"; 
+import Marketing from "../assets/images/global-services.png"; 
+import { useGSAP } from "@gsap/react";
+import gsap, { Linear, TweenLite } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function ServicesSection() {
   const SrvicesData = [
@@ -20,13 +25,13 @@ function ServicesSection() {
       src: MobileDev,
       alt: "Mobile App Development",
       title: "Mobile App Development",
-      pra: "Are you looking to create an innovative mobile app? Whether you need an Android, iOS, or cross-platform solution, we've got you covered. Our mobile app development services prioritize user-friendliness, seamless functionality, and optimal performance to deliver exceptional experiences. Partner with us for your next mobile app development project and turn your idea into reality.",
+      pra: "Whether you need an Android, iOS, or cross-platform solution, we've got you covered. Our mobile app development services prioritize user-friendliness, seamless functionality, and optimal performance to deliver exceptional experiences. Partner with us for your next mobile app development project and turn your idea into reality.",
     },
     {
       src: CustomDev,
       alt: "Custom Software Development",
       title: "Custom Software Development",
-      pra: "Need a tailored software solution for your unique business needs? At Crealogic, we specialize in custom software development that ts your specic challenges, business model, and goals. We deliver secure, scalable software compatible with all major operating systems, devices, and browsers, ensuring your solution is built to grow with your business. Let's create a custom solution that works for you.",
+      pra: "At Crealogic, we specialize in custom software development that ts your specic challenges, business model, and goals. We deliver secure, scalable software compatible with all major operating systems, devices, and browsers, ensuring your solution is built to grow with your business. Let's create a custom solution that works for you.",
     },
     {
       src: SoftDev,
@@ -41,41 +46,59 @@ function ServicesSection() {
       pra: "Unlock the power of blockchain with a secure, transparent, and efcient solution from us to empower your business. Our blockchain experts help to create safe, decentralized, and scalable applications, from smart contracts to complete blockchain ecosystems. We designed to streamline operations and build trust. Transform your operations today with innovative blockchain technology.",
     },
     {
-      src: AppDev,
-      alt: "Web Development",
-      title: "Web Development",
-      pra: "At Crealogic, we specialize in building responsive and quality websites that leave a lasting impression. From custom eCommerce platforms to informative corporate portals, our web development services ensure your online presence drives results. We focus on creating engaging, user-centric designs that help businesses establish a solid online identity and convert visitors into loyal customers.",
+      src: DevOps,
+      alt: "DevOps Services",
+      title: "DevOps Services",
+      pra: "At Crealogic, we deliver seamless DevOps solutions that bridge the gap between development and operations. By leveraging automation, continuous integration, and deployment strategies, we ensure faster development cycles, scalable infrastructure, and minimal downtime. Our services focus on optimizing collaboration, streamlining workflows, and enabling your team to deliver robust, high-performing applications with efficiency and precision.",
     },
     {
-      src: WebDev,
-      alt: "Web Development",
-      title: "Web Development",
-      pra: "At Crealogic, we specialize in building responsive and quality websites that leave a lasting impression. From custom eCommerce platforms to informative corporate portals, our web development services ensure your online presence drives results. We focus on creating engaging, user-centric designs that help businesses establish a solid online identity and convert visitors into loyal customers.",
+      src: Data,
+      alt: "Data Analytics Services",
+      title: "Data Analytics Services",
+      pra: "At Crealogic, we specialize in turning complex data into meaningful insights that drive results. From developing custom analytics dashboards to implementing predictive models, our data analytics solutions empower businesses to make informed decisions. We focus on providing user-centric, actionable insights that optimize operations, uncover opportunities, and establish a data-driven approach to growth.",
     },
     {
-      src: WebDev,
-      alt: "Web Development",
-      title: "Web Development",
-      pra: "At Crealogic, we specialize in building responsive and quality websites that leave a lasting impression. From custom eCommerce platforms to informative corporate portals, our web development services ensure your online presence drives results. We focus on creating engaging, user-centric designs that help businesses establish a solid online identity and convert visitors into loyal customers.",
+      src: Marketing,
+      alt: "Marketing Services",
+      title: "Marketing Services",
+      pra: "At Crealogic, we design impactful marketing strategies that leave a lasting impression on your audience. From tailored digital campaigns to advanced SEO techniques, our services are designed to drive engagement and boost conversions. We focus on creating data-driven strategies and compelling content that help businesses establish a strong online presence and build long-lasting customer relationships.",
     },
   ];
 
+
+  useGSAP(() => {
+    const tl = gsap.timeline({ ease: Linear.easeIn });
+    TweenLite.set(".servicesDotsTitle ", { perspective: 500 });
+    tl.from('.servicesDotsTitle', 1, { y: 100, opacity: 0, rotationX: -100, transformOrigin: "center", stagger: 0.03, }, "collabe")
+        .from('.web3Items', 1, { x: -100, opacity: 0, rotationY: 50, transformOrigin: "center", stagger: 0.1, }, "collabe+=0.2")
+        .fromTo('.marqalter', 1, {
+            x: 200, opacity: 0, delay: 1, transformOrigin: "center"
+        }, { x: -0, opacity: 1, transformOrigin: "center", });
+    ScrollTrigger.create({
+        trigger: ".services-dots",
+        start: "top center",
+        animation: tl
+    });
+});
+
   return (
-    <section className="py-[90px] lg:py-16">
+
+
+    <section id="services" className="py-[90px] lg:py-16">
       <div className="container">
         <div className="flex flex-col justify-center items-center ">
-          <div className="">
+          <div className="servicesDotsTitle">
             <HadingTitle
-              className="flex justify-center items-center"
+              className="flex  justify-center items-center"
               text="Services"
             />
 
-            <h2 className="blockSubTitle pSubTitle">
+            <h2 className=" ">
               Offering End-to-End IT Services for Every Business Need
             </h2>
           </div>
 
-          <ServicesBox data={SrvicesData} />
+          <ServicesBox data={SrvicesData} className="web3Items"/>
         </div>
       </div>
     </section>

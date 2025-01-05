@@ -18,7 +18,7 @@ export const metadata = {
     "As a leading Web & Mobile App Development Company in India, We offer scalable and custom software development services globally. Get a free quote now!",
   keywords: "",
   icons: {
-    icon: "/favicon.ico",
+    icon: "../../favicon.ico",
   },
 };
 
@@ -29,6 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
 
+  
   return (
     <html lang="en">
       <body className="h-full ">

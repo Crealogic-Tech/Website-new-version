@@ -1,27 +1,29 @@
 import React from "react";
 import HadingTitle from "../Components/HadingTitle";
-import WebDev from "../assets/images/web.svg";
+import Skilled from "../assets/images/Skilled.png";
+import Technology from "../assets/images/Technology.png";
+import Quality from "../assets/images/Quality.png";
 import WhyUsBox from "../Components/layout/WhyUsBox";
 
 function WhyUs() {
   const SrvicesData = [
     {
-      src: WebDev,
-      alt: "Web Development",
-      title: "Web Development",
-      pra: "At Crealogic, we specialize in building responsive and quality websites that leave a lasting impression. From custom eCommerce platforms to informative corporate portals, our web development services ensure your online presence drives results. We focus on creating engaging, user-centric designs that help businesses establish a solid online identity and convert visitors into loyal customers.",
+      src: Skilled,
+      alt: "Proven Expertise & Skilled Team",
+      title: "Proven Expertise & Skilled Team",
+      pra: "Our talented, multi-skilled team ensures timely delivery of projects of all sizes, using creative and practical approaches tailored to your business needs.",
     },
     {
-      src: WebDev,
-      alt: "Web Development",
-      title: "Web Development",
-      pra: "At Crealogic, we specialize in building responsive and quality websites that leave a lasting impression. From custom eCommerce platforms to informative corporate portals, our web development services ensure your online presence drives results. We focus on creating engaging, user-centric designs that help businesses establish a solid online identity and convert visitors into loyal customers.",
+      src: Technology,
+      alt: "Cutting-Edge Technology & Collaboration",
+      title: "Cutting-Edge Technology & Collaboration",
+      pra: "Leveraging the latest technologies, we follow a collaborative roadmap with open communication to ensure our solutions align with your company goals.",
     },
     {
-      src: WebDev,
-      alt: "Web Development",
-      title: "Web Development",
-      pra: "At Crealogic, we specialize in building responsive and quality websites that leave a lasting impression. From custom eCommerce platforms to informative corporate portals, our web development services ensure your online presence drives results. We focus on creating engaging, user-centric designs that help businesses establish a solid online identity and convert visitors into loyal customers.",
+      src: Quality,
+      alt: "High-Quality & Customizable Solutions",
+      title: "High-Quality & Customizable Solutions",
+      pra: "Dedicated to building long-term relationships, we provide budget-friendly, customizable solutions that exceed expectations and deliver impactful results.",
     },
   ];
 

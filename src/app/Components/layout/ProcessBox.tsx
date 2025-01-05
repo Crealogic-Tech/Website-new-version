@@ -28,8 +28,8 @@ const ProcessBox: React.FC<ProcessProps> = ({ data }) => {
           </div>
         </div>
       ))}
-      <div className="icon"></div>
-      <div className="icon bottom"></div>
+      <div className="md:icon"></div>
+      <div className="md:icon bottom"></div>
     </div>
   );
 };

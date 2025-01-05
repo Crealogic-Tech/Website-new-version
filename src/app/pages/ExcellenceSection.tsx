@@ -8,9 +8,24 @@ import Projects from "../assets/images/Projects.png"; // Import the image
 
 const ExcellenceSection = () => {
   const excellenceData = [
-    { src: Year, alt: "Year", value: "5", label: "Years" },
-    { src: Country, alt: "Country", value: "4", label: "Countries Served" },
-    { src: Repeat, alt: "Repeat", value: "20", label: "Repeat Clients" },
+    {
+      src: Year,
+      alt: " Years of Experience",
+      value: "3",
+      label: " Years of Experience",
+    },
+    {
+      src: Country,
+      alt: "Countries Served",
+      value: "4",
+      label: "Countries Served",
+    },
+    {
+      src: Repeat,
+      alt: " Clients Served",
+      value: "20",
+      label: " Clients Served",
+    },
     { src: Projects, alt: "Projects", value: "15", label: "Projects" },
   ];
 
@@ -23,9 +38,9 @@ const ExcellenceSection = () => {
             text="Excellence"
           />
         </div>
-      <div className=" excellence border rounded-[50px] border-transparent mt-6" >
-        <ExcellenceBox data={excellenceData} />
-      </div>
+        <div className=" excellence border rounded-[50px] border-transparent mt-6">
+          <ExcellenceBox data={excellenceData} />
+        </div>
       </div>
     </section>
   );

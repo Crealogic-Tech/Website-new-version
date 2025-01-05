@@ -1,76 +1,127 @@
 import React from "react";
 import HadingTitle from "../Components/HadingTitle";
 
-import Hero from "../assets/images/hero-home-image-1.webp";
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";  // You can use any icon library
+import Dats from "../assets/images/dats.png";
+import Smit from "../assets/images/smit.png";
+import MeetK from "../assets/images/Meetk.png";
+import MeetM from "../assets/images/Meetm.png";
+import Prtham from "../assets/images/prtham.png";
+import Riddham from "../assets/images/riddham.png";
+import { FaSkype, FaTwitter, FaLinkedin, FaTelegram } from "react-icons/fa";
 import ProfileCard from "../Components/layout/TeamCard";
 
 const OurTeam: React.FC = () => {
   const teamMembers = [
     {
-      name: "Robert Fox",
+      name: "Dats",
       role: "Founder & CEO",
-      avatarSrc: Hero,
+      avatarSrc: Dats,
       socialLinks: [
-        { icon: <FaFacebook />, url: "https://facebook.com" },  // JSX icon components
-        { icon: <FaTwitter />, url: "https://twitter.com" },
-        { icon: <FaLinkedin />, url: "https://linkedin.com" },
-        { icon: <FaInstagram />, url: "https://linkedin.com" },
+        { icon: <FaTwitter />, url: "https://x.com/Crealogictech" },
+        { icon: <FaTelegram />, url: "https://t.me/crealogictech" },
+        {
+          icon: <FaSkype />,
+          url: "https://join.skype.com/invite/thfRVKaY89La",
+        },
+        {
+          icon: <FaLinkedin />,
+          url: "https://www.linkedin.com/company/crealogictech/",
+        },
       ],
     },
     {
-      name: "Mallela Oni",
-      role: "Product Analyst",
-      avatarSrc: Hero,
+      name: "Smit Kachchadiya",
+      role: "Product Manager",
+      avatarSrc: Smit,
       socialLinks: [
-        { icon: <FaFacebook />, url: "https://facebook.com" },
-        { icon: <FaTwitter />, url: "https://twitter.com" },
-        { icon: <FaLinkedin />, url: "https://linkedin.com" },
-        { icon: <FaInstagram />, url: "https://linkedin.com" },
+        { icon: <FaTwitter />, url: "https://x.com/smitkachhadiy17?s=21" },
+        { icon: <FaTelegram />, url: "https://t.me/smit_kachhadiya" },
+        {
+          icon: <FaSkype />,
+          url: "https://join.skype.com/invite/roz2GKxd4m6V",
+        },
+        {
+          icon: <FaLinkedin />,
+          url: "https://www.linkedin.com/in/smit-kachhadiya-999469224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        },
       ],
     },
     {
-      name: "Mallela Oni",
-      role: "Product Analyst",
-      avatarSrc: Hero,
+      name: "Meet Mangukiya",
+      role: "Frontend Developer",
+      avatarSrc: MeetM,
       socialLinks: [
-        { icon: <FaFacebook />, url: "https://facebook.com" },
         { icon: <FaTwitter />, url: "https://twitter.com" },
-        { icon: <FaLinkedin />, url: "https://linkedin.com" },
-        { icon: <FaInstagram />, url: "https://linkedin.com" },
+        { icon: <FaTelegram />, url: "https://t.me/meetMangukiya2757" },
+        {
+          icon: <FaSkype />,
+          url: "https://join.skype.com/invite/w6QDXdidYOsI",
+        },
+        {
+          icon: <FaLinkedin />,
+          url: "https://www.linkedin.com/in/meet-mangukiya-7a4245252/",
+        },
       ],
     },
     {
-      name: "Mallela Oni",
-      role: "Product Analyst",
-      avatarSrc: Hero,
+      name: "Prtham Kyada",
+      role: "Backend Developer",
+      avatarSrc: Prtham,
       socialLinks: [
-        { icon: <FaFacebook />, url: "https://facebook.com" },
-        { icon: <FaTwitter />, url: "https://twitter.com" },
-        { icon: <FaLinkedin />, url: "https://linkedin.com" },
-        { icon: <FaInstagram />, url: "https://linkedin.com" },
+        {
+          icon: <FaTwitter />,
+          url: "https://x.com/i/flow/login?redirect_after_login=%2Fkyadaprath24129",
+        },
+        { icon: <FaTelegram />, url: "https://t.me/P_kyada" },
+        {
+          icon: <FaSkype />,
+          url: "https://join.skype.com/invite/wGWoAA0MWvca",
+        },
+        {
+          icon: <FaLinkedin />,
+          url: "https://www.linkedin.com/in/pratham-kyada-749209345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
       ],
     },
     {
-      name: "Mallela Oni",
-      role: "Product Analyst",
-      avatarSrc: Hero,
+      name: "Meet Kaswala",
+      role: "Content Manager",
+      avatarSrc: MeetK,
       socialLinks: [
-        { icon: <FaFacebook />, url: "https://facebook.com" },
-        { icon: <FaTwitter />, url: "https://twitter.com" },
-        { icon: <FaLinkedin />, url: "https://linkedin.com" },
-        { icon: <FaInstagram />, url: "https://linkedin.com" },
+        {
+          icon: <FaTwitter />,
+          url: "https://x.com/Mitukaswala1311?t=HlWNwN0eWfFep9NuHs8zXQ&s=09",
+        },
+        { icon: <FaTelegram />, url: "https://t.me/Mitu1311" },
+        {
+          icon: <FaSkype />,
+          url: "https://join.skype.com/invite/rg1UTmA87CfO",
+        },
+        {
+          icon: <FaLinkedin />,
+          url: "https://www.linkedin.com/in/mitu-kaswala",
+        },
       ],
     },
+
     {
-      name: "Mallela Oni",
-      role: "Product Analyst",
-      avatarSrc: Hero,
+      name: "Riddham Patel",
+      role: "Data Analytics",
+      avatarSrc: Riddham,
       socialLinks: [
-        { icon: <FaFacebook />, url: "https://facebook.com" },
-        { icon: <FaTwitter />, url: "https://twitter.com" },
-        { icon: <FaLinkedin />, url: "https://linkedin.com" },
-        { icon: <FaInstagram />, url: "https://linkedin.com" },
+        {
+          icon: <FaTwitter />,
+          url: "https://x.com/RidhamP72112423?t=zZCUPkCk-OqB6hVZfdv1Xg&s=09",
+        },
+        { icon: <FaTelegram />, url: "https://t.me/Ridham2211" },
+        {
+          icon: <FaSkype />,
+          url: "https://join.skype.com/invite/yteG7Eth1W6v",
+        },
+        {
+          icon: <FaLinkedin />,
+          url: "https://www.linkedin.com/in/ridhampatel22?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        },
       ],
     },
   ];

@@ -6,13 +6,15 @@ type ServicesItem = {
   alt: string;
   title: string;
   pra: string;
+
 };
 
 type ServicesProps = {
   data: ServicesItem[];
+  className: string;
 };
 
-const ServicesBox: React.FC<ServicesProps> = ({ data }) => {
+const ServicesBox: React.FC<ServicesProps> = ({ data ,className}) => {
   // const truncateText = (text: string, maxLength: number) => {
   //   if (text.length > maxLength) {
   //     return text.slice(0, maxLength) + "...";
@@ -21,9 +23,9 @@ const ServicesBox: React.FC<ServicesProps> = ({ data }) => {
   // };
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 ">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8 ">
       {data.map((item, index) => (
-        <div key={index} className="services">
+        <div key={index} className={`${className} services`}>
           <div className="services_img_wrap relative">
 
           <Image

@@ -1,3 +1,4 @@
+"use client";
 import AboutSection from "./pages/AboutSection";
 import ExcellenceSection from "./pages/ExcellenceSection";
 import HeroSection from "./pages/HeroSection";
@@ -11,36 +12,49 @@ import ServicesSection from "./pages/ServicesSection";
 import Contactbook from "./pages/Contactbook";
 import WhyUs from "./pages/WhyUs";
 import ProcessSection from "./pages/ProcessSection";
-import ContactSection from "./pages/ContactSection";
 import TecnologysSection from "./pages/TecnologysSection";
 import InderstreSection from "./pages/InderstreSection";
 import OurTeam from "./pages/OurTeam";
 import Footer from "./Components/layout/Footer";
 import TalkToExpertSection from "./pages/TalkToExpertSection";
 import FaqSection from "./pages/FaqSection";
-
+import { useEffect } from "react";
+import Projects from "./pages/Projects";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, DrawSVGPlugin, SplitText);
 
 export default function Home() {
-  return (
-    <div className="mt-[2.5em] h-[100vh]">
-      <HeroSection />
-      <Marque />
-      <ExcellenceSection />
-      <AboutSection />
-      <ServicesSection />
-      <Contactbook />
-      <WhyUs />
-      <ProcessSection />
-      <TecnologysSection />
-      <OurTeam />
-      <InderstreSection />
+  useEffect(() => {
+    // Initialize ScrollSmoother
+    const smoother = ScrollSmoother.create({
+      wrapper: ".wrapper", // specify wrapper for smooth scroll
+      content: ".content", // specify the content to scroll
+      smooth: 5.5, // the smoothness of the scroll
+      effects: true, // enable effects (e.g. ScrollTrigger)
+    });
 
-      <ContactSection />
-      <FaqSection />
-      <TalkToExpertSection />
-      <Footer />
+    // Cleanup on unmount
+    return () => smoother.kill();
+  }, []);
+  return (
+    <div className="wrapper">
+      <div className="mt-[2.5em] h-[100vh]">
+        <HeroSection />
+        <Marque />
+        <ExcellenceSection />
+        <AboutSection />
+        <ServicesSection />
+        <Contactbook />
+        <WhyUs />
+        <ProcessSection />
+        <TecnologysSection />
+        <OurTeam />
+        <Projects />
+        <InderstreSection />
+        <FaqSection />
+        <TalkToExpertSection />
+        <Footer />
+      </div>
     </div>
   );
 }

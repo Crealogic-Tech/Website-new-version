@@ -25,7 +25,7 @@ function Marque() {
   }, []);
 
   return (
-    <section data-scroll-index="2" className="my-16 ">
+    <section data-scroll-index="2" className="my-16">
       <div className="container overflow-hidden relative marquee-mask"> {/* Ensure the content stays within the viewport */}
         <div
           className="flex gap-5 justify-between items-center whitespace-nowrap  py-5"

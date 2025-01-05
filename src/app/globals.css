@@ -201,11 +201,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(53, 92, 125 ,0.3);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #6c5b7b;
   border-radius: 40px;
 }
 
@@ -299,6 +299,21 @@ img {
   font-size: 25px;
 }
 
+
+.wrapper {
+  position: relative !important;
+  height: 100%;
+  overflow: auto !important; /* Disable scrolling on the body */
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: auto; /* Or any value that fits your content */
+  overflow-x: hidden;
+}
+
+
 /* ================================================================================
 ============================= Loader Page ======================================
 ================================================================================ */
@@ -355,7 +370,7 @@ img {
 .load-text span {
   -webkit-animation: 1s infinite alternate loading;
   animation: 1s infinite alternate loading;
-  color: var(--brand-color);
+  color: var(--foreground);
 }
 
 .load-text span:first-child {
@@ -673,7 +688,7 @@ span {
 }
 
 .services .services_img_wrap {
-  background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);
+  /* background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84); */
 
   position: absolute;
   height: 90px;
@@ -696,13 +711,15 @@ span {
   width: 100%;
   border-radius: 24px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.65) 5%, #fff 100%);
-  z-index: -1;
+  z-index: 0;
+  box-shadow: 0 0 10px var(--color1)
+
 }
 .services_title {
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 20px;
   line-height: 1.3333333;
-  margin-top: 24px;
+  margin-top: 40px;
   margin-bottom: 1rem;
   color: #000;
 }
@@ -817,6 +834,7 @@ span {
   display: block;
   font-family: exbit-bold, sans-serif;
   line-height: 20px;
+  font-size: 30px;
 }
 .process-box .title {
   margin-bottom: 21px;
@@ -954,14 +972,13 @@ span {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap !important;
-  margin-bottom: 1.75em;
 }
 
 .contact-wrapper {
   display: flex;
   width: 100%;
-  background: #ffffff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #F9FAFA;
+  box-shadow:0 0 50px rgb(162 182 212 );
   border-radius: 10px;
   overflow: hidden;
   padding: 12px;
@@ -1053,7 +1070,7 @@ span {
 .form-row input,
 .form-row textarea {
   background-color: #ffffff;
-  border: 1px solid #f1f1f1;
+  border: 1px solid #9d9d9d;
   border-radius: 4px;
   font-style: normal;
   font-weight: 400;
@@ -1064,6 +1081,7 @@ span {
   color: rgb(25 39 52 / 50%);
   padding: 17px 20px;
 }
+
 
 textarea {
   resize: none;
@@ -1201,6 +1219,10 @@ textarea {
   h1 {
     font-size: 40px;
   }
+  .title{
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   .about-footer {
     width: 100%;
@@ -1218,6 +1240,10 @@ textarea {
   }
   h1 {
     font-size: 32px;
+  }
+  h2 {
+    font-size: 28px;
+    line-height: 50px;
   }
 
   .hamenu .logo {

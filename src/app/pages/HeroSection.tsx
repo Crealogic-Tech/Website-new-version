@@ -1,11 +1,12 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import HeroImage from "../assets/images/hero-home-image-1.webp";
+import HeroImage from "../assets/images/hero-home-image-1.png";
 import Button from "../Components/layout/Button";
 import { useGSAP } from "@gsap/react";
 import gsap, { Linear } from "gsap";
 import { TweenLite } from "gsap/gsap-core";
+import Link from "next/link";
 
 function HeroSection() {
   const [animationComplete, setAnimationComplete] = useState(false); // Track GSAP animation completion
@@ -14,7 +15,7 @@ function HeroSection() {
   const [isDeleting, setIsDeleting] = useState(false);
   const [typingSpeed, setTypingSpeed] = useState(100);
 
-  const words = ['Logical', 'Professional', 'Secured', 'Creative'];
+  const words = ["Logical", "Professional", "Secured", "Creative"];
 
   // GSAP Animation
   useGSAP(() => {
@@ -105,27 +106,30 @@ function HeroSection() {
   return (
     <section data-scroll-index="1" className="py-[90px] md:pt-24 lg:pt-32">
       <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8" >
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
           <div className="flex flex-col relative titleText">
             <div className="">
               <h1 className="titleText">
                 Your Logical Choice Where Bold Ideas Meet{" "}
-                <span className="text-[#c06c84]">
+                {/* <span className="text-[#c06c84]">
                   {displayText}
                   <span className="blinking-cursor">|</span>
-                </span>{" "}
+                </span>{" "} */}
+                <span className="text-[#c06c84]">Logical</span>
                 Execution
               </h1>
             </div>
             <div>
-              <p className="para-hero">
+              <p className="para-hero me-0 md:me-[60px]">
                 Crealogic is a dynamic force in Web and Mobile App Development.
                 We drive the digital evolution of startups, established brands,
                 and small to medium-sized businesses.
               </p>
             </div>
             <div>
+              <Link href="/contact">
               <Button className="hero-video w-36" text="Enquire Now" />
+              </Link>
             </div>
           </div>
           <div>

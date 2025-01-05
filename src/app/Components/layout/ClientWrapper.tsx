@@ -11,7 +11,7 @@ const ClientWrapper: React.FC<{ children: React.ReactNode }> = ({
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 4500); // Match GSAP loader animation duration
+    }, 1200); 
 
     return () => clearTimeout(timer);
   }, []);

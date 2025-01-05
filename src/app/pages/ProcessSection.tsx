@@ -51,7 +51,7 @@ function ProcessSection() {
       src: Maintenance,
       alt: "Maintenance & Support",
       title: "Maintenance & Support",
-      pra: "We offer continuous support, handling updates, issues, and enhancements to ensure the software stays efcient.",
+      pra: "We offer continuous support, handling updates, issues, and enhancements to ensure the software stays efficient.",
     },
   ];
 

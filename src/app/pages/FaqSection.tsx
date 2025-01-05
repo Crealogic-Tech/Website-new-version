@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import HadingTitle from "../Components/HadingTitle";
 import Accordion from "../Components/layout/Accordion";
@@ -9,29 +9,28 @@ const FaqSection: React.FC = () => {
   const data = [
     {
       id: 1,
-      title: "Can you ensure quality in outstanding web development and mobile app development projects?",
+      title: "Can you ensure quality in outstanding development projects?",
       content:
-        "O-Mantra NFT is the international community of the global decentralized ecosystem and the first-ever Polygon Chain smart contract marketing matrix...",
+        "Crealogic is an expert web development, mobile app development, and custom software development outsourcing company. Our experts comprehensively examine your project requirements and assign them to an appropriate, experienced, and skilled project manager in their field.",
     },
     {
       id: 2,
       title: "How will you keep updated on the progress of the project?",
       content:
-        "You get updates on your projects throughout the entire development process. Our dedicated project manager will be in touch with you throughout the project...",
+        "You get updates on your projects throughout the entire development process. Our dedicated project manager will be in touch with you throughout the project.",
     },
     {
       id: 3,
       title: "What measures do you take to protect data and users?",
       content:
-        "We always keep client data security as our top priority. We apply comprehensive, multi-layered security protocols that include data encryption, rest and in transit, secure coding standards, and regular security audits to keep the data safe. We always keep your data secure and confidential...",
+        "We always keep client data security as our top priority. We apply comprehensive, multi-layered security protocols that include data encryption, rest and in transit, secure coding standards, and regular security audits to keep the data safe. We always keep your data secure and confidential.",
     },
     {
       id: 4,
       title: "What kind of post-launch support do you provide?",
       content:
-        " It depends on the size and kind of the project. We provide the client with 1 to 3 months post support of bug fixing and developmental support. After this period, clients can opt for hourly slots for minor maintenance & updates or choose ongoing yearly maintenance and aid on a retainer basis...",
+        " It depends on the size and kind of the project. We provide the client with 1 to 3 months post support of bug fixing and developmental support. After this period, clients can opt for hourly slots for minor maintenance & updates or choose ongoing yearly maintenance and aid on a retainer basis.",
     },
-    // Add more items as needed
   ];
 
   const handleToggle = (id: number) => {
