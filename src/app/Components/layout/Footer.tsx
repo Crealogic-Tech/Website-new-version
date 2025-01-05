@@ -3,7 +3,7 @@ import React from "react";
 import Logo from "../../assets/images/logo.png";
 import LogoName from "../../assets/images/crealogic.png";
 import FooterIcon from "../../assets/images/footer.png";
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaSkype, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { IoMdMail } from "react-icons/io";
 import Link from "next/link";
@@ -146,30 +146,26 @@ function Footer() {
                       </div>
                     </div>
                     <div className="flex items-center justify-between gap-5 mt-3">
-                      <a
-                        href=""
+                      <Link href="https://join.skype.com/invite/thfRVKaY89La"
                         className=" p-2 flex justify-center items-center social-icon rounded-full bg-[#1778f2]"
                       >
-                        <FaFacebook />
-                      </a>
-                      <a
-                        href=""
+                        <FaSkype />
+                      </Link>
+                      <Link href="https://www.instagram.com/crealogictech?igsh=aHlnMDhrc2lucHBt&utm_source=qr"
                         className=" p-2 flex justify-center items-center social-icon rounded-full bg-[#f00075]"
                       >
                         <FaInstagram />
-                      </a>
-                      <a
-                        href=""
+                      </Link>
+                      <Link href="https://x.com/Crealogictech"
                         className=" p-2 flex justify-center items-center social-icon rounded-full bg-[#1da1f2]"
                       >
                         <FaTwitter />
-                      </a>
-                      <a
-                        href=""
+                      </Link>
+                      <Link href="https://www.linkedin.com/company/crealogictech/"
                         className=" p-2 flex justify-center items-center social-icon rounded-full bg-[#0d66c2]"
                       >
                         <FaLinkedin />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
