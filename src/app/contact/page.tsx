@@ -48,7 +48,7 @@ const ContactSection = () => {
         phone: "",
         description: "",
       });
-      setCaptchaToken(""); 
+      setCaptchaToken("");
     } catch (error) {
       console.error(error);
       alert("Failed to send email. Please try again later.");
@@ -77,26 +77,34 @@ const ContactSection = () => {
                 </p>
                 <ul>
                   <li>
-                    <Link href="tel:+9181603 43175">
+                    <Link
+                      href="tel:+9181603 43175"
+                      target="/"
+                      className="flex items-center gap-3"
+                    >
                       <Image src={Phone} alt="Phone" width={30} height={30} />
-                      +91 +91 81603 43175
+                      +91 81603 43175
                     </Link>
                   </li>
                   <li>
-                    <Link href="mailto:crealogictech@gmail.com">
+                    <Link
+                      href="mailto:crealogictech@gmail.com "
+                      target="/"
+                      className="flex items-center gap-3"
+                    >
                       <Image src={Mail} alt="Mail" width={30} height={30} />
                       crealogictech@gmail.com
                     </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="https://join.skype.com/invite/thfRVKaY89La"
                       target="/"
                       className="flex  items-center gap-3"
                     >
                       <Image src={Skype} alt="Skype" width={30} height={30} />
                       Crealogic Tech
-                    </a>
+                    </Link>
                   </li>
                 </ul>
                 <span className="check-icon-p">
@@ -164,7 +172,7 @@ const ContactSection = () => {
                   </div>
                   <div className="form-row flex justify-between items-center">
                     <Turnstile
-                    className=""
+                      className=""
                       sitekey="0x4AAAAAAA4fOTL7Q5GY82TN"
                       onVerify={(token) => setCaptchaToken(token)}
                     />
