@@ -37,8 +37,8 @@ export default function Home() {
     return () => smoother.kill();
   }, []);
   return (
-    <div className="wrapper">
-      <div className="mt-[2.5em] h-[100vh]">
+    <div className="wrapper ">
+      <div className="mt-[2.5em] h-[95.8vh]">
         <HeroSection />
         <Marque />
         <ExcellenceSection />

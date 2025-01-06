@@ -198,15 +198,18 @@
 
 ::-webkit-scrollbar {
   width: 10px;
+  z-index: 9999;
 }
 
 ::-webkit-scrollbar-track {
   background: rgba(53, 92, 125 ,0.3);
+  z-index: 9999;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #6c5b7b;
   border-radius: 40px;
+  z-index: 9999;
 }
 
 body {
