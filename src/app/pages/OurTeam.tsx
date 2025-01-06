@@ -1,6 +1,5 @@
 import React from "react";
 import HadingTitle from "../Components/HadingTitle";
-
 import Dats from "../assets/images/dats.webp";
 import Smit from "../assets/images/smit.webp";
 import MeetK from "../assets/images/Meetk.webp";
