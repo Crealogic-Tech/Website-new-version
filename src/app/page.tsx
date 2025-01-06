@@ -19,7 +19,7 @@ import Footer from "./Components/layout/Footer";
 import TalkToExpertSection from "./pages/TalkToExpertSection";
 import FaqSection from "./pages/FaqSection";
 import { useEffect } from "react";
-import Projects from "./pages/Projects";
+// import Projects from "./pages/Projects";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, DrawSVGPlugin, SplitText);
 
@@ -49,7 +49,7 @@ export default function Home() {
         <ProcessSection />
         <TecnologysSection />
         <OurTeam />
-        <Projects />
+        {/* <Projects /> */}
         <InderstreSection />
         <FaqSection />
         <TalkToExpertSection />
