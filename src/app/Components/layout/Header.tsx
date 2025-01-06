@@ -5,7 +5,7 @@ import BurgerBTN from "./BurgerBTN";
 import CloseBTNSVG from "./CloseBTNSVG";
 // import NavManu from "./NavMenu";
 import Image from "next/image";
-import Logo from "../../assets/images/logo.png";
+import Logo from "../../assets/images/logo.svg";
 import NavItem from "../NavItem";
 import Link from "next/link"; // Import Link from Next.js
 import { useGSAP } from "@gsap/react";
