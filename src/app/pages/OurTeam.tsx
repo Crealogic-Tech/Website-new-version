@@ -1,12 +1,12 @@
 import React from "react";
 import HadingTitle from "../Components/HadingTitle";
 
-import Dats from "../assets/images/dats.png";
-import Smit from "../assets/images/smit.png";
-import MeetK from "../assets/images/Meetk.png";
-import MeetM from "../assets/images/Meetm.png";
-import Prtham from "../assets/images/prtham.png";
-import Riddham from "../assets/images/riddham.png";
+import Dats from "../assets/images/dats.webp";
+import Smit from "../assets/images/smit.webp";
+import MeetK from "../assets/images/Meetk.webp";
+import MeetM from "../assets/images/Meetm.webp";
+import Prtham from "../assets/images/prtham.webp";
+import Riddham from "../assets/images/riddham.webp";
 import { FaSkype, FaTwitter, FaLinkedin, FaTelegram } from "react-icons/fa";
 import ProfileCard from "../Components/layout/TeamCard";
 

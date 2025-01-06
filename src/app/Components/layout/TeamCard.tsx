@@ -3,6 +3,7 @@ import { useRef } from 'react';
 import { gsap } from 'gsap';
 import Image from 'next/image';
 import { StaticImageData } from 'next/image';
+import Link from 'next/link';
 
 interface SocialLink {
   icon: string | React.ReactElement;
@@ -73,14 +74,15 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ name, role, avatarSrc, social
         >
           {socialLinks.slice(0, Math.ceil(socialLinks.length / 2)).map((social, index) => (
             <li key={index} className="mr-1">
-              <a
+              <Link
+              
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 flex items-center justify-center rounded-full bg-slate-700 text-white"
               >
                 {social.icon}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -101,14 +103,14 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ name, role, avatarSrc, social
         >
           {socialLinks.slice(Math.ceil(socialLinks.length / 2)).map((social, index) => (
             <li key={index} className="mr-1">
-              <a
+              <Link
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 flex items-center justify-center rounded-full bg-slate-700 text-white"
               >
                 {social.icon}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Logo from "../../assets/images/logo.svg";
-import LogoName from "../../assets/images/crealogic.png";
+import LogoName from "../../assets/images/crealogic.svg";
 import FooterIcon from "../../assets/images/footer.png";
 import { FaSkype, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { BiSolidPhoneCall } from "react-icons/bi";

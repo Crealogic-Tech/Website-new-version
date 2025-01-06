@@ -1,12 +1,12 @@
 import React from "react";
 import HadingTitle from "../Components/HadingTitle";
 import ProcessBox from "../Components/layout/ProcessBox";
-import Requirement from "../assets/images/Requirement-Analysis.png";
-import Planning from "../assets/images/Planning-Design.png";
-import Development from "../assets/images/Development.png";
-import Testing from "../assets/images/Testing.png";
-import Deployment from "../assets/images/Deployment.png";
-import Maintenance from "../assets/images/Maintenance-Support.png";
+import Requirement from "../assets/images/Requirement-Analysis.webp";
+import Planning from "../assets/images/Planning-Design.webp";
+import Development from "../assets/images/Development.webp";
+import Testing from "../assets/images/Testing.webp";
+import Deployment from "../assets/images/Deployment.webp";
+import Maintenance from "../assets/images/Maintenance-Support.webp";
 
 
 function ProcessSection() {

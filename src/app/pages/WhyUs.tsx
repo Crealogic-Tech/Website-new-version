@@ -1,8 +1,8 @@
 import React from "react";
 import HadingTitle from "../Components/HadingTitle";
-import Skilled from "../assets/images/Skilled.png";
-import Technology from "../assets/images/Technology.png";
-import Quality from "../assets/images/Quality.png";
+import Skilled from "../assets/images/Skilled.webp";
+import Technology from "../assets/images/Technology.webp";
+import Quality from "../assets/images/Quality.webp";
 import WhyUsBox from "../Components/layout/WhyUsBox";
 
 function WhyUs() {

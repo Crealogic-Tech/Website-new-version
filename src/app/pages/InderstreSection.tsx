@@ -2,21 +2,21 @@
 import React from "react";
 import HadingTitle from "../Components/HadingTitle";
 import Image from "next/image";
-import Banking from "@/src/app/assets/images/Banking-Finance.png";
-import Healthcare from "@/src/app/assets/images/Healthcare-Medicine.png";
-import Travel from "@/src/app/assets/images/Travel-Tourism.png";
-import Real from "@/src/app/assets/images/Real-Estate.png";
-import Restaurants from "@/src/app/assets/images/Restaurants.png";
-import Elearning from "@/src/app/assets/images/E-learning.png";
-import Ecommerce from "@/src/app/assets/images/e-commerce.png";
-import Logistics from "@/src/app/assets/images/Logistics-Procurement.png";
-import Social from "@/src/app/assets/images/Social Network.png";
-import SaaS from "@/src/app/assets/images/SaaS.png";
-import Startup from "@/src/app/assets/images/Startup.png";
-import Advertising from "@/src/app/assets/images/Advertising.png";
-import Retail from "@/src/app/assets/images/Retail-store.png";
-import Media from "@/src/app/assets/images/Media-Entertainment.png";
-import Gaming from "@/src/app/assets/images/Gaming.png";
+import Banking from "@/src/app/assets/images/Banking-Finance.webp";
+import Healthcare from "@/src/app/assets/images/Healthcare-Medicine.webp";
+import Travel from "@/src/app/assets/images/Travel-Tourism.webp";
+import Real from "@/src/app/assets/images/Real-Estate.webp";
+import Restaurants from "@/src/app/assets/images/Restaurants.webp";
+import Elearning from "@/src/app/assets/images/E-learning.webp";
+import Ecommerce from "@/src/app/assets/images/e-commerce.webp";
+import Logistics from "@/src/app/assets/images/Logistics-Procurement.webp";
+import Social from "@/src/app/assets/images/Social Network.webp";
+import SaaS from "@/src/app/assets/images/SaaS.webp";
+import Startup from "@/src/app/assets/images/Startup.webp";
+import Advertising from "@/src/app/assets/images/Advertising.webp";
+import Retail from "@/src/app/assets/images/Retail-store.webp";
+import Media from "@/src/app/assets/images/Media-Entertainment.webp";
+import Gaming from "@/src/app/assets/images/Gaming.webp";
 
 
 const industries = [
