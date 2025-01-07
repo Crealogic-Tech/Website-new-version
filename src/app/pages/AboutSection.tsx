@@ -17,7 +17,7 @@ function AboutSection() {
     TweenLite.set(".para-about ", { perspective: 500 });
     const tl = gsap.timeline({
       ease: Linear.easeInOut,
-      onComplete: () => setAnimationComplete(true), // Set animationComplete to true when GSAP finishes
+      onComplete: () => setAnimationComplete(true), 
     });
 
     tl.from(
@@ -49,7 +49,7 @@ function AboutSection() {
   });
 
   useEffect(() => {
-    if (!animationComplete) return; // Start typewriter only after GSAP animation completes
+    if (!animationComplete) return; 
   }, [animationComplete]);
 
   return (

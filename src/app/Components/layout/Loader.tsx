@@ -3,7 +3,6 @@ import gsap from "gsap";
 import TextPlugin from "gsap/TextPlugin";
 import { EasePack, SlowMo } from "gsap/all";
 
-// Register GSAP plugins
 gsap.registerPlugin(TextPlugin, SlowMo, EasePack);
 
 const Loader = () => {

@@ -149,8 +149,8 @@ function TecnologysSection() {
                   <Image
                     src={tech.icon}
                     alt={tech.name}
-                    width={60} // Provide explicit width
-                    height={60} // Provide explicit height
+                    width={60} 
+                    height={60} 
                     className=" mx-auto mb-2"
                   />
                   <h4 className="font-bold text-lg py-6">{tech.name}</h4>

@@ -7,7 +7,7 @@ type ExcellenceItem = {
   value: string;
   label: string;
   alt: string;
-  src: StaticImageData; // StaticImageData type
+  src: StaticImageData; 
 };
 
 type ExcellenceGridProps = {
@@ -16,7 +16,7 @@ type ExcellenceGridProps = {
 
 const ExcellenceBox: React.FC<ExcellenceGridProps> = ({ data }) => {
   useEffect(() => {
-    // Run counter animation after the component is mounted
+    
     const counters = document.querySelectorAll(".counter");
 
     counters.forEach((counter) => {

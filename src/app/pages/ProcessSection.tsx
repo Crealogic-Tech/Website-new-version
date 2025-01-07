@@ -74,58 +74,6 @@ function ProcessSection() {
         </div>
       </div>
     </section>
-
-    // <section className="py-[90px] lg:py-16">
-    //   <div className="container">
-    //     <div className="flex flex-col justify-center items-center">
-    //       <div>
-    //         <HadingTitle
-    //           className="flex justify-center items-center"
-    //           text="Process"
-    //         />
-    //         <h2 className="blockSubTitle pSubTitle">
-    //           Our Software Development Process
-    //         </h2>
-    //       </div>
-
-    //       <div className="relative">
-    //         <div className="grid grid-cols-3 gap-12">
-    //           {ProcessData.map((item, index) => {
-    //             let customClass = "";
-
-    //             // Apply specific classes based on the index
-    //             if(index === 0 || index === 1 ) {
-    //               customClass = "rDirection";
-    //             }
-    //             else if (index === 2) {
-    //               customClass = "bDirection"; // Index 3 (array index 2) gets "bottom" class
-    //             } else if (index === 4 || index === 5) {
-    //               customClass = "lDirection"; // Index 4 and 5 (array index 3 and 4) get "right" class
-    //             } else if (index === 3) {
-    //               customClass = "sDirection"; // Index 6 (array index 5) gets "left" class
-    //             }
-
-    //             return (
-    //               <div key={index} className={`process-box ${customClass}`}>
-    //                 <div className="content">
-    //                   <div className="flex items-center justify-start gap-5 mb-4">
-    //                     <Image
-    //                     src={item.src}
-    //                       alt={item.alt}
-    //                       className="w-10 h-10"
-    //                     />
-    //                     <h3 className="title">{item.title}</h3>
-    //                   </div>
-    //                   <p className="text me-0">{item.pra}</p>
-    //                 </div>
-    //               </div>
-    //             );
-    //           })}
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </section>
   );
 }
 

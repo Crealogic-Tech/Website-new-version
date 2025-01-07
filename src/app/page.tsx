@@ -19,21 +19,20 @@ import Footer from "./Components/layout/Footer";
 import TalkToExpertSection from "./pages/TalkToExpertSection";
 import FaqSection from "./pages/FaqSection";
 import { useEffect } from "react";
-// import Projects from "./pages/Projects";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, DrawSVGPlugin, SplitText);
 
 export default function Home() {
   useEffect(() => {
-    // Initialize ScrollSmoother
+  
     const smoother = ScrollSmoother.create({
-      wrapper: ".wrapper", // specify wrapper for smooth scroll
-      content: ".content", // specify the content to scroll
-      smooth: 5.5, // the smoothness of the scroll
-      effects: true, // enable effects (e.g. ScrollTrigger)
+      wrapper: ".wrapper",
+      content: ".content",
+      smooth: 5.5,
+      effects: true,
     });
 
-    // Cleanup on unmount
+  
     return () => smoother.kill();
   }, []);
   return (

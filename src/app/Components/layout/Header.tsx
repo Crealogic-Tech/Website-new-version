@@ -7,7 +7,7 @@ import CloseBTNSVG from "./CloseBTNSVG";
 import Image from "next/image";
 import Logo from "../../assets/images/logo.svg";
 import NavItem from "../NavItem";
-import Link from "next/link"; // Import Link from Next.js
+import Link from "next/link"; 
 import { useGSAP } from "@gsap/react";
 import gsap, { Linear } from "gsap";
 import { BrowserRouter } from "react-router";
@@ -40,7 +40,7 @@ const Header: React.FC = () => {
     { name: "Contact", href: "/contact" },
   ];
 
-  // Handle hover animation for burger menu
+
   const mousFunc = () => {
     gsap.fromTo(
       "#menu-burger line",
@@ -55,7 +55,7 @@ const Header: React.FC = () => {
     );
   };
 
-  // Handle hover animation for close menu button
+
   const mousCloseFunc = () => {
     gsap.fromTo(
       "#menu-close path",
@@ -65,12 +65,11 @@ const Header: React.FC = () => {
     );
   };
 
-  // GSAP animation when component mounts
+
   useGSAP(() => {
     gsap.from(".gsapAnime", 1, { y: -100, ease: Linear.easeOut });
   });
 
-  // // Burger menu button animation
   const manuBTN = () => {
     document.body.classList.add("fixedBody");
     const tl = gsap.timeline();
@@ -119,7 +118,7 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto px-8 transition-shadow duration-300">
         <div className="flex flex-row justify-between items-center px-4">
-          {/* Logo */}
+
           <Link
             className="logo gsapAnime logoBrans cursor-pointer"
             href="/"
@@ -134,23 +133,23 @@ const Header: React.FC = () => {
           </Link>
 
           <div className="hidden lg:flex justify-between items-center gap-4">
-            {/* Navigation */}
+
             <nav className="flex gsapAnime items-center bdevBTN gap-6">
               {navItems.map((item) => (
                 <NavItem key={item.name} {...item} />
               ))}
             </nav>
 
-            {/* Contact Button */}
+
             <Link href="/contact">
               <Button className="gsapAnime" text="Let's Talk" />
             </Link>
           </div>
 
-          {/* Burger menu button for small screens */}
+
           <div className="flex lg:hidden justify-center items-center md:gap-4">
             <Link
-              href="" // Add the target route path here
+              href="" 
               className="gsapAnime logoBrans burderBTN"
               onMouseEnter={mousFunc}
               onClick={manuBTN}

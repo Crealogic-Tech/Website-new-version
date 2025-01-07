@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
-
-// Define the interface for props outside of the component function
+ 
 interface NavManuProps {
   label: string;
   name: string;
@@ -13,7 +12,7 @@ const NavManu: React.FC<NavManuProps> = (props) => {
     <li>
       <div className="">
         <NavLink
-          to={props.route} // Use props.route without quotes
+          to={props.route} 
           className="link cursor-pointer dmenu"
           aria-label={props.label}
           onClick={props.onClick}

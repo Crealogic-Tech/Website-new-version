@@ -9,21 +9,21 @@ import { TweenLite } from "gsap/gsap-core";
 import Link from "next/link";
 
 function HeroSection() {
-  const [animationComplete, setAnimationComplete] = useState(false); // Track GSAP animation completion
+  const [animationComplete, setAnimationComplete] = useState(false); 
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const [displayText, setDisplayText] = useState("Logical"); // Start with "Logical"
+  const [displayText, setDisplayText] = useState("Logical"); 
   const [isDeleting, setIsDeleting] = useState(false);
   const [typingSpeed, setTypingSpeed] = useState(100);
 
   const words = ["Logical", "Professional", "Secured", "Creative"];
 
-  // GSAP Animation
+  
   useGSAP(() => {
     TweenLite.set(".titleText ", { perspective: 500 });
     TweenLite.set(".para-hero ", { perspective: 500 });
     const tl = gsap.timeline({
       ease: Linear.easeInOut,
-      onComplete: () => setAnimationComplete(true), // Set animationComplete to true when GSAP finishes
+      onComplete: () => setAnimationComplete(true), 
     });
 
     tl.from(
@@ -67,14 +67,14 @@ function HeroSection() {
       );
   });
 
-  // Typewriter Effect
+  
   useEffect(() => {
-    if (!animationComplete) return; // Start typewriter only after GSAP animation completes
+    if (!animationComplete) return; 
 
     const word = words[currentWordIndex];
 
     if (!isDeleting && displayText === word) {
-      setTimeout(() => setIsDeleting(true), 2000); // Pause before deleting
+      setTimeout(() => setIsDeleting(true), 2000); 
     } else if (isDeleting && displayText === "") {
       setIsDeleting(false);
       setCurrentWordIndex((prev) => (prev + 1) % words.length);
@@ -83,8 +83,8 @@ function HeroSection() {
         setDisplayText(
           (prev) =>
             isDeleting
-              ? prev.slice(0, prev.length - 1) // Remove characters
-              : word.slice(0, prev.length + 1) // Add characters
+              ? prev.slice(0, prev.length - 1) 
+              : word.slice(0, prev.length + 1) 
         );
       }, typingSpeed);
 
@@ -100,7 +100,7 @@ function HeroSection() {
   ]);
 
   useEffect(() => {
-    setTypingSpeed(isDeleting ? 50 : 300); // Adjust speed when deleting vs typing
+    setTypingSpeed(isDeleting ? 50 : 300); 
   }, [isDeleting]);
 
   return (

@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image"; // Import StaticImageData
+import Image, { StaticImageData } from "next/image"; 
 import React from "react";
 
 type ServicesItem = {

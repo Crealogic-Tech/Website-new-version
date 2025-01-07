@@ -37,7 +37,7 @@ const industries = [
   { name: "Gaming", icon: Gaming },
 ];
 
-// Sorting industries alphabetically
+
 const sortedIndustries = industries.sort((a, b) =>
   a.name.localeCompare(b.name)
 );
@@ -64,8 +64,8 @@ function InderstreSection() {
                   <Image
                     src={industry.icon}
                     alt={industry.name}
-                    width={60} // Provide explicit width
-                    height={60} // Provide explicit height
+                    width={60} 
+                    height={60} 
                     className="h-10 w-10 group-hover:scale-105  transition duration-300"
                   />
                 </div>
