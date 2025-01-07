@@ -32,7 +32,7 @@ export default function RootLayout({
   
   return (
     <html lang="en">
-      <body className="h-full ">
+      <body >
         <ClientWrapper>
           <Header />
           <main>{children}</main>

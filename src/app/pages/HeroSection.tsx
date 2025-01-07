@@ -104,7 +104,7 @@ function HeroSection() {
   }, [isDeleting]);
 
   return (
-    <section data-scroll-index="1" className="py-[90px] md:pt-24 lg:pt-32">
+    <section data-scroll-index="1" className="py-[90px] md:pt-24 lg:pt-24">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
           <div className="flex flex-col relative titleText">

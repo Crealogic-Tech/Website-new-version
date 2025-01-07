@@ -38,7 +38,7 @@ export default function Home() {
   }, []);
   return (
     <div className="wrapper ">
-      <div className="mt-[2.5em] h-[95.8vh]">
+      <div className=" h-full">
         <HeroSection />
         <Marque />
         <ExcellenceSection />
