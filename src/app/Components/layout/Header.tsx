@@ -126,8 +126,10 @@ const Header: React.FC = () => {
           >
             <Image
               src={Logo}
-              loading="lazy"
+              loading="eager"
               alt="Logo"
+              width={70} 
+              height={70}
               className="image-4 w-[70px] headerLogo cursor-pointer"
             />
           </Link>
@@ -172,8 +174,10 @@ const Header: React.FC = () => {
                 >
                   <Image
                     src={Logo}
-                    loading="lazy"
+                    loading="eager"
                     alt="Logo"
+                    width={70} 
+              height={70}
                     className="image-4 w-16 headerLogo cursor-pointer"
                   />
                 </Link>

@@ -27,7 +27,7 @@ const WhyUsBox: React.FC<ServicesProps> = ({ data }) => {
           key={index}
           className="flex flex-col justify-start items-start p-4 border  border-[#9f6496]  rounded-xl serviceHover"
         >
-          <Image src={item.src} alt={item.alt} className="w-16 h-16 " />
+          <Image src={item.src} alt={item.alt} width={64} height={64} className="w-16 h-16 " />
           <h3 className="text-lg text-start font-semibold mt-6">
             {item.title}
           </h3>

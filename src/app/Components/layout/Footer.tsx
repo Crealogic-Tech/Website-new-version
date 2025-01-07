@@ -23,7 +23,7 @@ function Footer() {
                   height={60}
                   className="mb-4"
                 />
-                <Image src={LogoName} alt="" className="w-60" />
+                <Image src={LogoName} alt="" width={240}  className="w-60" />
                 <p className="m-0  ">
                   Where visionaries and technologists unite to craft brilliance
                   for a connected world!

@@ -17,7 +17,7 @@ const ProtfolioList:React.FC<ProtfolioProps> =({data,className}) => {
         {data.map((item, index) => (
 
         <div key={index} className={`${className} excellences  border border-[#c06c84] rounded-xl p-3 m-3`}>
-            <Image src={item.src} alt={item.alt} className='w-80 h-60 rounded-xl'/>
+            <Image src={item.src} alt={item.alt}  width={320} height={240} className='w-80 h-60 rounded-xl'/>
         </div>
         ))};
     </div>

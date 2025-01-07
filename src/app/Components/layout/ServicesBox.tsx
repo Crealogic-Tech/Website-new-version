@@ -31,6 +31,8 @@ const ServicesBox: React.FC<ServicesProps> = ({ data ,className}) => {
           <Image
             src={item.src}
             alt={item.alt}
+            width={48}
+            height={48}
             className="w-12 h-12  z-10"
           />
           </div>
