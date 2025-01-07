@@ -847,14 +847,15 @@ span {
 }
 
 .process-box .title:after {
-  background: linear-gradient(to right, #c06c84, #6c5b7b, #355c7d);
+  background: linear-gradient(90deg, hsla(22, 88%, 78%, 0), #355c7d 17%, #c06c84 75%, rgba(255, 151, 213, 0));
   border-radius: 1.2px;
   bottom: 0;
   content: "";
-  height: 4px;
+  height: 2px;
   left: 0;
   position: absolute;
-  width: 60px;
+  width: 100%;
+  opacity: 0.8;
 }
 
 .process-box.right {

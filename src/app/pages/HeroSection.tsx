@@ -9,21 +9,20 @@ import { TweenLite } from "gsap/gsap-core";
 import Link from "next/link";
 
 function HeroSection() {
-  const [animationComplete, setAnimationComplete] = useState(false); 
+  const [animationComplete, setAnimationComplete] = useState(false);
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const [displayText, setDisplayText] = useState("Logical"); 
+  const [displayText, setDisplayText] = useState("Logical");
   const [isDeleting, setIsDeleting] = useState(false);
   const [typingSpeed, setTypingSpeed] = useState(100);
 
   const words = ["Logical", "Professional", "Secured", "Creative"];
 
-  
   useGSAP(() => {
     TweenLite.set(".titleText ", { perspective: 500 });
     TweenLite.set(".para-hero ", { perspective: 500 });
     const tl = gsap.timeline({
       ease: Linear.easeInOut,
-      onComplete: () => setAnimationComplete(true), 
+      onComplete: () => setAnimationComplete(true),
     });
 
     tl.from(
@@ -67,24 +66,22 @@ function HeroSection() {
       );
   });
 
-  
   useEffect(() => {
-    if (!animationComplete) return; 
+    if (!animationComplete) return;
 
     const word = words[currentWordIndex];
 
     if (!isDeleting && displayText === word) {
-      setTimeout(() => setIsDeleting(true), 2000); 
+      setTimeout(() => setIsDeleting(true), 2000);
     } else if (isDeleting && displayText === "") {
       setIsDeleting(false);
       setCurrentWordIndex((prev) => (prev + 1) % words.length);
     } else {
       const timeout = setTimeout(() => {
-        setDisplayText(
-          (prev) =>
-            isDeleting
-              ? prev.slice(0, prev.length - 1) 
-              : word.slice(0, prev.length + 1) 
+        setDisplayText((prev) =>
+          isDeleting
+            ? prev.slice(0, prev.length - 1)
+            : word.slice(0, prev.length + 1)
         );
       }, typingSpeed);
 
@@ -100,7 +97,7 @@ function HeroSection() {
   ]);
 
   useEffect(() => {
-    setTypingSpeed(isDeleting ? 50 : 300); 
+    setTypingSpeed(isDeleting ? 50 : 300);
   }, [isDeleting]);
 
   return (
@@ -115,8 +112,7 @@ function HeroSection() {
                   {displayText}
                   <span className="blinking-cursor">|</span>
                 </span>{" "} */}
-                <span className="text-[#c06c84]">Logical </span>
-                {" "}Execution
+                <span className="text-[#c06c84]">Logical </span> Execution
               </h1>
             </div>
             <div>
@@ -128,12 +124,17 @@ function HeroSection() {
             </div>
             <div>
               <Link href="/contact">
-              <Button className="hero-video w-36" text="Enquire Now" />
+                <Button className="hero-video w-36" text="Enquire Now" />
               </Link>
             </div>
           </div>
           <div>
-            <Image alt="" className="hero-video" src={HeroImage} />
+            <Image
+              alt="banner image"
+              className="hero-video"
+              loading="eager"
+              src={HeroImage}
+            />
           </div>
         </div>
       </div>
