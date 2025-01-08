@@ -1,9 +1,9 @@
 import React from "react";
 import HadingTitle from "../Components/HadingTitle";
-import Dats from "../assets/images/Dats.svg";
+// import Dats from "../assets/images/Dats.svg";
 import Smit from "../assets/images/smit.svg";
 import MeetK from "../assets/images/Meetk.svg";
-import MeetM from "../assets/images/Meetm.svg";
+// import MeetM from "../assets/images/Meetm.svg";
 import Prtham from "../assets/images/prtham.svg";
 import Riddham from "../assets/images/riddham.svg";
 import { FaSkype, FaTwitter, FaLinkedin, FaTelegram } from "react-icons/fa";
@@ -11,23 +11,23 @@ import ProfileCard from "../Components/layout/TeamCard";
 
 const OurTeam: React.FC = () => {
   const teamMembers = [
-    {
-      name: "Dats",
-      role: "Founder & CEO",
-      avatarSrc: Dats,
-      socialLinks: [
-        { icon: <FaTwitter />, url: "https://x.com/Crealogictech" },
-        { icon: <FaTelegram />, url: "https://t.me/crealogictech" },
-        {
-          icon: <FaSkype />,
-          url: "https://join.skype.com/invite/thfRVKaY89La",
-        },
-        {
-          icon: <FaLinkedin />,
-          url: "https://www.linkedin.com/company/crealogictech/",
-        },
-      ],
-    },
+    // {
+    //   name: "Dats",
+    //   role: "Founder & CEO",
+    //   avatarSrc: Dats,
+    //   socialLinks: [
+    //     { icon: <FaTwitter />, url: "https://x.com/Crealogictech" },
+    //     { icon: <FaTelegram />, url: "https://t.me/crealogictech" },
+    //     {
+    //       icon: <FaSkype />,
+    //       url: "https://join.skype.com/invite/thfRVKaY89La",
+    //     },
+    //     {
+    //       icon: <FaLinkedin />,
+    //       url: "https://www.linkedin.com/company/crealogictech/",
+    //     },
+    //   ],
+    // },
     {
       name: "Smit Kachhadiya",
       role: "Product Manager",
@@ -45,23 +45,23 @@ const OurTeam: React.FC = () => {
         },
       ],
     },
-    {
-      name: "Meet Mangukiya",
-      role: "Frontend Developer",
-      avatarSrc: MeetM,
-      socialLinks: [
-        { icon: <FaTwitter />, url: "https://twitter.com" },
-        { icon: <FaTelegram />, url: "https://t.me/meetMangukiya2757" },
-        {
-          icon: <FaSkype />,
-          url: "https://join.skype.com/invite/w6QDXdidYOsI",
-        },
-        {
-          icon: <FaLinkedin />,
-          url: "https://www.linkedin.com/in/meet-mangukiya-7a4245252/",
-        },
-      ],
-    },
+    // {
+    //   name: "Meet Mangukiya",
+    //   role: "Frontend Developer",
+    //   avatarSrc: MeetM,
+    //   socialLinks: [
+    //     { icon: <FaTwitter />, url: "https://twitter.com" },
+    //     { icon: <FaTelegram />, url: "https://t.me/meetMangukiya2757" },
+    //     {
+    //       icon: <FaSkype />,
+    //       url: "https://join.skype.com/invite/w6QDXdidYOsI",
+    //     },
+    //     {
+    //       icon: <FaLinkedin />,
+    //       url: "https://www.linkedin.com/in/meet-mangukiya-7a4245252/",
+    //     },
+    //   ],
+    // },
     {
       name: "Pratham Kyada",
       role: "Backend Developer",

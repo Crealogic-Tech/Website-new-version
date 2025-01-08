@@ -15,8 +15,6 @@ function HeroSection() {
   const [isDeleting, setIsDeleting] = useState(false);
   const [typingSpeed, setTypingSpeed] = useState(100);
 
-  const words = ["Logical", "Professional", "Secured", "Creative"];
-
   useGSAP(() => {
     TweenLite.set(".titleText ", { perspective: 500 });
     TweenLite.set(".para-hero ", { perspective: 500 });
@@ -68,9 +66,10 @@ function HeroSection() {
 
   useEffect(() => {
     if (!animationComplete) return;
-
+  
+    const words = ["Logical", "Professional", "Secured", "Creative"];  // Move words here
     const word = words[currentWordIndex];
-
+  
     if (!isDeleting && displayText === word) {
       setTimeout(() => setIsDeleting(true), 2000);
     } else if (isDeleting && displayText === "") {
@@ -84,18 +83,17 @@ function HeroSection() {
             : word.slice(0, prev.length + 1)
         );
       }, typingSpeed);
-
+  
       return () => clearTimeout(timeout);
     }
   }, [
     displayText,
     isDeleting,
     currentWordIndex,
-    words,
     typingSpeed,
     animationComplete,
   ]);
-
+  
   useEffect(() => {
     setTypingSpeed(isDeleting ? 50 : 300);
   }, [isDeleting]);
@@ -117,9 +115,9 @@ function HeroSection() {
             </div>
             <div>
               <p className="para-hero me-0 md:me-[60px]">
-                Crealogic is a dynamic force in Web & Mobile App Development.
-                We drive the digital evolution of startups, established brands,
-                and small to medium-sized businesses.
+                Crealogic is a dynamic force in Web & Mobile App Development. We
+                drive the digital evolution of startups, established brands, and
+                small to medium-sized businesses.
               </p>
             </div>
             <div>
