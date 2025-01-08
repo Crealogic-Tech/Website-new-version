@@ -29,7 +29,7 @@ const OurTeam: React.FC = () => {
       ],
     },
     {
-      name: "Smit Kachchadiya",
+      name: "Smit Kachhadiya",
       role: "Product Manager",
       avatarSrc: Smit,
       socialLinks: [
@@ -63,7 +63,7 @@ const OurTeam: React.FC = () => {
       ],
     },
     {
-      name: "Prtham Kyada",
+      name: "Pratham Kyada",
       role: "Backend Developer",
       avatarSrc: Prtham,
       socialLinks: [

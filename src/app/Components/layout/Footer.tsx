@@ -24,7 +24,7 @@ function Footer() {
                   className="mb-4"
                 />
                 <Image src={LogoName} alt="" width={240}  className="w-60" />
-                <p className="m-0  ">
+                <p className="m-0 mt-3 ">
                   Where visionaries and technologists unite to craft brilliance
                   for a connected world!
                 </p>

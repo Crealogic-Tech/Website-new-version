@@ -2,11 +2,11 @@ import React from "react";
 import HadingTitle from "../Components/HadingTitle";
 import ProcessBox from "../Components/layout/ProcessBox";
 import Requirement from "../assets/images/Requirement-Analysis.svg";
-import Planning from "../assets/images/Planning-Design.svg";
+import Planning from "../assets/images/Planning & Design.svg";
 import Development from "../assets/images/Development.svg";
 import Testing from "../assets/images/Testing.svg";
 import Deployment from "../assets/images/Deployment.svg";
-import Maintenance from "../assets/images/Maintenance-Support.svg";
+import Maintenance from "../assets/images/Maintenance & Support.svg";
 
 
 function ProcessSection() {
