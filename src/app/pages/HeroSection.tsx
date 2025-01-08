@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import HeroImage from "../assets/images/hero-home-image-1.webp";
+import HeroImage from "../assets/images/hero-home-image-1.svg";
 import Button from "../Components/layout/Button";
 import { useGSAP } from "@gsap/react";
 import gsap, { Linear } from "gsap";

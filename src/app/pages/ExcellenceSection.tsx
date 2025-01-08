@@ -1,10 +1,10 @@
 import React from "react";
 import HadingTitle from "../Components/HadingTitle";
 import ExcellenceBox from "../Components/ExcellenceBox";
-import Year from "../assets/images/years.webp"; 
-import Country from "../assets/images/country.webp"; 
-import Repeat from "../assets/images/repeat-customers.webp"; 
-import Projects from "../assets/images/Projects.webp"; 
+import Year from "../assets/images/years.svg"; 
+import Country from "../assets/images/country.svg"; 
+import Repeat from "../assets/images/repeat-customers.svg"; 
+import Projects from "../assets/images/Projects.svg"; 
 
 const ExcellenceSection = () => {
   const excellenceData = [
