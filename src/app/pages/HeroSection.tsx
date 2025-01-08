@@ -117,7 +117,7 @@ function HeroSection() {
             </div>
             <div>
               <p className="para-hero me-0 md:me-[60px]">
-                Crealogic is a dynamic force in Web and Mobile App Development.
+                Crealogic is a dynamic force in Web & Mobile App Development.
                 We drive the digital evolution of startups, established brands,
                 and small to medium-sized businesses.
               </p>
