@@ -445,8 +445,8 @@ img {
   width: 100%;
   z-index: 9999;
   backdrop-filter: blur(50px);
-  box-shadow: 1px 1px 10px #000;
-  transition: left 0.3s ease-in-out; 
+  /* box-shadow: 1px 1px 10px #000; */
+  transition: left 0.3s ease-in-out;
 }
 
 .icon-img-100 {
@@ -462,16 +462,17 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   line-height: 60px;
   border: 1px solid var(--color2);
-  border-radius: 50%;
+  border-radius: 100%;
   text-align: center;
   cursor: pointer;
   z-index: 4;
-  padding: 5px;
+  padding: 10px;
 }
+
 .hamenu .close-menu svg {
   width: 40px;
   height: 40px;

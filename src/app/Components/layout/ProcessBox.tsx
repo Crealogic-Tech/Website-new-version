@@ -24,7 +24,7 @@ const ProcessBox: React.FC<ProcessProps> = ({ data }) => {
               <Image src={item.src} alt={item.alt} height={40} width={40} className="w-10 h-10 mb-[21px]" />
               <h3 className="title">{item.title}</h3>
             </div>
-            <p className="text me-0">{item.pra}</p>
+            <p className="text me-0 mb-0 md:mb-auto">{item.pra}</p>
           </div>
         </div>
       ))}
