@@ -1,17 +1,20 @@
+"use client";
 import React from "react";
 import HadingTitle from "../Components/HadingTitle";
 import ServicesBox from "../Components/layout/ServicesBox";
-import WebDev from "../assets/images/web-dev.svg"; 
-import MobileDev from "../assets/images/mobile-development.svg"; 
-import SoftDev from "../assets/images/software-development.svg"; 
-import CustomDev from "../assets/images/optimization.svg"; 
-import BlockDev from "../assets/images/blockchain.svg"; 
-import DevOps from "../assets/images/devops.svg"; 
-import Data from "../assets/images/administration.svg"; 
-import Marketing from "../assets/images/global-services.svg"; 
-import { useGSAP } from "@gsap/react";
-import gsap, { Linear, TweenLite } from "gsap";
+import WebDev from "../assets/images/web-dev.svg";
+import MobileDev from "../assets/images/mobile-development.svg";
+import SoftDev from "../assets/images/software-development.svg";
+import CustomDev from "../assets/images/optimization.svg";
+import BlockDev from "../assets/images/blockchain.svg";
+import DevOps from "../assets/images/devops.svg";
+import Data from "../assets/images/administration.svg";
+import Marketing from "../assets/images/global-services.svg";
+// import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function ServicesSection() {
   const SrvicesData = [
@@ -65,31 +68,13 @@ function ServicesSection() {
     },
   ];
 
-
-  useGSAP(() => {
-    const tl = gsap.timeline({ ease: Linear.easeIn });
-    TweenLite.set(".servicesDotsTitle ", { perspective: 500 });
-    tl.from('.servicesDotsTitle', 1, { y: 100, opacity: 0, rotationX: -100, transformOrigin: "center", stagger: 0.03, }, "collabe")
-        .from('.web3Items', 1, { x: -100, opacity: 0, rotationY: 50, transformOrigin: "center", stagger: 0.1, }, "collabe+=0.2")
-        .fromTo('.marqalter', 1, {
-            x: 200, opacity: 0, delay: 1, transformOrigin: "center"
-        }, { x: -0, opacity: 1, transformOrigin: "center", });
-    ScrollTrigger.create({
-        trigger: ".services-dots",
-        start: "top center",
-        animation: tl
-    });
-});
-
   return (
-
-
     <section id="services" className="py-[90px] lg:py-16">
       <div className="container">
         <div className="flex flex-col justify-center items-center ">
-          <div className="servicesDotsTitle">
+          <div className="">
             <HadingTitle
-              className="flex  justify-center items-center"
+              className="flex web3Items justify-center items-center"
               text="Services"
             />
 
@@ -98,7 +83,7 @@ function ServicesSection() {
             </h2>
           </div>
 
-          <ServicesBox data={SrvicesData} className="web3Items"/>
+          <ServicesBox data={SrvicesData} className="" />
         </div>
       </div>
     </section>

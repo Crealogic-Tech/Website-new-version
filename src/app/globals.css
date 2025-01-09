@@ -202,7 +202,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(53, 92, 125 ,0.3);
+  background: rgba(53, 92, 125, 0.3);
   z-index: 9999;
 }
 
@@ -303,7 +303,6 @@ img {
   font-size: 25px;
 }
 
-
 .wrapper {
   position: relative !important;
   height: 100%;
@@ -316,7 +315,6 @@ img {
   height: auto; /* Or any value that fits your content */
   overflow-x: hidden;
 }
-
 
 /* ================================================================================
 ============================= Loader Page ======================================
@@ -331,6 +329,7 @@ img {
   top: 0;
   left: 0;
 }
+
 .loader-wrap {
   height: 100vh;
   overflow: hidden;
@@ -366,6 +365,7 @@ img {
   text-transform: uppercase;
   z-index: 20;
 }
+
 .loader-wrap .loader-wrap-heading .load-text {
   font-size: 18px;
   letter-spacing: 15px;
@@ -446,7 +446,7 @@ img {
   z-index: 9999;
   backdrop-filter: blur(50px);
   box-shadow: 1px 1px 10px #000;
-  transition: left 0.3s ease-in-out; /* Smooth transition */
+  transition: left 0.3s ease-in-out; 
 }
 
 .icon-img-100 {
@@ -704,6 +704,7 @@ span {
   left: 56px;
   top: -45px;
   transition: transform 0.15s ease-in-out;
+  z-index: 0;
 }
 
 .services .services_img_wrap:before {
@@ -716,8 +717,7 @@ span {
   border-radius: 24px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.65) 5%, #fff 100%);
   z-index: 0;
-  box-shadow: 0 0 10px var(--color1)
-
+  box-shadow: 0 0 10px var(--color1);
 }
 .services_title {
   font-weight: 600;
@@ -787,7 +787,6 @@ span {
   width: calc(50% - 30px);
 }
 
-
 .process-box:before {
   background: #3f506e;
   content: "";
@@ -847,7 +846,13 @@ span {
 }
 
 .process-box .title:after {
-  background: linear-gradient(90deg, hsla(22, 88%, 78%, 0), #355c7d 17%, #c06c84 75%, rgba(255, 151, 213, 0));
+  background: linear-gradient(
+    90deg,
+    hsla(22, 88%, 78%, 0),
+    #355c7d 17%,
+    #c06c84 75%,
+    rgba(255, 151, 213, 0)
+  );
   border-radius: 1.2px;
   bottom: 0;
   content: "";
@@ -914,8 +919,8 @@ span {
 .contact-wrapper {
   display: flex;
   width: 100%;
-  background: #F9FAFA;
-  box-shadow:0 0 50px rgb(162 182 212 );
+  background: #f9fafa;
+  box-shadow: 0 0 50px rgb(162 182 212);
   border-radius: 10px;
   overflow: hidden;
   padding: 12px;
@@ -1004,7 +1009,6 @@ span {
   margin-bottom: 20px;
 }
 
-
 .form-row input,
 .form-row textarea {
   background-color: #ffffff;
@@ -1019,7 +1023,6 @@ span {
   color: rgb(25 39 52 / 50%);
   padding: 17px 20px;
 }
-
 
 textarea {
   resize: none;
@@ -1101,11 +1104,10 @@ textarea {
   background-color: transparent !important;
   border: none !important;
   box-shadow: none !important;
-  color: #000!important;
+  color: #000 !important;
   font-size: 20px;
   font-weight: 400 !important;
 }
-
 
 .accordion-button span {
   margin-right: 32px;
@@ -1136,7 +1138,7 @@ textarea {
   flex-shrink: 0;
   height: 1.25rem;
   margin-left: auto;
-  transition: transform 0.2s ease-in-out;;
+  transition: transform 0.2s ease-in-out;
   width: 1.25rem;
 }
 .accordion-button:after {
@@ -1157,7 +1159,7 @@ textarea {
   h1 {
     font-size: 40px;
   }
-  .title{
+  .title {
     font-size: 20px;
     line-height: 30px;
   }
