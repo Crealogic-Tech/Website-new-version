@@ -1,12 +1,13 @@
 import React from "react";
 import HadingTitle from "../Components/HadingTitle";
-// import Dats from "../assets/images/Dats.svg";
 import Smit from "../assets/images/smit.svg";
-import MeetK from "../assets/images/Meetk.svg";
 // import MeetM from "../assets/images/Meetm.svg";
+// import Dats from "../assets/images/Dats.svg";
+import MeetK from "../assets/images/Meetk.svg";
 import Prtham from "../assets/images/prtham.svg";
 import Riddham from "../assets/images/riddham.svg";
-import { FaSkype, FaTwitter, FaLinkedin, FaTelegram } from "react-icons/fa";
+import { FaSkype, FaLinkedin, FaTelegram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import ProfileCard from "../Components/layout/TeamCard";
 
 const OurTeam: React.FC = () => {
@@ -29,11 +30,11 @@ const OurTeam: React.FC = () => {
     //   ],
     // },
     {
-      name: "Smit Kachhadiya",
+      name: "Smit Kachchadiya",
       role: "Product Manager",
       avatarSrc: Smit,
       socialLinks: [
-        { icon: <FaTwitter />, url: "https://x.com/smitkachhadiy17?s=21" },
+        { icon: <FaXTwitter  />, url: "https://x.com/smitkachhadiy17?s=21" },
         { icon: <FaTelegram />, url: "https://t.me/smit_kachhadiya" },
         {
           icon: <FaSkype />,
@@ -63,12 +64,12 @@ const OurTeam: React.FC = () => {
     //   ],
     // },
     {
-      name: "Pratham Kyada",
+      name: "Prtham Kyada",
       role: "Backend Developer",
       avatarSrc: Prtham,
       socialLinks: [
         {
-          icon: <FaTwitter />,
+          icon: <FaXTwitter  />,
           url: "https://x.com/i/flow/login?redirect_after_login=%2Fkyadaprath24129",
         },
         { icon: <FaTelegram />, url: "https://t.me/P_kyada" },
@@ -88,7 +89,7 @@ const OurTeam: React.FC = () => {
       avatarSrc: MeetK,
       socialLinks: [
         {
-          icon: <FaTwitter />,
+          icon: <FaXTwitter  />,
           url: "https://x.com/Mitukaswala1311?t=HlWNwN0eWfFep9NuHs8zXQ&s=09",
         },
         { icon: <FaTelegram />, url: "https://t.me/Mitu1311" },
@@ -109,7 +110,7 @@ const OurTeam: React.FC = () => {
       avatarSrc: Riddham,
       socialLinks: [
         {
-          icon: <FaTwitter />,
+          icon: <FaXTwitter  />,
           url: "https://x.com/RidhamP72112423?t=zZCUPkCk-OqB6hVZfdv1Xg&s=09",
         },
         { icon: <FaTelegram />, url: "https://t.me/Ridham2211" },

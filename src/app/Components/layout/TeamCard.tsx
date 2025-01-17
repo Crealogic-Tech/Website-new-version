@@ -1,9 +1,9 @@
-'use client'
+'use client';
+
 import { useRef } from 'react';
 import { gsap } from 'gsap';
 import Image from 'next/image';
 import { StaticImageData } from 'next/image';
-import Link from 'next/link';
 
 interface SocialLink {
   icon: string | React.ReactElement;
@@ -24,7 +24,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ name, role, avatarSrc, social
   const buttonRef = useRef<HTMLSpanElement>(null);
 
   const handleMouseEnter = () => {
-    if (cardRef.current && leftIconsRef.current && rightIconsRef.current && buttonRef.current) {
+    if (leftIconsRef.current && rightIconsRef.current && buttonRef.current) {
       gsap.to(leftIconsRef.current, { opacity: 1, x: 0, duration: 0.5 });
       gsap.to(rightIconsRef.current, { opacity: 1, x: 0, duration: 0.5 });
       gsap.to(buttonRef.current, { rotate: 90, duration: 0.3 });
@@ -32,7 +32,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ name, role, avatarSrc, social
   };
 
   const handleMouseLeave = () => {
-    if (cardRef.current && leftIconsRef.current && rightIconsRef.current && buttonRef.current) {
+    if (leftIconsRef.current && rightIconsRef.current && buttonRef.current) {
       gsap.to(leftIconsRef.current, { opacity: 0, x: 20, duration: 0.5 });
       gsap.to(rightIconsRef.current, { opacity: 0, x: -20, duration: 0.5 });
       gsap.to(buttonRef.current, { rotate: 0, duration: 0.3 });
@@ -53,7 +53,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ name, role, avatarSrc, social
           alt={name}
           width={150}
           height={150}
-          className="object-cover w-full h-full "
+          className="object-cover w-full h-full"
         />
       </div>
 
@@ -74,15 +74,14 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ name, role, avatarSrc, social
         >
           {socialLinks.slice(0, Math.ceil(socialLinks.length / 2)).map((social, index) => (
             <li key={index} className="mr-1">
-              <Link
-              
+              <a
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 flex items-center justify-center rounded-full bg-slate-700 text-white"
               >
                 {social.icon}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>
@@ -103,14 +102,14 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ name, role, avatarSrc, social
         >
           {socialLinks.slice(Math.ceil(socialLinks.length / 2)).map((social, index) => (
             <li key={index} className="mr-1">
-              <Link
+              <a
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 flex items-center justify-center rounded-full bg-slate-700 text-white"
               >
                 {social.icon}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>
