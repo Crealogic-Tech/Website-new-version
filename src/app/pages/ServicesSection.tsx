@@ -50,21 +50,21 @@ function ServicesSection() {
     },
     {
       src: DevOps,
-      alt: "DevOps Services",
-      title: "DevOps Services",
-      pra: "At Crealogic, we deliver seamless DevOps solutions that bridge the gap between development and operations. By leveraging automation, continuous integration, and deployment strategies, we ensure faster development cycles, scalable infrastructure, and minimal downtime. Our services focus on optimizing collaboration, streamlining workflows, and enabling your team to deliver robust, high-performing applications with efficiency and precision.",
+      alt: "DevOps",
+      title: "DevOps",
+      pra: "Our DevOps services aim to streamline and speed up your software development process. We prioritize creating smooth workflows by merging development and operations through automation, continuous integration, and deployment. This approach guarantees quicker delivery, better scalability, and reduced downtime. Whether it's handling infrastructure, boosting collaboration, or enhancing performance, we offer solutions customized to your specific business requirements. With Crealogic, you can innovate more effectively, deliver more quickly, and accomplish greater results.",
     },
     {
       src: Data,
-      alt: "Data Analytics Services",
-      title: "Data Analytics Services",
-      pra: "At Crealogic, we specialize in turning complex data into meaningful insights that drive results. From developing custom analytics dashboards to implementing predictive models, our data analytics solutions empower businesses to make informed decisions. We focus on providing user-centric, actionable insights that optimize operations, uncover opportunities, and establish a data-driven approach to growth.",
+      alt: "Data analyst",
+      title: "Data analyst",
+      pra: "Crealogic's Data Analyst services convert raw data into valuable information that is useful in making appropriate decisions. We offer data cleansing, descriptive and prescriptive business analytics, and the development of dashboards for real-time business intelligence. Our superb practitioners create personalized solutions that help you identify opportunities, streamline operations, and gain competitive advantages. Whether in banking, health care, or retail, Crealogic offers solutions that effectively use data and breakthrough business transformation. Let us help you reach the full potential of your data! ",
     },
     {
       src: Marketing,
-      alt: "Marketing Services",
-      title: "Marketing Services",
-      pra: "At Crealogic, we design impactful marketing strategies that leave a lasting impression on your audience. From tailored digital campaigns to advanced SEO techniques, our services are designed to drive engagement and boost conversions. We focus on creating data-driven strategies and compelling content that help businesses establish a strong online presence and build long-lasting customer relationships.",
+      alt: "Digital Marketing",
+      title: "Digital Marketing",
+      pra: "Create your online identity more effectively with Crealogic's professional marketing solutions. We integrate innovative ideas with analytical strategies to implement concrete results. Our state-of-the-art digital marketing tools, such as SEO, social media, content marketing, and PPC, the businesses provide the keys to the current competitive digital environment. Our personalized strategies can support anything from increased visibility and lead generation to climate change awareness to help the company grow. ",
     },
   ];
 
