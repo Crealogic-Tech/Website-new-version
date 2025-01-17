@@ -2,7 +2,7 @@ import "./globals.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import Header from "./Components/layout/Header";
-import ClientWrapper from "./Components/layout/ClientWrapper";
+// import ClientWrapper from "./Components/layout/ClientWrapper";
 import gsap from 'gsap';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -32,10 +32,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body >
-        <ClientWrapper>
+        {/* <ClientWrapper> */}
           <Header />
           <main>{children}</main>
-        </ClientWrapper>
+        {/* </ClientWrapper> */}
       </body>
     </html>
   );
