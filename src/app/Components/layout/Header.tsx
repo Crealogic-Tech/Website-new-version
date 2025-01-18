@@ -93,7 +93,7 @@ const Header: React.FC = () => {
       .fromTo(
         ".item",
         0.5, // Reduced duration for immediate visibility
-        { y: 100, opacity: 0, stagger: { each: 0.5 } },
+        { y: -30, opacity: 0, stagger: { each: 0.5 } },
         { y: 0, opacity: 1 }
       )
       .call(() => document.body.classList.remove("fixedBody")); // Reset body class after animation
