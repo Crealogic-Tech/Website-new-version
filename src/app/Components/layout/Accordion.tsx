@@ -1,6 +1,5 @@
 "use client";
 import { useRef, useEffect } from "react";
-import { gsap } from "gsap";
 import { FaChevronDown } from "react-icons/fa";
 
 interface AccordionItemProps {
@@ -23,17 +22,9 @@ const Accordion: React.FC<AccordionItemProps> = ({
   useEffect(() => {
     if (contentRef.current) {
       if (isOpen) {
-        gsap.to(contentRef.current, {
-          height: "auto",
-          duration: 0.5,
-          ease: "power1.out",
-        });
+        contentRef.current.style.height = `${contentRef.current.scrollHeight}px`;
       } else {
-        gsap.to(contentRef.current, {
-          height: 0,
-          duration: 0.5,
-          ease: "power1.in",
-        });
+        contentRef.current.style.height = "0";
       }
     }
   }, [isOpen]);
@@ -63,7 +54,7 @@ const Accordion: React.FC<AccordionItemProps> = ({
       <div
         ref={contentRef}
         className="overflow-hidden text-[#9ea1a5] "
-        style={{ height: 0 }}
+        style={{ height: 0, transition: "height 0.5s ease" }}
       >
         <div className="py-4 px-5">{content}</div>
       </div>
