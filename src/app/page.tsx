@@ -4,7 +4,6 @@ import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import DrawSVGPlugin from "gsap/DrawSVGPlugin";
 import { SplitText } from "gsap/SplitText";
-
 import { useEffect } from "react";
 import HeroSection from "@/Components/HeroSection";
 import Marque from "@/Components/Marque";
@@ -20,6 +19,7 @@ import InderstreSection from "@/Components/InderstreSection";
 import FaqSection from "@/Components/FaqSection";
 import TalkToExpertSection from "@/Components/TalkToExpertSection";
 import Footer from "@/Components/layout/Footer";
+import '@/app/globals.css'
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, DrawSVGPlugin, SplitText);
 

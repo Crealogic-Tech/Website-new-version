@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 import { useGSAP } from "@gsap/react";
 import { TweenLite } from "gsap/gsap-core";
-
+import '@/app/globals.css'
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 function AboutSection() {

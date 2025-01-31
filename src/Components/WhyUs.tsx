@@ -1,5 +1,6 @@
 import React from "react";
 import HadingTitle from "../Components/HadingTitle";
+import '@/app/globals.css'
 // import Skilled from "../assets/images/Skilled.svg";
 // import Technology from "../assets/images/Technology.svg";
 // import Quality from "../assets/images/Quality.svg";

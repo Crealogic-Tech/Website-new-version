@@ -12,6 +12,7 @@ import web3 from '../assets/images/Protfolio/web3.png'
 import web8 from '../assets/images/Protfolio/web8.png'
 import web5 from '../assets/images/Protfolio/web5.png'
 import web9 from '../assets/images/Protfolio/web9.png'
+import '@/app/globals.css'
 
 function Projects() {
 const ProtfoliosData = [

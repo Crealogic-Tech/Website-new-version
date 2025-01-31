@@ -2,6 +2,7 @@
 
 import Image, { StaticImageData } from "next/image";
 import React, { useEffect } from "react";
+import '@/app/globals.css'
 
 type ExcellenceItem = {
   value: string;

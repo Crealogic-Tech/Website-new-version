@@ -13,6 +13,7 @@ import ServicesBox from "../Components/layout/ServicesBox";
 // import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import '@/app/globals.css'
 
 gsap.registerPlugin(ScrollTrigger);
 

@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import HadingTitle from "../Components/HadingTitle";
+import '@/app/globals.css'
 import Image, { StaticImageData } from "next/image";
 // import TypeScript from "@/src/app/assets/images/typescript-tech.svg";
 // import ReactIcon from "@/src/app/assets/images/react-logo.svg";

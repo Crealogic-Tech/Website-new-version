@@ -2,6 +2,7 @@
 import React from "react";
 import HadingTitle from "../Components/HadingTitle";
 import Image from "next/image";
+import '@/app/globals.css'
 // import Banking from "@/src/app/assets/images/Banking-Finance.svg";
 // import Healthcare from "@/src/app/assets/images/Healthcare-Medicine.svg";
 // import Travel from "@/src/app/assets/images/Travel-Tourism.svg";

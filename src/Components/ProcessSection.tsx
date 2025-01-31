@@ -1,6 +1,7 @@
 import React from "react";
 import HadingTitle from "../Components/HadingTitle";
 import ProcessBox from "../Components/layout/ProcessBox";
+import '@/app/globals.css'
 // import Requirement from "../assets/images/Requirement-Analysis.svg";
 // import Planning from "../assets/images/Planning & Design.svg";
 // import Development from "../assets/images/Development.svg";

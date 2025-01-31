@@ -1,5 +1,6 @@
 import React from "react";
 import HadingTitle from "../Components/HadingTitle";
+import '@/app/globals.css'
 import ExcellenceBox from "../Components/ExcellenceBox";
 // import Year from "../assets/images/calendar.svg"; 
 // import Country from "../assets/images/country.svg"; 

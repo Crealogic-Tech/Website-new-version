@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import HadingTitle from "../Components/HadingTitle";
+import '@/app/globals.css'
 import Accordion from "../Components/layout/Accordion";
 
 const FaqSection: React.FC = () => {

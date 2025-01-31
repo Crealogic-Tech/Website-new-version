@@ -7,6 +7,7 @@ import { useGSAP } from "@gsap/react";
 import gsap, { Linear } from "gsap";
 import { TweenLite } from "gsap/gsap-core";
 import Link from "next/link";
+import '@/app/globals.css'
 
 function HeroSection() {
   const [animationComplete, setAnimationComplete] = useState(false);

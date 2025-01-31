@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../Components/layout/Button";
 import Link from "next/link";
+import '@/app/globals.css'
 
 function TalkToExpertSection() {
   return (
