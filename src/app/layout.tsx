@@ -27,7 +27,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
       <link rel="icon" href="/favicon.ico" sizes="any" />
-        
+      <link rel="stylesheet" href="/styles/globals.css" />
+
         {/* Google Analytics script with next/script */}
         <Script
           async

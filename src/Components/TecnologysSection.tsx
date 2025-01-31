@@ -69,7 +69,7 @@ function TecnologysSection() {
       { name: "Node js", icon: "/assets/images/nodejs.svg" },
       { name: "Mongodb", icon: "/assets/images/mongodb-tech.svg" },
       { name: "MySQL", icon: "/assets/images/mysql.svg" },
-      { name: "Solidity", icon: "/assets/images/solidity.sv" },
+      { name: "Solidity", icon: "/assets/images/solidity.svg" },
       { name: "Power BI", icon: "/assets/images/power-bi.svg" },
       { name: "Tableau", icon: "/assets/images/tableau-software.svg" },
     ],
