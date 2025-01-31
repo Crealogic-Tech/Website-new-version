@@ -1,16 +1,17 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 // import Button from "../Components/layout/Button";
-import HadingTitle from "../Components/HadingTitle";
-import Phone from "../assets/images/phone.svg";
-import Check from "../assets/images/check.svg";
-import Mail from "../assets/images/mail.svg";
-import Skype from "../assets/images/skype.svg";
+// import Phone from "/assets/images/phone.svg";
+// import Check from "/assets/images/check.svg";
+// import Mail from "/assets/images/mail.svg";
+// import Skype from "/assets/images/skype.svg";
 import Image from "next/image";
 import axios from "axios";
-import Turnstile from "react-turnstile";
-import Footer from "../Components/layout/Footer";
+
+import Footer from "@/Components/layout/Footer";
 import Link from "next/link";
+import HadingTitle from "@/Components/HadingTitle";
+import Turnstile from "react-turnstile";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -21,6 +22,7 @@ const ContactSection = () => {
     description: "",
   });
   const [captchaToken, setCaptchaToken] = useState("");
+
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -55,9 +57,13 @@ const ContactSection = () => {
     }
   };
 
+  useEffect(() => {
+    console.log(document.title); // This will now only run in the browser
+  }, []);
+
   return (
     <>
-      <section className="py-[90px] lg:py-16">
+      <section className="py-[90px] lg:py-24">
         <div className="container">
           <div className="flex flex-col justify-center items-center">
             <div>
@@ -82,7 +88,7 @@ const ContactSection = () => {
                       target="/"
                       className="flex items-center gap-3"
                     >
-                      <Image src={Phone} alt="Phone" width={30} height={30} />
+                      <Image src="/assets/images/phone.svg" alt="Phone" width={30} height={30} />
                       +91 81603 43175
                     </Link>
                   </li>
@@ -92,7 +98,7 @@ const ContactSection = () => {
                       target="/"
                       className="flex items-center gap-3"
                     >
-                      <Image src={Mail} alt="Mail" width={30} height={30} />
+                      <Image src="/assets/images/mail.svg" alt="Mail" width={30} height={30} />
                       crealogictech@gmail.com
                     </Link>
                   </li>
@@ -102,14 +108,14 @@ const ContactSection = () => {
                       target="/"
                       className="flex  items-center gap-3"
                     >
-                      <Image src={Skype} alt="Skype" width={30} height={30} />
+                      <Image src="/assets/images/skype.svg" alt="Skype" width={30} height={30} />
                       Crealogic Tech
                     </Link>
                   </li>
                 </ul>
                 <span className="check-icon-p">
                   <Image
-                    src={Check}
+                    src="/assets/images/check.svg"
                     alt="Check"
                     width={40}
                     height={40}

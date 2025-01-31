@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import HeroImage from "../assets/images/hero-home-image-1.svg";
+// import HeroImage from "../assets/images/hero-home-image-1.svg";
 import Button from "../Components/layout/Button";
 import { useGSAP } from "@gsap/react";
 import gsap, { Linear } from "gsap";
@@ -129,9 +129,11 @@ function HeroSection() {
           <div>
             <Image
               alt="banner image"
-              className="hero-video"
+              className="hero-video w-full h-full"
               loading="eager"
-              src={HeroImage}
+              width="100"
+              height="100"
+              src="/assets/images/hero-home-image-1.svg"
             />
           </div>
         </div>

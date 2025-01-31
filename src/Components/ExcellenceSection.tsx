@@ -1,32 +1,32 @@
 import React from "react";
 import HadingTitle from "../Components/HadingTitle";
 import ExcellenceBox from "../Components/ExcellenceBox";
-import Year from "../assets/images/calendar.svg"; 
-import Country from "../assets/images/country.svg"; 
-import Repeat from "../assets/images/repeat-customers.svg"; 
-import Projects from "../assets/images/Projects.svg"; 
+// import Year from "../assets/images/calendar.svg"; 
+// import Country from "../assets/images/country.svg"; 
+// import Repeat from "../assets/images/repeat-customers.svg"; 
+// import Projects from "../assets/images/Projects.svg"; 
 
 const ExcellenceSection = () => {
   const excellenceData = [
     {
-      src: Year,
+      src: "/assets/images/calendar.svg",
       alt: " Years of Experience",
       value: "3",
       label: " Years of Experience",
     },
     {
-      src: Country,
+      src: "/assets/images/country.svg",
       alt: "Countries Served",
       value: "4",
       label: "Countries Served",
     },
     {
-      src: Repeat,
+      src: "/assets/images/repeat-customers.svg",
       alt: " Clients Served",
       value: "20",
       label: " Clients Served",
     },
-    { src: Projects, alt: "Projects", value: "15", label: "Projects" },
+    { src: "/assets/images/Projects.svg", alt: "Projects", value: "15", label: "Projects" },
   ];
 
   return (

@@ -17,9 +17,9 @@
 
 @font-face {
   font-family: "Urbanist";
-  src: url("../app/assets/fonts/Urbanist-SemiBold.woff2") format("woff2"),
-    url("../app/assets/fonts/Urbanist-SemiBold.woff") format("woff"),
-    url("../app/assets/fonts/Urbanist-SemiBold.ttf") format("truetype");
+  src: url("/assets/fonts/Urbanist-SemiBold.woff2") format("woff2"),
+    url("/assets/fonts/Urbanist-SemiBold.woff") format("woff"),
+    url("/assets/fonts/Urbanist-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -27,9 +27,9 @@
 
 @font-face {
   font-family: "Urbanist";
-  src: url("../app/assets/fonts/Urbanist-SemiBoldItalic.woff2") format("woff2"),
-    url("../app/assets/fonts/Urbanist-SemiBoldItalic.woff") format("woff"),
-    url("../app/assets/fonts/Urbanist-SemiBoldItalic.ttf") format("truetype");
+  src: url("/assets/fonts/Urbanist-SemiBoldItalic.woff2") format("woff2"),
+    url("/assets/fonts/Urbanist-SemiBoldItalic.woff") format("woff"),
+    url("/assets/fonts/Urbanist-SemiBoldItalic.ttf") format("truetype");
   font-weight: 600;
   font-style: italic;
   font-display: swap;
@@ -37,9 +37,9 @@
 
 @font-face {
   font-family: "Urbanist";
-  src: url("../app/assets/fonts/Urbanist-ExtraBoldItalic.woff2") format("woff2"),
-    url("../app/assets/fonts/Urbanist-ExtraBoldItalic.woff") format("woff"),
-    url("../app/assets/fonts/Urbanist-ExtraBoldItalic.ttf") format("truetype");
+  src: url("/assets/fonts/Urbanist-ExtraBoldItalic.woff2") format("woff2"),
+    url("/assets/fonts/Urbanist-ExtraBoldItalic.woff") format("woff"),
+    url("/assets/fonts/Urbanist-ExtraBoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -47,10 +47,10 @@
 
 @font-face {
   font-family: "Urbanist";
-  src: url("../app/assets/fonts/Urbanist-ExtraLightItalic.woff2")
+  src: url("/assets/fonts/Urbanist-ExtraLightItalic.woff2")
       format("woff2"),
-    url("../app/assets/fonts/Urbanist-ExtraLightItalic.woff") format("woff"),
-    url("../app/assets/fonts/Urbanist-ExtraLightItalic.ttf") format("truetype");
+    url("/assets/fonts/Urbanist-ExtraLightItalic.woff") format("woff"),
+    url("/assets/fonts/Urbanist-ExtraLightItalic.ttf") format("truetype");
   font-weight: 200;
   font-style: italic;
   font-display: swap;
@@ -58,9 +58,9 @@
 
 @font-face {
   font-family: "Urbanist";
-  src: url("../app/assets/fonts/Urbanist-Medium.woff2") format("woff2"),
-    url("../app/assets/fonts/Urbanist-Medium.woff") format("woff"),
-    url("../app/assets/fonts/Urbanist-Medium.ttf") format("truetype");
+  src: url("/assets/fonts/Urbanist-Medium.woff2") format("woff2"),
+    url("/assets/fonts/Urbanist-Medium.woff") format("woff"),
+    url("/assets/fonts/Urbanist-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -68,9 +68,9 @@
 
 @font-face {
   font-family: "Urbanist";
-  src: url("../app/assets/fonts/Urbanist-BlackItalic.woff2") format("woff2"),
-    url("../app/assets/fonts/Urbanist-BlackItalic.woff") format("woff"),
-    url("../app/assets/fonts/Urbanist-BlackItalic.ttf") format("truetype");
+  src: url("/assets/fonts/Urbanist-BlackItalic.woff2") format("woff2"),
+    url("/assets/fonts/Urbanist-BlackItalic.woff") format("woff"),
+    url("/assets/fonts/Urbanist-BlackItalic.ttf") format("truetype");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -78,9 +78,9 @@
 
 @font-face {
   font-family: "Urbanist";
-  src: url("../app/assets/fonts/Urbanist-Bold.woff2") format("woff2"),
-    url("../app/assets/fonts/Urbanist-Bold.woff") format("woff"),
-    url("../app/assets/fonts/Urbanist-Bold.ttf") format("truetype");
+  src: url("/assets/fonts/Urbanist-Bold.woff2") format("woff2"),
+    url("/assets/fonts/Urbanist-Bold.woff") format("woff"),
+    url("/assets/fonts/Urbanist-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -88,9 +88,9 @@
 
 @font-face {
   font-family: "Urbanist";
-  src: url("../app/assets/fonts/Urbanist-LightItalic.woff2") format("woff2"),
-    url("../app/assets/fonts/Urbanist-LightItalic.woff") format("woff"),
-    url("../app/assets/fonts/Urbanist-LightItalic.ttf") format("truetype");
+  src: url("/assets/fonts/Urbanist-LightItalic.woff2") format("woff2"),
+    url("/assets/fonts/Urbanist-LightItalic.woff") format("woff"),
+    url("/assets/fonts/Urbanist-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -98,9 +98,9 @@
 
 @font-face {
   font-family: "Urbanist";
-  src: url("../app/assets/fonts/Urbanist-MediumItalic.woff2") format("woff2"),
-    url("../app/assets/fonts/Urbanist-MediumItalic.woff") format("woff"),
-    url("../app/assets/fonts/Urbanist-MediumItalic.ttf") format("truetype");
+  src: url("/assets/fonts/Urbanist-MediumItalic.woff2") format("woff2"),
+    url("/assets/fonts/Urbanist-MediumItalic.woff") format("woff"),
+    url("/assets/fonts/Urbanist-MediumItalic.ttf") format("truetype");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -108,9 +108,9 @@
 
 @font-face {
   font-family: "Urbanist";
-  src: url("../app/assets/fonts/Urbanist-Black.woff2") format("woff2"),
-    url("../app/assets/fonts/Urbanist-Black.woff") format("woff"),
-    url("../app/assets/fonts/Urbanist-Black.ttf") format("truetype");
+  src: url("/assets/fonts/Urbanist-Black.woff2") format("woff2"),
+    url("/assets/fonts/Urbanist-Black.woff") format("woff"),
+    url("/assets/fonts/Urbanist-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -118,9 +118,9 @@
 
 @font-face {
   font-family: "Urbanist";
-  src: url("../app/assets/fonts/Urbanist-Italic.woff2") format("woff2"),
-    url("../app/assets/fonts/Urbanist-Italic.woff") format("woff"),
-    url("../app/assets/fonts/Urbanist-Italic.ttf") format("truetype");
+  src: url("/assets/fonts/Urbanist-Italic.woff2") format("woff2"),
+    url("/assets/fonts/Urbanist-Italic.woff") format("woff"),
+    url("/assets/fonts/Urbanist-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -128,9 +128,9 @@
 
 @font-face {
   font-family: "Urbanist";
-  src: url("../app/assets/fonts/Urbanist-Thin.woff2") format("woff2"),
-    url("../app/assets/fonts/Urbanist-Thin.woff") format("woff"),
-    url("../app/assets/fonts/Urbanist-Thin.ttf") format("truetype");
+  src: url("/assets/fonts/Urbanist-Thin.woff2") format("woff2"),
+    url("/assets/fonts/Urbanist-Thin.woff") format("woff"),
+    url("/assets/fonts/Urbanist-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -138,9 +138,9 @@
 
 @font-face {
   font-family: "Urbanist";
-  src: url("../app/assets/fonts/Urbanist-ExtraBold.woff2") format("woff2"),
-    url("../app/assets/fonts/Urbanist-ExtraBold.woff") format("woff"),
-    url("../app/assets/fonts/Urbanist-ExtraBold.ttf") format("truetype");
+  src: url("/assets/fonts/Urbanist-ExtraBold.woff2") format("woff2"),
+    url("/assets/fonts/Urbanist-ExtraBold.woff") format("woff"),
+    url("/assets/fonts/Urbanist-ExtraBold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -148,9 +148,9 @@
 
 @font-face {
   font-family: "Urbanist";
-  src: url("../app/assets/fonts/Urbanist-ThinItalic.woff2") format("woff2"),
-    url("../app/assets/fonts/Urbanist-ThinItalic.woff") format("woff"),
-    url("../app/assets/fonts/Urbanist-ThinItalic.ttf") format("truetype");
+  src: url("/assets/fonts/Urbanist-ThinItalic.woff2") format("woff2"),
+    url("/assets/fonts/Urbanist-ThinItalic.woff") format("woff"),
+    url("/assets/fonts/Urbanist-ThinItalic.ttf") format("truetype");
   font-weight: 100;
   font-style: italic;
   font-display: swap;
@@ -158,9 +158,9 @@
 
 @font-face {
   font-family: "Urbanist";
-  src: url("../app/assets/fonts/Urbanist-BoldItalic.woff2") format("woff2"),
-    url("../app/assets/fonts/Urbanist-BoldItalic.woff") format("woff"),
-    url("../app/assets/fonts/Urbanist-BoldItalic.ttf") format("truetype");
+  src: url("/assets/fonts/Urbanist-BoldItalic.woff2") format("woff2"),
+    url("/assets/fonts/Urbanist-BoldItalic.woff") format("woff"),
+    url("/assets/fonts/Urbanist-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -168,9 +168,9 @@
 
 @font-face {
   font-family: "Urbanist";
-  src: url("../app/assets/fonts/Urbanist-Light.woff2") format("woff2"),
-    url("../app/assets/fonts/Urbanist-Light.woff") format("woff"),
-    url("../app/assets/fonts/Urbanist-Light.ttf") format("truetype");
+  src: url("/assets/fonts/Urbanist-Light.woff2") format("woff2"),
+    url("/assets/fonts/Urbanist-Light.woff") format("woff"),
+    url("/assets/fonts/Urbanist-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -178,9 +178,9 @@
 
 @font-face {
   font-family: "Urbanist";
-  src: url("../app/assets/fonts/Urbanist-ExtraLight.woff2") format("woff2"),
-    url("../app/assets/fonts/Urbanist-ExtraLight.woff") format("woff"),
-    url("../app/assets/fonts/Urbanist-ExtraLight.ttf") format("truetype");
+  src: url("/assets/fonts/Urbanist-ExtraLight.woff2") format("woff2"),
+    url("/assets/fonts/Urbanist-ExtraLight.woff") format("woff"),
+    url("/assets/fonts/Urbanist-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -188,9 +188,9 @@
 
 @font-face {
   font-family: "Urbanist";
-  src: url("../app/assets/fonts/Urbanist-Regular.woff2") format("woff2"),
-    url("../app/assets/fonts/Urbanist-Regular.woff") format("woff"),
-    url("../app/assets/fonts/Urbanist-Regular.ttf") format("truetype");
+  src: url("/assets/fonts/Urbanist-Regular.woff2") format("woff2"),
+    url("/assets/fonts/Urbanist-Regular.woff") format("woff"),
+    url("/assets/fonts/Urbanist-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;

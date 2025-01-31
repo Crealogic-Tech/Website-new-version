@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import Logo from "../../assets/images/logo.svg";
-import LogoName from "../../assets/images/crealogic.svg";
-import FooterIcon from "../../assets/images/footer.svg";
+// import Logo from "../../assets/images/logo.svg";
+// import LogoName from "../../assets/images/crealogic.svg";
+// import FooterIcon from "../../assets/images/footer.svg";
 import { FaSkype, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { IoMdMail } from "react-icons/io";
@@ -18,12 +18,12 @@ function Footer() {
               <div className="footer-widget">
                 <Image
                   alt=""
-                  src={Logo}
+                  src="/assets/images/logo.svg"
                   width={60}
                   height={60}
                   className="mb-4"
                 />
-                <Image src={LogoName} alt="" width={240}  className="w-60" />
+                <Image src="/assets/images/crealogic.svg" alt="" width={240} height={240}  className="w-60" />
                 <p className="m-0 mt-3 ">
                   Where visionaries and technologists unite to craft brilliance
                   for a connected world!
@@ -174,7 +174,7 @@ function Footer() {
                   Innovated with care at{" "}
                   <span className="text-xl font-semibold">Crealogic</span>{" "}
                 </p>
-                <Image alt="cre" src={FooterIcon} width={32} height={32} />
+                <Image alt="cre" src="/assets/images/footer.svg" width={32} height={32} />
               </div>
             </div>
           </div>

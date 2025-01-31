@@ -7,7 +7,7 @@ type ExcellenceItem = {
   value: string;
   label: string;
   alt: string;
-  src: StaticImageData; 
+  src: string | StaticImageData; 
 };
 
 

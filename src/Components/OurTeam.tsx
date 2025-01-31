@@ -1,11 +1,11 @@
 import React from "react";
 import HadingTitle from "../Components/HadingTitle";
-import Smit from "../assets/images/smit.svg";
+// import Smit from "../assets/images/smit.svg";
 // import MeetM from "../assets/images/Meetm.svg";
 // import Dats from "../assets/images/Dats.svg";
-import MeetK from "../assets/images/Meetk.svg";
-import Prtham from "../assets/images/prtham.svg";
-import Riddham from "../assets/images/riddham.svg";
+// import MeetK from "../assets/images/Meetk.svg";
+// import Prtham from "../assets/images/prtham.svg";
+// import Riddham from "../assets/images/riddham.svg";
 import { FaSkype, FaLinkedin, FaTelegram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import ProfileCard from "../Components/layout/TeamCard";
@@ -32,7 +32,7 @@ const OurTeam: React.FC = () => {
     {
       name: "Smit Kachchadiya",
       role: "Product Manager",
-      avatarSrc: Smit,
+      avatarSrc: "/assets/images/smit.svg",
       socialLinks: [
         { icon: <FaXTwitter  />, url: "https://x.com/smitkachhadiy17?s=21" },
         { icon: <FaTelegram />, url: "https://t.me/smit_kachhadiya" },
@@ -66,7 +66,7 @@ const OurTeam: React.FC = () => {
     {
       name: "Prtham Kyada",
       role: "Backend Developer",
-      avatarSrc: Prtham,
+      avatarSrc: "/assets/images/prtham.svg",
       socialLinks: [
         {
           icon: <FaXTwitter  />,
@@ -86,7 +86,7 @@ const OurTeam: React.FC = () => {
     {
       name: "Meet Kaswala",
       role: "Content Manager",
-      avatarSrc: MeetK,
+      avatarSrc: "/assets/images/Meetk.svg",
       socialLinks: [
         {
           icon: <FaXTwitter  />,
@@ -107,7 +107,7 @@ const OurTeam: React.FC = () => {
     {
       name: "Riddham Patel",
       role: "Data Analytics",
-      avatarSrc: Riddham,
+      avatarSrc: "/assets/images/riddham.svg",
       socialLinks: [
         {
           icon: <FaXTwitter  />,

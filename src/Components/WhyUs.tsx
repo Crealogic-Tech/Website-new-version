@@ -1,26 +1,26 @@
 import React from "react";
 import HadingTitle from "../Components/HadingTitle";
-import Skilled from "../assets/images/Skilled.svg";
-import Technology from "../assets/images/Technology.svg";
-import Quality from "../assets/images/Quality.svg";
+// import Skilled from "../assets/images/Skilled.svg";
+// import Technology from "../assets/images/Technology.svg";
+// import Quality from "../assets/images/Quality.svg";
 import WhyUsBox from "../Components/layout/WhyUsBox";
 
 function WhyUs() {
   const SrvicesData = [
     {
-      src: Skilled,
+      src: "/assets/images/Skilled.svg",
       alt: "Proven Expertise & Skilled Team",
       title: "Proven Expertise & Skilled Team",
       pra: "Our talented, multi-skilled team ensures timely delivery of projects of all sizes, using creative and practical approaches tailored to your business needs.",
     },
     {
-      src: Technology,
+      src: "/assets/images/Technology.svg",
       alt: "Cutting-Edge Technology & Collaboration",
       title: "Cutting-Edge Technology & Collaboration",
       pra: "Leveraging the latest technologies, we follow a collaborative roadmap with open communication to ensure our solutions align with your company goals.",
     },
     {
-      src: Quality,
+      src: "/assets/images/Quality.svg",
       alt: "High-Quality & Customizable Solutions",
       title: "High-Quality & Customizable Solutions",
       pra: "Dedicated to building long-term relationships, we provide budget-friendly, customizable solutions that exceed expectations and deliver impactful results.",
