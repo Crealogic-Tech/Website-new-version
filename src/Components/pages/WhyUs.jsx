@@ -2,9 +2,9 @@ import React from "react";
 import HeadingTitle from "../../Components/HadingTitle";
 import WhyUsBox from "../../Components/WhyUsBox";
 // import servicesData from "../../data/servicesData"; // Moved data to a separate file
-import Skilled from "../assets/images/Skilled.svg";
-import Technology from "../assets/images/Technology.svg";
-import Quality from "../assets/images/Quality.svg"
+import Skilled from "../../assets/images/Skilled.svg";
+import Technology from "../../assets/images/Technology.svg";
+import Quality from "../../assets/images/Quality.svg"
 
 
 function WhyUs() {
